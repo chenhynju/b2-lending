@@ -70,6 +70,8 @@ contract LendingHandler is Test {
         available = available < vault.cash() ? available : vault.cash();
         if (available == 0) return;
         amount = bound(amount, 1, available);
+        uint256 managed = vault.totalAssets();
+        if ((amount * supply + managed - 1) / managed == supply && amount != managed) return;
         vm.prank(user);
         uint256 shares = vault.withdraw(amount, type(uint256).max);
         withdrawals += amount;

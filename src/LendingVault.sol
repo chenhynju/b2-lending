@@ -146,6 +146,8 @@ contract LendingVault is ERC20, ReentrancyGuard {
         if (assets > cash) revert InsufficientLiquidity();
         shares = Math.mulDiv(assets, totalSupply(), cash + _debtAt(borrowIndex), Math.Rounding.Ceil);
         if (shares == 0 || shares > maxShares) revert Slippage();
+        // A final rounded-up burn must extinguish the entire lender claim.
+        if (shares == totalSupply() && assets != cash + _debtAt(borrowIndex)) revert InvalidAmount();
         cash -= assets;
         _burn(msg.sender, shares);
         _push(asset, msg.sender, assets);

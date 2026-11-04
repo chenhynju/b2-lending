@@ -428,7 +428,7 @@ contract LendingVaultTest is Test {
         this.rate(1e18 + 1);
     }
 
-    function testPoC_LastShareBurnOrphansReceivables() public {
+    function testRegression_LastShareCannotOrphanReceivables() public {
         vm.prank(alice);
         vault.deposit(2, 0);
         vm.startPrank(bob);
@@ -445,9 +445,10 @@ contract LendingVaultTest is Test {
         vm.prank(bob);
         vault.borrow(1);
         vm.prank(alice);
+        vm.expectRevert(LendingVault.InvalidAmount.selector);
         vault.withdraw(1, 1);
-        assertEq(vault.totalSupply(), 0);
-        assertGt(vault.totalAssets(), 0);
+        assertEq(vault.totalSupply(), 1);
+        assertEq(vault.totalAssets(), 5);
     }
 
     function rate(uint256 u) external pure returns (uint256) {

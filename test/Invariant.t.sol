@@ -20,6 +20,9 @@ contract LendingInvariant is StdInvariant, Test {
         oracle = new MockOracle();
         v = new LendingVault(address(loan), address(coll), address(oracle));
         h = new LendingHandler(v, loan, coll, oracle);
+        h.deposit(0, 10_000e6);
+        h.addCollateral(1, 1 ether);
+        h.borrow(1, 1000e6);
         bytes4[] memory selectors = new bytes4[](12);
         selectors[0] = h.deposit.selector;
         selectors[1] = h.withdraw.selector;
