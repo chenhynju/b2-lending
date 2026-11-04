@@ -1,0 +1,30 @@
+[profile.default]
+src = "src"
+test = "test"
+script = "script"
+out = "out"
+libs = ["lib"]
+fs_permissions = [{ access = "read", path = "./test/fixtures" }]
+solc_version = "0.8.38"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 1000
+via_ir = true
+bytecode_hash = "ipfs"
+remappings = ["@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/"]
+[profile.default.fuzz]
+runs = 1024
+[profile.default.invariant]
+fail_on_revert = true
+runs = 128
+depth = 64
+[profile.ci.fuzz]
+runs = 10000
+[profile.ci.invariant]
+runs = 512
+depth = 256
+[profile.deep.fuzz]
+runs = 50000
+[profile.deep.invariant]
+runs = 1000
+depth = 512
