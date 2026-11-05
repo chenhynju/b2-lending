@@ -26,6 +26,7 @@
   "scripts/deployment_benchmark.py": "37398e304cb5047c94bae6d083e0751a49e5346bbe9aab8f3528c9a1ff784f9c",
   "scripts/finalize_evidence.py": "89fbf7c33fcd17c32356aca1b63c4c08988f0bed9ed041cd212e998211ec2d91",
   "scripts/fork_check.py": "ea86911ab6723f168ba33b390b439ac4a901eb0598ec632506b76072687f33b4",
+  "scripts/fresh_clone.py": "a35c80563f988effe6408f8121ca1982cf18577ec150ae33f8d33d446c21ce4b",
   "scripts/generate_walkthrough.py": "9c9e3082bd5b169a6b8109103e3b18f972c807211e040228b722946db564d172",
   "scripts/install_ci_tools.py": "12552d5be809443f71d0071af1980659bbcb461f9a6ed0edac2a7b8ab9fd7d24",
   "scripts/isolated_checks.py": "58ccd9e9f7ae0dd64df179efd1ae8a1dc058c1c09e1aa5aefc1c73a7c6f5196a",
