@@ -97,6 +97,8 @@ No system can promise zero bad debt under arbitrary price gaps. [Economic model]
 
 The handler maintains ghost cash/share/collateral ledgers for four actors and varies time, price, borrow, repay, supply, withdrawal and liquidation. Unexpected vault reverts are not swallowed. Conditional closeout funds repayment and checks complete lender exit. This does not prove unconditional withdrawal liquidity.
 
+[Fresh offline clone](evidence/fresh-clone.json) validates dependency bytes, tests and the fixed-seed gas gate from a clean checkout.
+
 [Results and gates](docs/testing/results.md) · [timed campaign](evidence/campaign.json) · [coverage](evidence/coverage.json) · [mutation tests](evidence/mutation.json) · [gas/optimizer comparison](evidence/optimizer-matrix.json) · [reproducible builds](evidence/reproducible.json).
 
 ## Audit findings and remediation

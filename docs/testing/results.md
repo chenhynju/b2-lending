@@ -68,3 +68,7 @@ The CI workflow and locked installer exist, but no remote CI result or public de
 ## Learning Report
 
 [Business/math](../economics/economic-model.md), [HLD](../architecture/overview.md), [LLD](../design/low-level.md), [source walkthrough](../code-walkthrough/README.md), [execution/debug/defense exercises](../learning/interview-defense.md). Owner explanations and independent exercises are NOT RUN. Availability of AI-assisted material does not prove mastery.
+
+## Clean checkout review
+
+An offline Git-bundle clone at 46f74403dc5ada78a53dddd06cceb4d2bc0d5efc passed dependency content verification, the independent reference, all ordinary tests and fixed-seed gas regression. Every reviewed file matched its recorded SHA-256. Only evidence/documentation was added after that test revision; production/test/config/tool inputs are unchanged. [Machine record](../../evidence/fresh-clone.json) and [full output](../../evidence/fresh-clone.txt).

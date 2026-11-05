@@ -1,0 +1,51 @@
+{
+  "testedCommit": "46f74403dc5ada78a53dddd06cceb4d2bc0d5efc",
+  "bundle": "review.bundle",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/dependencies.py"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/reference_model.py"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "forge",
+        "test",
+        "--fuzz-seed",
+        "0x20261105",
+        "-vv"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "forge",
+        "snapshot",
+        "--match-contract",
+        "LendingVaultTest",
+        "--fuzz-seed",
+        "0x20261105",
+        "--check"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "sourceCommit": "b97598b987dfee2a0bf2ee40c95d2ebda1ad62fe",
+  "reviewedFilesMatch": true,
+  "sourceManifest": {
+    "src/LendingVault.sol": "34ee6190454bcf7b5ff9a49345bba2197625af94f994649033e857d51eaa129c",
+    "src/InterestRateModel.sol": "9dde3d9ed396ff5517aaf4b8eb3e5844dc54078dccd48a5d0b47c753a8a57678",
+    "src/FeedOracle.sol": "543c79a34362fc7058fe759a932dff2e06784b0097bf3373204689f9718885fd",
+    "src/interfaces/IPriceOracle.sol": "5c644d1995674556750cdb3b43219cb9f3d3651e9a823f31df0388024a6f5253"
+  },
+  "status": "PASS"
+}
