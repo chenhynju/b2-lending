@@ -1,0 +1,65 @@
+name: Lending verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      deep:
+        description: Run manually authorized deep campaigns
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Install pinned tools
+        run: |
+          python3 scripts/install_ci_tools.py
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          python3 -m venv .audit-venv
+          .audit-venv/bin/pip install -r scripts/requirements-audit.txt
+          echo "$PWD/.audit-venv/bin" >> "$GITHUB_PATH"
+      - name: Dependency content / financial reference
+        run: |
+          python3 scripts/dependencies.py
+          python3 scripts/reference_model.py
+          python3 scripts/dependency_audit.py
+      - name: Format / build / CI fuzz and invariants
+        run: |
+          forge fmt --check
+          forge build --sizes
+          FOUNDRY_PROFILE=ci forge test -vv | tee evidence/ci-tests.txt
+        shell: bash --noprofile --norc -eo pipefail {0}
+      - name: Gas regression / reproducibility
+        run: |
+          forge snapshot --match-contract LendingVaultTest --fuzz-seed 0x20261105 --check
+          python3 scripts/isolated_checks.py reproducible
+      - name: Static analysis and reviewed-warning gate
+        run: |
+          python3 scripts/isolated_checks.py static
+          python3 scripts/static_gate.py
+      - name: Coverage (90% branch target for every production module)
+        run: |
+          python3 scripts/isolated_checks.py coverage
+          python3 scripts/coverage_gate.py
+      - name: Local chain and browser integration
+        run: |
+          npm ci --ignore-scripts
+          npx playwright install --with-deps chromium
+          python3 scripts/local_smoke.py --browser
+      - name: Deep campaign (manual)
+        if: github.event_name == 'workflow_dispatch' && inputs.deep
+        run: FOUNDRY_PROFILE=deep forge test --no-match-contract MainnetForkTest -vv
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        if: always()
+        with:
+          name: lending-verification
+          path: evidence/

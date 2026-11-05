@@ -1,0 +1,3477 @@
+Compiling 2 files with Solc 0.8.38
+Solc 0.8.38 finished in 10.41s
+Compiler run successful with warnings:
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1312:9:
+     |
+1312 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1326:9:
+     |
+1326 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1334:79:
+     |
+1334 |     function assertApproxEqAbs(uint256 left, uint256 right, uint256 maxDelta, string calldata error) external pure;
+     |                                                                               ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1341:77:
+     |
+1341 |     function assertApproxEqAbs(int256 left, int256 right, uint256 maxDelta, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1358:9:
+     |
+1358 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1376:9:
+     |
+1376 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1386:86:
+     |
+1386 |     function assertApproxEqRel(uint256 left, uint256 right, uint256 maxPercentDelta, string calldata error)
+     |                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1397:84:
+     |
+1397 |     function assertApproxEqRel(int256 left, int256 right, uint256 maxPercentDelta, string calldata error) external pure;
+     |                                                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1404:77:
+     |
+1404 |     function assertEqDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1411:75:
+     |
+1411 |     function assertEqDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1417:46:
+     |
+1417 |     function assertEq(bool left, bool right, string calldata error) external pure;
+     |                                              ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1423:68:
+     |
+1423 |     function assertEq(string calldata left, string calldata right, string calldata error) external pure;
+     |                                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1429:66:
+     |
+1429 |     function assertEq(bytes calldata left, bytes calldata right, string calldata error) external pure;
+     |                                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1435:68:
+     |
+1435 |     function assertEq(bool[] calldata left, bool[] calldata right, string calldata error) external pure;
+     |                                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1441:74:
+     |
+1441 |     function assertEq(uint256[] calldata left, uint256[] calldata right, string calldata error) external pure;
+     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1447:72:
+     |
+1447 |     function assertEq(int256[] calldata left, int256[] calldata right, string calldata error) external pure;
+     |                                                                        ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1456:74:
+     |
+1456 |     function assertEq(address[] calldata left, address[] calldata right, string calldata error) external pure;
+     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1462:74:
+     |
+1462 |     function assertEq(bytes32[] calldata left, bytes32[] calldata right, string calldata error) external pure;
+     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1468:72:
+     |
+1468 |     function assertEq(string[] calldata left, string[] calldata right, string calldata error) external pure;
+     |                                                                        ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1474:70:
+     |
+1474 |     function assertEq(bytes[] calldata left, bytes[] calldata right, string calldata error) external pure;
+     |                                                                      ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1477:52:
+     |
+1477 |     function assertEq(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1483:50:
+     |
+1483 |     function assertEq(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1489:52:
+     |
+1489 |     function assertEq(address left, address right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1495:52:
+     |
+1495 |     function assertEq(bytes32 left, bytes32 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1501:42:
+     |
+1501 |     function assertFalse(bool condition, string calldata error) external pure;
+     |                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1509:77:
+     |
+1509 |     function assertGeDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1517:75:
+     |
+1517 |     function assertGeDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1524:52:
+     |
+1524 |     function assertGe(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1531:50:
+     |
+1531 |     function assertGe(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1539:77:
+     |
+1539 |     function assertGtDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1547:75:
+     |
+1547 |     function assertGtDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1554:52:
+     |
+1554 |     function assertGt(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1561:50:
+     |
+1561 |     function assertGt(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1569:77:
+     |
+1569 |     function assertLeDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1577:75:
+     |
+1577 |     function assertLeDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1584:52:
+     |
+1584 |     function assertLe(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1591:50:
+     |
+1591 |     function assertLe(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1599:77:
+     |
+1599 |     function assertLtDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1607:75:
+     |
+1607 |     function assertLtDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1614:52:
+     |
+1614 |     function assertLt(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1621:50:
+     |
+1621 |     function assertLt(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1628:80:
+     |
+1628 |     function assertNotEqDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                                ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1635:78:
+     |
+1635 |     function assertNotEqDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                              ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1641:49:
+     |
+1641 |     function assertNotEq(bool left, bool right, string calldata error) external pure;
+     |                                                 ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1647:71:
+     |
+1647 |     function assertNotEq(string calldata left, string calldata right, string calldata error) external pure;
+     |                                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1653:69:
+     |
+1653 |     function assertNotEq(bytes calldata left, bytes calldata right, string calldata error) external pure;
+     |                                                                     ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1659:71:
+     |
+1659 |     function assertNotEq(bool[] calldata left, bool[] calldata right, string calldata error) external pure;
+     |                                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1665:77:
+     |
+1665 |     function assertNotEq(uint256[] calldata left, uint256[] calldata right, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1671:75:
+     |
+1671 |     function assertNotEq(int256[] calldata left, int256[] calldata right, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1680:77:
+     |
+1680 |     function assertNotEq(address[] calldata left, address[] calldata right, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1686:77:
+     |
+1686 |     function assertNotEq(bytes32[] calldata left, bytes32[] calldata right, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1692:75:
+     |
+1692 |     function assertNotEq(string[] calldata left, string[] calldata right, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1698:73:
+     |
+1698 |     function assertNotEq(bytes[] calldata left, bytes[] calldata right, string calldata error) external pure;
+     |                                                                         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1701:55:
+     |
+1701 |     function assertNotEq(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1707:53:
+     |
+1707 |     function assertNotEq(int256 left, int256 right, string calldata error) external pure;
+     |                                                     ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1713:55:
+     |
+1713 |     function assertNotEq(address left, address right, string calldata error) external pure;
+     |                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1719:55:
+     |
+1719 |     function assertNotEq(bytes32 left, bytes32 right, string calldata error) external pure;
+     |                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1725:41:
+     |
+1725 |     function assertTrue(bool condition, string calldata error) external pure;
+     |                                         ^^^^^^^^^^^^^^^^^^^^^
+
+note[unsafe-cheatcode]: usage of unsafe cheatcodes that can perform dangerous operations
+   ╭▸ test/Differential.t.sol:11:62
+   │
+11 │         uint256[][] memory rows = abi.decode(vm.parseJson(vm.readFile("test/fixtures/reference.json")), (uint256[][]));
+   │                                                              ━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unsafe-cheatcode
+
+note[low-level-calls]: Low-level calls should be avoided
+   ╭▸ test/fork/MainnetFork.t.sol:26:22
+   │
+26 │         (bool ok,) = usdt.call(abi.encodeWithSignature("approve(address,uint256)", address(v), type(uint256).max));
+   │                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/low-level-calls
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/FeedOracle.sol:14:36
+   │
+14 │     IAggregatorV3 public immutable collateralFeed;
+   │                                    ━━━━━━━━━━━━━━ help: consider using: `COLLATERAL_FEED`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/FeedOracle.sol:15:36
+   │
+15 │     IAggregatorV3 public immutable loanFeed;
+   │                                    ━━━━━━━━ help: consider using: `LOAN_FEED`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/FeedOracle.sol:16:36
+   │
+16 │     IAggregatorV3 public immutable sequencerFeed;
+   │                                    ━━━━━━━━━━━━━ help: consider using: `SEQUENCER_FEED`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/FeedOracle.sol:17:30
+   │
+17 │     uint256 public immutable maxAge;
+   │                              ━━━━━━ help: consider using: `MAX_AGE`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/fork/MainnetFork.t.sol:24:35
+   │
+24 │         deal(usdt, address(this), 10000e6);
+   │                                   ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/fork/MainnetFork.t.sol:29:19
+   │
+29 │         v.deposit(10000e6, 0);
+   │                   ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/FeedOracle.sol:18:30
+   │
+18 │     uint256 public immutable collateralScale;
+   │                              ━━━━━━━━━━━━━━━ help: consider using: `COLLATERAL_SCALE`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/FeedOracle.sol:19:30
+   │
+19 │     uint256 public immutable loanScale;
+   │                              ━━━━━━━━━ help: consider using: `LOAN_SCALE`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/fork/MainnetFork.t.sol:30:25
+   │
+30 │         v.addCollateral(1 ether);
+   │                         ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/fork/MainnetFork.t.sol:34:28
+   │
+34 │         v.removeCollateral(1 ether);
+   │                            ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/fork/MainnetFork.t.sol:35:46
+   │
+35 │         v.redeem(v.balanceOf(address(this)), 10000e6);
+   │                                              ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[multi-contract-file]: prefer having only one contract, interface or library per file
+  ╭▸ src/FeedOracle.sol:6:11
+  │
+6 │ interface IAggregatorV3 {
+  │           ━━━━━━━━━━━━━
+  │
+  ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
+
+note[multi-contract-file]: prefer having only one contract, interface or library per file
+   ╭▸ src/FeedOracle.sol:13:10
+   │
+13 │ contract FeedOracle is IPriceOracle {
+   │          ━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/FeedOracle.sol:36:17
+   │
+36 │         if (c > 18 || l > 18) revert InvalidConfiguration();
+   │                 ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/FeedOracle.sol:36:27
+   │
+36 │         if (c > 18 || l > 18) revert InvalidConfiguration();
+   │                           ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/FeedOracle.sol:37:27
+   │
+37 │         collateralScale = 10 ** (18 - c);
+   │                           ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/FeedOracle.sol:37:34
+   │
+37 │         collateralScale = 10 ** (18 - c);
+   │                                  ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/FeedOracle.sol:38:21
+   │
+38 │         loanScale = 10 ** (18 - l);
+   │                     ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:15:26
+   │
+15 │         c = new MockFeed(8, 2000e8);
+   │                          ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+  ╭▸ test/mocks/Mocks.sol:9:29
+  │
+9 │     uint8 private immutable _decimals;
+  │                             ━━━━━━━━━ help: consider using: `_DECIMALS`
+  │
+  ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/FeedOracle.sol:38:28
+   │
+38 │         loanScale = 10 ** (18 - l);
+   │                            ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/FeedOracle.sol:51:35
+   │
+51 │         if (value == 0 || value > 1e36) revert InvalidPrice();
+   │                                   ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+  ╭▸ test/invariant/LendingHandler.sol:9:35
+  │
+9 │     LendingVault public immutable vault;
+  │                                   ━━━━━ help: consider using: `VAULT`
+  │
+  ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/FeedOracle.sol:58:76
+   │
+58 │                 || block.timestamp - updated > maxAge || uint256(answer) > 1e36 / scale
+   │                                                                            ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ test/invariant/LendingHandler.sol:10:32
+   │
+10 │     MockToken public immutable loan;
+   │                                ━━━━ help: consider using: `LOAN`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/LendingVault.sol:25:29
+   │
+25 │     IERC20 public immutable asset;
+   │                             ━━━━━ help: consider using: `ASSET`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/LendingVault.sol:26:29
+   │
+26 │     IERC20 public immutable collateralToken;
+   │                             ━━━━━━━━━━━━━━━ help: consider using: `COLLATERAL_TOKEN`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/LendingVault.t.sol:52:23
+   │
+52 │         vault.deposit(10_000 * U, 0);
+   │                       ━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/LendingVault.sol:27:35
+   │
+27 │     IPriceOracle public immutable oracle;
+   │                                   ━━━━━━ help: consider using: `ORACLE`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/LendingVault.t.sol:58:29
+   │
+58 │         vault.addCollateral(1 ether);
+   │                             ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/LendingVault.t.sol:59:22
+   │
+59 │         vault.borrow(1000 * U);
+   │                      ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ test/invariant/LendingHandler.sol:11:32
+   │
+11 │     MockToken public immutable coll;
+   │                                ━━━━ help: consider using: `COLL`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ test/invariant/LendingHandler.sol:12:33
+   │
+12 │     MockOracle public immutable oracle;
+   │                                 ━━━━━━ help: consider using: `ORACLE`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/LendingVault.t.sol:66:42
+   │
+66 │         assertEq(vault.balanceOf(alice), 10_000 * U * 1e6);
+   │                                          ━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/LendingVault.t.sol:66:55
+   │
+66 │         assertEq(vault.balanceOf(alice), 10_000 * U * 1e6);
+   │                                                       ━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/LendingVault.t.sol:68:24
+   │
+68 │         vault.withdraw(1000 * U, type(uint256).max);
+   │                        ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/LendingVault.t.sol:78:35
+   │
+78 │         vm.warp(block.timestamp + 365 days);
+   │                                   ━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/LendingVault.t.sol:79:37
+   │
+79 │         assertGt(vault.debtOf(bob), 1000 * U);
+   │                                     ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/LendingVault.t.sol:85:32
+   │
+85 │         vault.removeCollateral(1 ether);
+   │                                ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/LendingVault.t.sol:94:43
+   │
+94 │         assertEq(vault.collateralOf(bob), 1 ether);
+   │                                           ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:106:51
+    │
+106 │         assertEq(paid, (s * vault.borrowIndex() + 1e27 - 1) / 1e27);
+    │                                                   ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:106:63
+    │
+106 │         assertEq(paid, (s * vault.borrowIndex() + 1e27 - 1) / 1e27);
+    │                                                               ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:115:32
+    │
+115 │         vault.removeCollateral(1 ether);
+    │                                ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:116:32
+    │
+116 │         vault.removeCollateral(0.1 ether);
+    │                                ━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:118:43
+    │
+118 │         assertGe(vault.healthFactor(bob), 1e18);
+    │                                           ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:124:29
+    │
+124 │         vault.addCollateral(1 ether);
+    │                             ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:147:25
+    │
+147 │         oracle.setPrice(1200e18);
+    │                         ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:149:63
+    │
+149 │         (uint256 paid, uint256 seized) = vault.liquidate(bob, 100 * U, type(uint256).max, 0);
+    │                                                               ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:150:24
+    │
+150 │         assertEq(paid, 100 * U);
+    │                        ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/LendingVault.sol:28:30
+   │
+28 │     uint256 public immutable assetUnit;
+   │                              ━━━━━━━━━ help: consider using: `ASSET_UNIT`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:164:101
+    │
+164 │         (uint256 paid, uint256 seized) = vault.liquidate(bob, type(uint256).max, type(uint256).max, 1 ether);
+    │                                                                                                     ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:165:26
+    │
+165 │         assertEq(seized, 1 ether);
+    │                          ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/LendingVault.sol:29:30
+   │
+29 │     uint256 public immutable collateralUnit;
+   │                              ━━━━━━━━━━━━━━ help: consider using: `COLLATERAL_UNIT`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:178:29
+    │
+178 │         vault.addCollateral(1 ether);
+    │                             ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:16:77
+   │
+16 │             uint256 next = x[2] + Math.mulDiv(x[2], Math.mulDiv(x[1], x[3], 365 days), 1e18);
+   │                                                                             ━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/invariant/LendingHandler.sol:34:29
+   │
+34 │         for (uint256 i; i < 4; i++) {
+   │                             ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[low-level-calls]: Low-level calls should be avoided
+   ╭▸ test/mocks/Mocks.sol:56:46
+   │
+56 │             (bool ok, bytes memory result) = hook.call(abi.encodeCall(LendingVault.accrue, ()));
+   │                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/low-level-calls
+
+note[low-level-calls]: Low-level calls should be avoided
+   ╭▸ test/mocks/Mocks.sol:58:28
+   │
+58 │             (ok, result) = hook.staticcall(abi.encodeCall(LendingVault.totalAssets, ()));
+   │                            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/low-level-calls
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:199:39
+    │
+199 │         loan.transfer(address(vault), 10_000 * U);
+    │                                       ━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:16:88
+   │
+16 │             uint256 next = x[2] + Math.mulDiv(x[2], Math.mulDiv(x[1], x[3], 365 days), 1e18);
+   │                                                                                        ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:20:40
+   │
+20 │             assertEq(Math.mulDiv(x[5], 1e27, x[2], Math.Rounding.Ceil), x[10]);
+   │                                        ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
+   ╭▸ src/FeedOracle.sol:46:46
+   │
+46 │             if (status != 0 || since == 0 || since > block.timestamp || block.timestamp - since <= GRACE_PERIOD) {
+   │                                              ━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/block-timestamp
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:16:26
+   │
+16 │         l = new MockFeed(8, 1e8);
+   │                          ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ test/mocks/Mocks.sol:83:28
+   │
+83 │     uint8 public immutable decimals;
+   │                            ━━━━━━━━ help: consider using: `DECIMALS`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+    ╭▸ test/mocks/Mocks.sol:113:27
+    │
+113 │     uint8 public constant decimals = 6;
+    │                           ━━━━━━━━ help: consider using: `DECIMALS`
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-const
+
+warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
+   ╭▸ src/FeedOracle.sol:46:73
+   │
+46 │             if (status != 0 || since == 0 || since > block.timestamp || block.timestamp - since <= GRACE_PERIOD) {
+   │                                                                         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/block-timestamp
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/LendingVault.sol:30:29
+   │
+30 │     uint8 private immutable _shareDecimals;
+   │                             ━━━━━━━━━━━━━━ help: consider using: `_SHARE_DECIMALS`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:201:39
+    │
+201 │         assertEq(vault.previewDeposit(100 * U), 100 * U * 1e6);
+    │                                       ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:21:46
+   │
+21 │             assertEq(Math.mulDiv(x[5], x[2], 1e27, Math.Rounding.Ceil), x[11]);
+   │                                              ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:27:39
+   │
+27 │         borrowed = bound(borrowed, 1, 10000e6);
+   │                                       ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:16:29
+   │
+16 │         l = new MockFeed(8, 1e8);
+   │                             ━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:18:36
+   │
+18 │         s.set(0, block.timestamp - 2 hours, block.timestamp);
+   │                                    ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ src/FeedOracle.sol:45:50
+   │
+45 │             (, int256 status, uint256 since,,) = sequencerFeed.latestRoundData();
+   │                                                  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/fork/MainnetFork.t.sol:16:9
+   │
+16 │         vm.createSelectFork(rpc, 21_000_000);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/invariant/LendingHandler.sol:37:29
+   │
+37 │             loan.mint(user, 1e24);
+   │                             ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:19:64
+   │
+19 │         o = new FeedOracle(address(c), address(l), address(s), 1 hours);
+   │                                                                ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:28:27
+   │
+28 │         dt = bound(dt, 0, 10 * 365 days);
+   │                           ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[multi-contract-file]: prefer having only one contract, interface or library per file
+  ╭▸ test/mocks/Mocks.sol:8:10
+  │
+8 │ contract MockToken is ERC20 {
+  │          ━━━━━━━━━
+  │
+  ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
+
+note[multi-contract-file]: prefer having only one contract, interface or library per file
+   ╭▸ test/mocks/Mocks.sol:64:10
+   │
+64 │ contract MockOracle is IPriceOracle {
+   │          ━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/fork/MainnetFork.t.sol:28:9
+   │
+28 │         IERC20(weth).approve(address(v), type(uint256).max);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:28:32
+   │
+28 │         dt = bound(dt, 0, 10 * 365 days);
+   │                                ━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
+   ╭▸ src/FeedOracle.sol:57:72
+   │
+57 │             answer <= 0 || id == 0 || answered < id || updated == 0 || updated > block.timestamp
+   │                                                                        ━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/block-timestamp
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/LendingVault.sol:72:17
+   │
+72 │         if (a > 18 || c > 18) revert InvalidConfiguration();
+   │                 ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/invariant/LendingHandler.sol:38:29
+   │
+38 │             coll.mint(user, 1e24);
+   │                             ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/fork/MainnetFork.t.sol:29:9
+   │
+29 │         v.deposit(10000e6, 0);
+   │         ━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
+   ╭▸ src/FeedOracle.sol:58:20
+   │
+58 │                 || block.timestamp - updated > maxAge || uint256(answer) > 1e36 / scale
+   │                    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/block-timestamp
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:201:49
+    │
+201 │         assertEq(vault.previewDeposit(100 * U), 100 * U * 1e6);
+    │                                                 ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:201:59
+    │
+201 │         assertEq(vault.previewDeposit(100 * U), 100 * U * 1e6);
+    │                                                           ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:23:29
+   │
+23 │         assertEq(o.price(), 2000e18);
+   │                             ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:33:31
+   │
+33 │         a.mint(address(this), 10000e6);
+   │                               ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:34:31
+   │
+34 │         c.mint(address(this), 100 ether);
+   │                               ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:203:23
+    │
+203 │         vault.deposit(100 * U, 100 * U * 1e6);
+    │                       ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ src/FeedOracle.sol:55:73
+   │
+55 │         (uint80 id, int256 answer,, uint256 updated, uint80 answered) = feed.latestRoundData();
+   │                                                                         ━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/LendingVault.sol:72:27
+   │
+72 │         if (a > 18 || c > 18) revert InvalidConfiguration();
+   │                           ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[multi-contract-file]: prefer having only one contract, interface or library per file
+   ╭▸ test/mocks/Mocks.sol:82:10
+   │
+82 │ contract MockFeed is IAggregatorV3 {
+   │          ━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/invariant/LendingHandler.sol:53:37
+   │
+53 │         address user = actors[who % 4];
+   │                                     ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:32:43
+   │
+32 │         MockFeed other = new MockFeed(18, 2000e18);
+   │                                           ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:33:79
+   │
+33 │         FeedOracle x = new FeedOracle(address(other), address(l), address(0), 1 hours);
+   │                                                                               ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:34:29
+   │
+34 │         assertEq(x.price(), 2000e18);
+   │                             ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/invariant/LendingHandler.sol:54:35
+   │
+54 │         amount = bound(amount, 1, 1e10);
+   │                                   ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[unsafe-typecast]: typecasts that can truncate values should be checked
+   ╭▸ src/FeedOracle.sol:58:58
+   │
+58 │                 || block.timestamp - updated > maxAge || uint256(answer) > 1e36 / scale
+   │                                                          ━━━━━━━━━━━━━━━
+   │
+   ├ note: consider disabling this lint if you're certain the cast is safe
+   │       
+   │       // casting to 'uint256' is safe because [explain why]
+   │       // forge-lint: disable-next-line(unsafe-typecast)
+   │       
+   │       
+   ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/LendingVault.sol:76:21
+   │
+76 │         assetUnit = 10 ** a;
+   │                     ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:37:19
+   │
+37 │         v.deposit(10000e6, 0);
+   │                   ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/fork/MainnetFork.t.sol:31:9
+   │
+31 │         v.borrow(100e6);
+   │         ━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/fork/MainnetFork.t.sol:33:9
+   │
+33 │         v.repay(address(this), s, type(uint256).max);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:203:32
+    │
+203 │         vault.deposit(100 * U, 100 * U * 1e6);
+    │                                ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[multi-contract-file]: prefer having only one contract, interface or library per file
+    ╭▸ test/mocks/Mocks.sol:112:10
+    │
+112 │ contract NoReturnToken {
+    │          ━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:38:25
+   │
+38 │         v.addCollateral(100 ether);
+   │                         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:40:42
+   │
+40 │         uint256 utilization = borrowed * 1e18 / 10000e6;
+   │                                          ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/LendingVault.sol:77:26
+   │
+77 │         collateralUnit = 10 ** c;
+   │                          ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:38:35
+   │
+38 │         vm.warp(block.timestamp + 1 hours);
+   │                                   ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/invariant/LendingHandler.sol:66:37
+   │
+66 │         address user = actors[who % 4];
+   │                                     ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/invariant/LendingHandler.sol:83:37
+   │
+83 │         address user = actors[who % 4];
+   │                                     ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/invariant/LendingHandler.sol:96:37
+   │
+96 │         address user = actors[who % 4];
+   │                                     ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[missing-events-access-control]: `collateralOf` is changed without an event but is used for access control
+    ╭▸ src/LendingVault.sol:186:9
+    │
+186 │         collateralOf[msg.sender] -= amount;
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/missing-events-access-control
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/fork/MainnetFork.t.sol:35:9
+   │
+35 │         v.redeem(v.balanceOf(address(this)), 10000e6);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:203:42
+    │
+203 │         vault.deposit(100 * U, 100 * U * 1e6);
+    │                                          ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:106:37
+    │
+106 │         address user = actors[who % 4];
+    │                                     ━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[unsafe-typecast]: typecasts that can truncate values should be checked
+   ╭▸ src/FeedOracle.sol:60:16
+   │
+60 │         return uint256(answer) * scale;
+   │                ━━━━━━━━━━━━━━━
+   │
+   ├ note: consider disabling this lint if you're certain the cast is safe
+   │       
+   │       // casting to 'uint256' is safe because [explain why]
+   │       // forge-lint: disable-next-line(unsafe-typecast)
+   │       
+   │       
+   ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:39:29
+   │
+39 │         assertEq(o.price(), 2000e18);
+   │                             ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ test/EconomicAttack.t.sol:25:27
+   │
+25 │     FlashLender immutable lender;
+   │                           ━━━━━━ help: consider using: `LENDER`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+warning[missing-zero-check]: address parameter is used in a state write or value transfer without a zero-address check
+   ╭▸ test/mocks/Mocks.sol:40:22
+   │
+40 │     function setHook(address x) external {
+   │                      ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/missing-zero-check
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Invariant.t.sol:24:28
+   │
+24 │         h.addCollateral(1, 1 ether);
+   │                            ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:58:15
+   │
+58 │         c.set(1e8, 1, 0);
+   │               ━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:110:63
+    │
+110 │         uint256 value = (balance - amount) * oracle.value() / 1e30;
+    │                                                               ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:111:42
+    │
+111 │         if (vault.debtOf(user) > value * 75 / 100) return;
+    │                                          ━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Invariant.t.sol:49:29
+   │
+49 │         for (uint256 i; i < 4; i++) {
+   │                             ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Invariant.t.sol:58:29
+   │
+58 │         for (uint256 i; i < 4; i++) {
+   │                             ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Invariant.t.sol:66:29
+   │
+66 │         for (uint256 i; i < 4; i++) {
+   │                             ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:61:15
+   │
+61 │         c.set(1e8, 1, block.timestamp + 1);
+   │               ━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[unwrapped-modifier-logic]: wrap modifier logic to reduce code size
+   ╭▸ src/LendingVault.sol:61:5
+   │
+61 │ ┏     modifier stableView() {
+62 │ ┃         if (_reentrancyGuardEntered()) revert ReadDuringMutation();
+63 │ ┃         _;
+64 │ ┃     }
+   │ ┗━━━━━┛
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unwrapped-modifier-logic
+help: wrap modifier logic to reduce code size
+   ╭╴
+61 ±     modifier stableView() {
+62 +         _stableView();
+63 +         _;
+64 +     }
+65 + 
+66 +     function _stableView() internal {
+67 +         if (_reentrancyGuardEntered()) revert ReadDuringMutation();
+68 +     }
+   ╰╴
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:111:47
+    │
+111 │         if (vault.debtOf(user) > value * 75 / 100) return;
+    │                                               ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Invariant.t.sol:90:29
+   │
+90 │         for (uint256 i; i < 4; i++) {
+   │                             ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:76:36
+   │
+76 │         s.set(1, block.timestamp - 2 hours, block.timestamp);
+   │                                    ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:79:36
+   │
+79 │         s.set(0, block.timestamp - 1 hours, block.timestamp);
+   │                                    ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Invariant.t.sol:99:34
+   │
+99 │         assertLe(v.borrowRate(), 1e18);
+   │                                  ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:116:77
+    │
+116 │         if (vault.debtShares(user) != 0) assertGe(vault.healthFactor(user), 1e18);
+    │                                                                             ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:205:38
+    │
+205 │         assertEq(_redeemAll(bob, 0), 100 * U);
+    │                                      ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:206:50
+    │
+206 │         assertEq(loan.balanceOf(address(vault)), 10_000 * U);
+    │                                                  ━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:120:37
+    │
+120 │         address user = actors[who % 4];
+    │                                     ━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:40:49
+   │
+40 │         uint256 utilization = borrowed * 1e18 / 10000e6;
+   │                                                 ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[unused-import]: unused imports should be removed
+  ╭▸ test/EconomicAttack.t.sol:5:9
+  │
+5 │ import {Math} from "@openzeppelin/contracts/utils/math/Math.sol";
+  │         ━━━━
+  │
+  ╰ help: https://getfoundry.sh/forge/linting/unused-import
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:82:36
+   │
+82 │         s.set(0, block.timestamp - 1 hours - 1, block.timestamp);
+   │                                    ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/Invariant.t.sol:106:29
+    │
+106 │         for (uint256 i; i < 4; i++) {
+    │                             ━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/Invariant.t.sol:120:29
+    │
+120 │         for (uint256 i; i < 4; i++) {
+    │                             ━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:213:40
+    │
+213 │         uint256 shares = vault.deposit(1000 * U, 0);
+    │                                        ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:225:25
+    │
+225 │         vault.redeem(s, 10_000 * U);
+    │                         ━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[unsafe-typecast]: typecasts that can truncate values should be checked
+   ╭▸ test/mocks/Mocks.sol:57:38
+   │
+57 │             mutationBlocked = !ok && bytes4(result) == bytes4(keccak256("ReentrancyGuardReentrantCall()"));
+   │                                      ━━━━━━━━━━━━━━
+   │
+   ├ note: consider disabling this lint if you're certain the cast is safe
+   │       
+   │       // casting to 'bytes4' is safe because [explain why]
+   │       // forge-lint: disable-next-line(unsafe-typecast)
+   │       
+   │       
+   ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:121:69
+    │
+121 │         uint256 value = vault.collateralOf(user) * oracle.value() / 1e30;
+    │                                                                     ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[named-struct-fields]: prefer initializing structs with named fields
+   ╭▸ test/Invariant.t.sol:39:24
+   │
+39 │         targetSelector(FuzzSelector(address(h), selectors));
+   │                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ help: consider using named fields: `FuzzSelector({ addr: address(h), selectors: selectors })`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/named-struct-fields
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:122:35
+    │
+122 │         uint256 maxDebt = value * 75 / 100;
+    │                                   ━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:41:36
+   │
+41 │         uint256 r = utilization <= 8e17 ? 2e16 + utilization / 10 : 1e17 + (utilization - 8e17) * 9 / 2;
+   │                                    ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:83:29
+   │
+83 │         assertEq(o.price(), 2000e18);
+   │                             ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:41:64
+   │
+41 │         uint256 r = utilization <= 8e17 ? 2e16 + utilization / 10 : 1e17 + (utilization - 8e17) * 9 / 2;
+   │                                                                ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[multi-contract-file]: prefer having only one contract, interface or library per file
+  ╭▸ test/EconomicAttack.t.sol:9:11
+  │
+9 │ interface IFlashReceiver {
+  │           ━━━━━━━━━━━━━━
+  │
+  ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:122:40
+    │
+122 │         uint256 maxDebt = value * 75 / 100;
+    │                                        ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
+    ╭▸ src/LendingVault.sol:276:65
+    │
+276 │         if (totalDebtShares == 0 || borrowIndex == MAX_INDEX || block.timestamp == lastAccrual) return borrowIndex;
+    │                                                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/block-timestamp
+
+warning[unsafe-typecast]: typecasts that can truncate values should be checked
+   ╭▸ test/mocks/Mocks.sol:57:56
+   │
+57 │             mutationBlocked = !ok && bytes4(result) == bytes4(keccak256("ReentrancyGuardReentrantCall()"));
+   │                                                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ├ note: consider disabling this lint if you're certain the cast is safe
+   │       
+   │       // casting to 'bytes4' is safe because [explain why]
+   │       // forge-lint: disable-next-line(unsafe-typecast)
+   │       
+   │       
+   ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:237:29
+    │
+237 │         vault.addCollateral(1 ether);
+    │                             ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:260:23
+    │
+260 │         vault.deposit(100 * U, 0);
+    │                       ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:127:25
+    │
+127 │         if (available > 1e10) available = 1e10;
+    │                         ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:41:91
+   │
+41 │         uint256 r = utilization <= 8e17 ? 2e16 + utilization / 10 : 1e17 + (utilization - 8e17) * 9 / 2;
+   │                                                                                           ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:127:43
+    │
+127 │         if (available > 1e10) available = 1e10;
+    │                                           ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:42:28
+   │
+42 │         uint256 expected = 1e27 + 1e27 * (r * dt / (365 days)) / 1e18;
+   │                            ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[multi-contract-file]: prefer having only one contract, interface or library per file
+   ╭▸ test/EconomicAttack.t.sol:14:10
+   │
+14 │ contract FlashLender {
+   │          ━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
+
+note[multi-contract-file]: prefer having only one contract, interface or library per file
+   ╭▸ test/EconomicAttack.t.sol:23:10
+   │
+23 │ contract FlashActor is IFlashReceiver {
+   │          ━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
+
+warning[uninitialized-local]: local variable is read before being initialized
+   ╭▸ test/Invariant.t.sol:50:13
+   │
+50 │             sum += v.balanceOf(h.actors(i));
+   │             ━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:42:35
+   │
+42 │         uint256 expected = 1e27 + 1e27 * (r * dt / (365 days)) / 1e18;
+   │                                   ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:42:53
+   │
+42 │         uint256 expected = 1e27 + 1e27 * (r * dt / (365 days)) / 1e18;
+   │                                                     ━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/Differential.t.sol:42:66
+   │
+42 │         uint256 expected = 1e27 + 1e27 * (r * dt / (365 days)) / 1e18;
+   │                                                                  ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[incorrect-strict-equality]: dangerous strict equality check on an externally-influenced value
+    ╭▸ src/LendingVault.sol:314:13
+    │
+314 │         if (token.balanceOf(address(this)) != beforeBalance + amount) revert UnsupportedToken();
+    │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/incorrect-strict-equality
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:265:29
+    │
+265 │         vault.addCollateral(1 ether);
+    │                             ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:134:44
+    │
+134 │         assertGe(vault.healthFactor(user), 1e18);
+    │                                            ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:97:60
+   │
+97 │         new FeedOracle(address(0), address(l), address(0), 3600);
+   │                                                            ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[uninitialized-local]: local variable is read before being initialized
+   ╭▸ test/Invariant.t.sol:49:25
+   │
+49 │         for (uint256 i; i < 4; i++) {
+   │                         ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/Invariant.t.sol:50:32
+   │
+50 │             sum += v.balanceOf(h.actors(i));
+   │                                ━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/Invariant.t.sol:50:20
+   │
+50 │             sum += v.balanceOf(h.actors(i));
+   │                    ━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+note[multi-contract-file]: prefer having only one contract, interface or library per file
+   ╭▸ test/EconomicAttack.t.sol:53:10
+   │
+53 │ contract EconomicAttackTest is Test {
+   │          ━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/FeedOracle.t.sol:99:60
+   │
+99 │         new FeedOracle(address(c), address(l), address(1), 3600);
+   │                                                            ━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[incorrect-strict-equality]: dangerous strict equality check on an externally-influenced value
+    ╭▸ src/LendingVault.sol:321:13
+    │
+321 │         if (token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount)
+    │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/incorrect-strict-equality
+
+warning[unsafe-typecast]: typecasts that can truncate values should be checked
+   ╭▸ test/mocks/Mocks.sol:59:34
+   │
+59 │             viewBlocked = !ok && bytes4(result) == LendingVault.ReadDuringMutation.selector;
+   │                                  ━━━━━━━━━━━━━━
+   │
+   ├ note: consider disabling this lint if you're certain the cast is safe
+   │       
+   │       // casting to 'bytes4' is safe because [explain why]
+   │       // forge-lint: disable-next-line(unsafe-typecast)
+   │       
+   │       
+   ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+warning[uninitialized-local]: local variable is read before being initialized
+   ╭▸ test/Invariant.t.sol:59:13
+   │
+59 │             sum += v.debtShares(h.actors(i));
+   │             ━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+warning[uninitialized-local]: local variable is read before being initialized
+   ╭▸ test/Invariant.t.sol:58:25
+   │
+58 │         for (uint256 i; i < 4; i++) {
+   │                         ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/Invariant.t.sol:59:33
+   │
+59 │             sum += v.debtShares(h.actors(i));
+   │                                 ━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/Invariant.t.sol:59:20
+   │
+59 │             sum += v.debtShares(h.actors(i));
+   │                    ━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[missing-events-access-control]: `allowance` is changed without an event but is used for access control
+    ╭▸ test/mocks/Mocks.sol:123:9
+    │
+123 │         allowance[msg.sender][to] = value;
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/missing-events-access-control
+
+warning[missing-zero-check]: address parameter is used in a state write or value transfer without a zero-address check
+   ╭▸ test/EconomicAttack.t.sol:15:20
+   │
+15 │     function flash(address token, uint256 amount, address receiver) external {
+   │                    ━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/missing-zero-check
+
+warning[uninitialized-local]: local variable is read before being initialized
+   ╭▸ test/Differential.t.sol:13:25
+   │
+13 │         for (uint256 i; i < rows.length; i++) {
+   │                         ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:138:37
+    │
+138 │         address user = actors[who % 4];
+    │                                     ━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[uninitialized-local]: local variable is read before being initialized
+   ╭▸ test/Invariant.t.sol:66:25
+   │
+66 │         for (uint256 i; i < 4; i++) {
+   │                         ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:273:24
+    │
+273 │         vault.withdraw(100 * U, type(uint256).max);
+    │                        ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:150:37
+    │
+150 │         address user = actors[who % 4];
+    │                                     ━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[incorrect-strict-equality]: dangerous strict equality check on an externally-influenced value
+    ╭▸ src/LendingVault.sol:321:73
+    │
+321 │         if (token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount)
+    │                                                                         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/incorrect-strict-equality
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:278:24
+    │
+278 │         vault.withdraw(100 * U, type(uint256).max);
+    │                        ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[erc20-unchecked-transfer]: ERC20 'transfer' and 'transferFrom' calls should check the return value
+   ╭▸ test/EconomicAttack.t.sol:17:9
+   │
+17 │         IERC20(token).transfer(receiver, amount);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/erc20-unchecked-transfer
+
+warning[uninitialized-local]: local variable is read before being initialized
+   ╭▸ test/Invariant.t.sol:67:13
+   │
+67 │             sum += v.collateralOf(h.actors(i));
+   │             ━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:151:44
+    │
+151 │         address userPayer = actors[payer % 4];
+    │                                            ━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:152:72
+    │
+152 │         if (vault.debtShares(user) == 0 || vault.healthFactor(user) >= 1e18) return;
+    │                                                                        ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/FeedOracle.t.sol:106:66
+    │
+106 │         new FeedOracle(address(invalid), address(l), address(0), 3600);
+    │                                                                  ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/Invariant.t.sol:67:35
+   │
+67 │             sum += v.collateralOf(h.actors(i));
+   │                                   ━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:282:32
+    │
+282 │         vault.removeCollateral(0.1 ether);
+    │                                ━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:299:24
+    │
+299 │         vault.withdraw(100 * U, type(uint256).max);
+    │                        ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:304:29
+    │
+304 │         vault.addCollateral(1 ether);
+    │                             ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:174:35
+    │
+174 │         amount = bound(amount, 1, 1e10);
+    │                                   ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/Invariant.t.sol:67:20
+   │
+67 │             sum += v.collateralOf(h.actors(i));
+   │                    ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/FeedOracle.t.sol:109:60
+    │
+109 │         new FeedOracle(address(c), address(l), address(0), 3600);
+    │                                                            ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/FeedOracle.t.sol:114:15
+    │
+114 │         l.set(1e26, 1, block.timestamp);
+    │               ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:312:31
+    │
+312 │         t.mint(address(this), 100 * U);
+    │                               ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:180:40
+    │
+180 │         address sender = actors[from % 4];
+    │                                        ━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[require-revert-in-loop]: `require` or `revert` inside a loop
+   ╭▸ src/InterestRateModel.sol:12:32
+   │
+12 │         if (utilization > WAD) revert InvalidUtilization();
+   │                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/require-revert-in-loop
+
+warning[missing-zero-check]: address parameter is used in a state write or value transfer without a zero-address check
+   ╭▸ test/EconomicAttack.t.sol:38:22
+   │
+38 │     function onFlash(address token, uint256 amount) external {
+   │                      ━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/missing-zero-check
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:313:31
+    │
+313 │         t.approve(address(v), 100 * U);
+    │                               ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[uninitialized-local]: local variable is read before being initialized
+   ╭▸ test/Invariant.t.sol:91:13
+   │
+91 │             sum += v.debtOf(h.actors(i));
+   │             ━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/FeedOracle.t.sol:117:15
+    │
+117 │         c.set(1e26, 1, block.timestamp);
+    │               ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:314:19
+    │
+314 │         v.deposit(100 * U, 0);
+    │                   ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[uninitialized-local]: local variable is read before being initialized
+   ╭▸ test/Invariant.t.sol:90:25
+   │
+90 │         for (uint256 i; i < 4; i++) {
+   │                         ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/invariant/LendingHandler.sol:184:36
+    │
+184 │         vault.transfer(actors[to % 4], bound(shares, 0, balance));
+    │                                    ━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[divide-before-multiply]: multiplication should occur before division to avoid loss of precision
+   ╭▸ test/Differential.t.sol:42:35
+   │
+42 │         uint256 expected = 1e27 + 1e27 * (r * dt / (365 days)) / 1e18;
+   │                                   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/divide-before-multiply
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/EconomicAttack.t.sol:40:9
+   │
+40 │         IERC20(token).approve(address(v), amount);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/Invariant.t.sol:91:29
+   │
+91 │             sum += v.debtOf(h.actors(i));
+   │                             ━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/EconomicAttack.t.sol:43:13
+   │
+43 │             v.redeem(s, 0);
+   │             ━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/Differential.t.sol:35:9
+   │
+35 │         a.approve(address(v), type(uint256).max);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:315:46
+    │
+315 │         v.redeem(v.balanceOf(address(this)), 100 * U);
+    │                                              ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:316:46
+    │
+316 │         assertEq(t.balanceOf(address(this)), 100 * U);
+    │                                              ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/Invariant.t.sol:91:20
+   │
+91 │             sum += v.debtOf(h.actors(i));
+   │                    ━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/FeedOracle.t.sol:124:53
+    │
+124 │         collateralPrice = bound(collateralPrice, 1, 1e18);
+    │                                                     ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/FeedOracle.t.sol:125:43
+    │
+125 │         loanPrice = bound(loanPrice, 1e4, 1e18);
+    │                                           ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:322:26
+    │
+322 │         vault.deposit(1, 1e6 + 1);
+    │                          ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:333:25
+    │
+333 │         oracle.setPrice(1200e18);
+    │                         ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/EconomicAttack.t.sol:46:13
+   │
+46 │             v.borrow(1000e6);
+   │             ━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/Differential.t.sol:36:9
+   │
+36 │         c.approve(address(v), type(uint256).max);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:382:35
+    │
+382 │         vm.warp(block.timestamp + 365 days);
+    │                                   ━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/FeedOracle.t.sol:128:47
+    │
+128 │         assertEq(o.price(), collateralPrice * 1e18 / loanPrice);
+    │                                               ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[uninitialized-local]: local variable is read before being initialized
+    ╭▸ test/Invariant.t.sol:120:25
+    │
+120 │         for (uint256 i; i < 4; i++) {
+    │                         ━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+warning[uninitialized-local]: local variable is read before being initialized
+    ╭▸ test/Invariant.t.sol:106:25
+    │
+106 │         for (uint256 i; i < 4; i++) {
+    │                         ━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:386:35
+    │
+386 │         vm.warp(block.timestamp + 365 days * 1e12);
+    │                                   ━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[erc20-unchecked-transfer]: ERC20 'transfer' and 'transferFrom' calls should check the return value
+   ╭▸ test/EconomicAttack.t.sol:49:9
+   │
+49 │         IERC20(token).transfer(address(lender), amount);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/erc20-unchecked-transfer
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:107:28
+    │
+107 │             address user = h.actors(i);
+    │                            ━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:108:28
+    │
+108 │             uint256 debt = v.debtShares(user);
+    │                            ━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/Differential.t.sol:37:9
+   │
+37 │         v.deposit(10000e6, 0);
+   │         ━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:389:35
+    │
+389 │         vm.warp(block.timestamp + 365 days);
+    │                                   ━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:110:33
+    │
+110 │                 loan.mint(user, v.debtOf(user));
+    │                                 ━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/EconomicAttack.t.sol:70:19
+   │
+70 │         v.deposit(10_000e6, 0);
+   │                   ━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:404:37
+    │
+404 │         elapsed = bound(elapsed, 1, 365 days);
+    │                                     ━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[uninitialized-local]: local variable is read before being initialized
+   ╭▸ test/invariant/LendingHandler.sol:34:25
+   │
+34 │         for (uint256 i; i < 4; i++) {
+   │                         ━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/uninitialized-local
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:405:35
+    │
+405 │         amount = bound(amount, 1, 100 * U);
+    │                                   ━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:417:25
+    │
+417 │         a = bound(a, 0, 1e18);
+    │                         ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/invariant/LendingHandler.sol:37:13
+   │
+37 │             loan.mint(user, 1e24);
+   │             ━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/invariant/LendingHandler.sol:38:13
+   │
+38 │             coll.mint(user, 1e24);
+   │             ━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:418:25
+    │
+418 │         b = bound(b, a, 1e18);
+    │                         ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:420:45
+    │
+420 │         assertLe(InterestRateModel.rate(b), 1e18);
+    │                                             ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:425:48
+    │
+425 │         assertEq(InterestRateModel.rate(8e17), 1e17);
+    │                                                ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:426:41
+    │
+426 │         assertEq(InterestRateModel.rate(1e18), 1e18);
+    │                                         ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:426:48
+    │
+426 │         assertEq(InterestRateModel.rate(1e18), 1e18);
+    │                                                ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:428:19
+    │
+428 │         this.rate(1e18 + 1);
+    │                   ━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:435:29
+    │
+435 │         vault.addCollateral(1 ether);
+    │                             ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/LendingVault.t.sol:442:39
+    │
+442 │         vm.warp(block.timestamp + 2 * 365 days);
+    │                                       ━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/invariant/LendingHandler.sol:39:13
+   │
+39 │             vm.startPrank(user);
+   │             ━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/invariant/LendingHandler.sol:40:13
+   │
+40 │             loan.approve(address(v), type(uint256).max);
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/invariant/LendingHandler.sol:41:13
+   │
+41 │             coll.approve(address(v), type(uint256).max);
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+   ╭▸ test/invariant/LendingHandler.sol:42:13
+   │
+42 │             vm.stopPrank();
+   │             ━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[unsafe-typecast]: typecasts that can truncate values should be checked
+   ╭▸ test/invariant/LendingHandler.sol:35:36
+   │
+35 │             address user = address(uint160(0x100 + i));
+   │                                    ━━━━━━━━━━━━━━━━━━
+   │
+   ├ note: consider disabling this lint if you're certain the cast is safe
+   │       
+   │       // casting to 'uint160' is safe because [explain why]
+   │       // forge-lint: disable-next-line(unsafe-typecast)
+   │       
+   │       
+   ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/invariant/LendingHandler.sol:40:13
+   │
+40 │             loan.approve(address(v), type(uint256).max);
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/invariant/LendingHandler.sol:41:13
+   │
+41 │             coll.approve(address(v), type(uint256).max);
+   │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:42:9
+   │
+42 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:48:9
+   │
+48 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:51:9
+   │
+51 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:54:9
+   │
+54 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:60:9
+   │
+60 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:63:9
+   │
+63 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:69:9
+   │
+69 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:72:9
+   │
+72 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:78:9
+   │
+78 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:81:9
+   │
+81 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:89:9
+   │
+89 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/FeedOracle.t.sol:92:9
+   │
+92 │         o.price();
+   │         ━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[divide-before-multiply]: multiplication should occur before division to avoid loss of precision
+    ╭▸ test/invariant/LendingHandler.sol:111:34
+    │
+111 │         if (vault.debtOf(user) > value * 75 / 100) return;
+    │                                  ━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/divide-before-multiply
+
+warning[divide-before-multiply]: multiplication should occur before division to avoid loss of precision
+    ╭▸ test/invariant/LendingHandler.sol:122:27
+    │
+122 │         uint256 maxDebt = value * 75 / 100;
+    │                           ━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/divide-before-multiply
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:110:17
+    │
+110 │                 loan.mint(user, v.debtOf(user));
+    │                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/FeedOracle.t.sol:116:9
+    │
+116 │         o.price();
+    │         ━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/invariant/LendingHandler.sol:130:9
+    │
+130 │         vault.borrow(amount);
+    │         ━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:111:17
+    │
+111 │                 vm.prank(user);
+    │                 ━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/Differential.t.sol:39:9
+   │
+39 │         v.borrow(borrowed);
+   │         ━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:112:17
+    │
+112 │                 v.repay(user, debt, type(uint256).max);
+    │                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:114:34
+    │
+114 │             uint256 collateral = v.collateralOf(user);
+    │                                  ━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:116:17
+    │
+116 │                 vm.prank(user);
+    │                 ━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:117:17
+    │
+117 │                 v.removeCollateral(collateral);
+    │                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:121:28
+    │
+121 │             address user = h.actors(i);
+    │                            ━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:122:30
+    │
+122 │             uint256 shares = v.balanceOf(user);
+    │                              ━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:124:17
+    │
+124 │                 vm.prank(user);
+    │                 ━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[calls-loop]: external call inside a loop
+    ╭▸ test/Invariant.t.sol:125:17
+    │
+125 │                 v.redeem(shares, 0);
+    │                 ━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/calls-loop
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/Invariant.t.sol:112:17
+    │
+112 │                 v.repay(user, debt, type(uint256).max);
+    │                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/Invariant.t.sol:125:17
+    │
+125 │                 v.redeem(shares, 0);
+    │                 ━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[erc20-unchecked-transfer]: ERC20 'transfer' and 'transferFrom' calls should check the return value
+    ╭▸ test/invariant/LendingHandler.sol:184:9
+    │
+184 │         vault.transfer(actors[to % 4], bound(shares, 0, balance));
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/erc20-unchecked-transfer
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/FeedOracle.t.sol:120:9
+    │
+120 │         o.price();
+    │         ━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unsafe-typecast]: typecasts that can truncate values should be checked
+    ╭▸ test/FeedOracle.t.sol:126:15
+    │
+126 │         c.set(int256(collateralPrice), 1, block.timestamp);
+    │               ━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ├ note: consider disabling this lint if you're certain the cast is safe
+    │       
+    │       // casting to 'int256' is safe because [explain why]
+    │       // forge-lint: disable-next-line(unsafe-typecast)
+    │       
+    │       
+    ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/EconomicAttack.t.sol:71:36
+   │
+71 │         loan.mint(address(lender), 10_000e6);
+   │                                    ━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[unsafe-typecast]: typecasts that can truncate values should be checked
+    ╭▸ test/FeedOracle.t.sol:127:15
+    │
+127 │         l.set(int256(loanPrice), 1, block.timestamp);
+    │               ━━━━━━━━━━━━━━━━━
+    │
+    ├ note: consider disabling this lint if you're certain the cast is safe
+    │       
+    │       // casting to 'int256' is safe because [explain why]
+    │       // forge-lint: disable-next-line(unsafe-typecast)
+    │       
+    │       
+    ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/EconomicAttack.t.sol:72:36
+   │
+72 │         coll.mint(address(lender), 10 ether);
+   │                                    ━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/EconomicAttack.t.sol:76:34
+   │
+76 │         actor.run(address(loan), 1000e6, 0);
+   │                                  ━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/EconomicAttack.t.sol:78:28
+   │
+78 │         assertEq(v.cash(), 10_000e6);
+   │                            ━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/EconomicAttack.t.sol:83:34
+   │
+83 │         actor.run(address(coll), 1 ether, 1);
+   │                                  ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/EconomicAttack.t.sol:85:51
+   │
+85 │         assertEq(coll.balanceOf(address(lender)), 10 ether);
+   │                                                   ━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/EconomicAttack.t.sol:89:34
+   │
+89 │         coll.mint(address(this), 1 ether);
+   │                                  ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/EconomicAttack.t.sol:91:25
+   │
+91 │         v.addCollateral(1 ether);
+   │                         ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ test/EconomicAttack.t.sol:99:34
+   │
+99 │         coll.mint(address(this), 1 ether);
+   │                                  ━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/EconomicAttack.t.sol:101:25
+    │
+101 │         v.addCollateral(1 ether);
+    │                         ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/EconomicAttack.t.sol:102:18
+    │
+102 │         v.borrow(1000e6);
+    │                  ━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/EconomicAttack.t.sol:109:43
+    │
+109 │         assertEq(v.debtOf(address(this)), 1000e6);
+    │                                           ━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/EconomicAttack.t.sol:110:49
+    │
+110 │         assertEq(v.collateralOf(address(this)), 1 ether);
+    │                                                 ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/EconomicAttack.t.sol:115:34
+    │
+115 │         coll.mint(address(this), 1 ether);
+    │                                  ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/EconomicAttack.t.sol:117:25
+    │
+117 │         v.addCollateral(1 ether);
+    │                         ━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+    ╭▸ test/EconomicAttack.t.sol:118:18
+    │
+118 │         v.borrow(1000e6);
+    │                  ━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/LendingVault.t.sol:33:9
+   │
+33 │         loan.approve(address(vault), type(uint256).max);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/EconomicAttack.t.sol:69:9
+   │
+69 │         loan.approve(address(v), type(uint256).max);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/EconomicAttack.t.sol:70:9
+   │
+70 │         v.deposit(10_000e6, 0);
+   │         ━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/EconomicAttack.t.sol:90:9
+   │
+90 │         coll.approve(address(v), type(uint256).max);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[erc20-unchecked-transfer]: ERC20 'transfer' and 'transferFrom' calls should check the return value
+   ╭▸ test/EconomicAttack.t.sol:92:9
+   │
+92 │         loan.transfer(address(v), 50_000e6);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/erc20-unchecked-transfer
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/EconomicAttack.t.sol:93:9
+   │
+93 │         v.borrow(1500e6);
+   │         ━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/EconomicAttack.t.sol:95:9
+   │
+95 │         v.borrow(1);
+   │         ━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/LendingVault.t.sol:34:9
+   │
+34 │         coll.approve(address(vault), type(uint256).max);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/EconomicAttack.t.sol:100:9
+    │
+100 │         coll.approve(address(v), type(uint256).max);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/EconomicAttack.t.sol:102:9
+    │
+102 │         v.borrow(1000e6);
+    │         ━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/LendingVault.t.sol:47:9
+   │
+47 │         vault.repay(borrower, s, type(uint256).max);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/EconomicAttack.t.sol:107:9
+    │
+107 │         v.liquidate(address(this), type(uint256).max, type(uint256).max, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/LendingVault.t.sol:52:9
+   │
+52 │         vault.deposit(10_000 * U, 0);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/LendingVault.t.sol:59:9
+   │
+59 │         vault.borrow(1000 * U);
+   │         ━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/EconomicAttack.t.sol:116:9
+    │
+116 │         coll.approve(address(v), type(uint256).max);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/EconomicAttack.t.sol:118:9
+    │
+118 │         v.borrow(1000e6);
+    │         ━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/LendingVault.t.sol:68:9
+   │
+68 │         vault.withdraw(1000 * U, type(uint256).max);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/EconomicAttack.t.sol:121:9
+    │
+121 │         v.liquidate(address(this), type(uint256).max, type(uint256).max, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+   ╭▸ test/LendingVault.t.sol:69:9
+   │
+69 │         vault.redeem(vault.balanceOf(alice), 0);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[divide-before-multiply]: multiplication should occur before division to avoid loss of precision
+    ╭▸ test/LendingVault.t.sol:106:25
+    │
+106 │         assertEq(paid, (s * vault.borrowIndex() + 1e27 - 1) / 1e27);
+    │                         ━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/divide-before-multiply
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:113:9
+    │
+113 │         vault.borrow(501 * U);
+    │         ━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:125:9
+    │
+125 │         vault.borrow(1500 * U);
+    │         ━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:127:9
+    │
+127 │         vault.borrow(1);
+    │         ━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:135:9
+    │
+135 │         vault.withdraw(9001 * U, type(uint256).max);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:142:9
+    │
+142 │         vault.liquidate(bob, type(uint256).max, type(uint256).max, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:152:9
+    │
+152 │         vault.liquidate(bob, type(uint256).max, type(uint256).max, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:176:9
+    │
+176 │         vault.deposit(1, 0);
+    │         ━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:179:9
+    │
+179 │         vault.borrow(1);
+    │         ━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:183:27
+    │
+183 │         (uint256 paid,) = vault.liquidate(bob, type(uint256).max, 0, 0);
+    │                           ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:188:9
+    │
+188 │         vault.deposit(1, 0);
+    │         ━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:191:9
+    │
+191 │         vault.deposit(1, 0);
+    │         ━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:197:9
+    │
+197 │         vault.deposit(1, 0);
+    │         ━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[erc20-unchecked-transfer]: ERC20 'transfer' and 'transferFrom' calls should check the return value
+    ╭▸ test/LendingVault.t.sol:199:9
+    │
+199 │         loan.transfer(address(vault), 10_000 * U);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/erc20-unchecked-transfer
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:203:9
+    │
+203 │         vault.deposit(100 * U, 100 * U * 1e6);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:214:9
+    │
+214 │         vault.redeem(shares, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[erc20-unchecked-transfer]: ERC20 'transfer' and 'transferFrom' calls should check the return value
+    ╭▸ test/LendingVault.t.sol:223:9
+    │
+223 │         vault.transfer(bob, s);
+    │         ━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/erc20-unchecked-transfer
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:225:9
+    │
+225 │         vault.redeem(s, 10_000 * U);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:234:9
+    │
+234 │         vault.borrow(1);
+    │         ━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:238:9
+    │
+238 │         vault.repay(bob, vault.debtShares(bob), type(uint256).max);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:249:9
+    │
+249 │         vault.borrow(1);
+    │         ━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:253:9
+    │
+253 │         vault.borrow(1);
+    │         ━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:260:9
+    │
+260 │         vault.deposit(100 * U, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:273:9
+    │
+273 │         vault.withdraw(100 * U, type(uint256).max);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:278:9
+    │
+278 │         vault.withdraw(100 * U, type(uint256).max);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:290:9
+    │
+290 │         vault.borrow(1);
+    │         ━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:299:9
+    │
+299 │         vault.withdraw(100 * U, type(uint256).max);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:314:9
+    │
+314 │         v.deposit(100 * U, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:315:9
+    │
+315 │         v.redeem(v.balanceOf(address(this)), 100 * U);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:322:9
+    │
+322 │         vault.deposit(1, 1e6 + 1);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:326:9
+    │
+326 │         vault.withdraw(U, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:329:9
+    │
+329 │         vault.redeem(U, 1e20);
+    │         ━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:332:9
+    │
+332 │         vault.repay(bob, U, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:336:9
+    │
+336 │         vault.liquidate(bob, U, 0, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:339:9
+    │
+339 │         vault.liquidate(bob, U, U, type(uint256).max);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:345:9
+    │
+345 │         vault.deposit(0, 0);
+    │         ━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:347:9
+    │
+347 │         vault.deposit(cap + 1, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:349:9
+    │
+349 │         vault.withdraw(0, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:351:9
+    │
+351 │         vault.redeem(0, 0);
+    │         ━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:359:9
+    │
+359 │         vault.borrow(0);
+    │         ━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:361:9
+    │
+361 │         vault.borrow(1);
+    │         ━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:363:9
+    │
+363 │         vault.repay(bob, 1, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:365:9
+    │
+365 │         vault.liquidate(bob, 1, 0, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:411:9
+    │
+411 │         vault.repay(bob, s, type(uint256).max);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:433:9
+    │
+433 │         vault.deposit(2, 0);
+    │         ━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:436:9
+    │
+436 │         vault.borrow(1);
+    │         ━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:440:9
+    │
+440 │         vault.redeem(shares - 1, 0);
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:446:9
+    │
+446 │         vault.borrow(1);
+    │         ━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+
+warning[unused-return]: Return value of an external call is not used
+    ╭▸ test/LendingVault.t.sol:449:9
+    │
+449 │         vault.withdraw(1, 1);
+    │         ━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/unused-return
+

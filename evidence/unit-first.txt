@@ -1,0 +1,52 @@
+Compiling 20 files with Solc 0.8.28
+Solc 0.8.28 finished in 42.85s
+Compiler run successful!
+
+Ran 29 tests for test/LendingVault.t.sol:LendingVaultTest
+[PASS] testBorrowAtLTVBoundary() (gas: 477944)
+[PASS] testBorrowLTVAndWithdrawCollateralChecks() (gas: 657070)
+[PASS] testConstructorRejectsInvalidConfiguration() (gas: 8373)
+[PASS] testDepositWithdrawRedeem() (gas: 333183)
+[FAIL: ERC20InsufficientBalance(0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496, 0, 1000000 [1e6])] testDonationCannotInflatePrice() (gas: 408698)
+[FAIL: ERC20InsufficientBalance(0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496, 0, 1000000 [1e6])] testDustLiquidationAndRestart() (gas: 671303)
+[PASS] testFeeOnTransferIncomingRejected() (gas: 410006)
+[PASS] testFuzz_BorrowRepayRounding(uint256,uint256) (runs: 1024, μ: 645671, ~: 645635)
+[PASS] testFuzz_DepositRedeem(uint256) (runs: 1024, μ: 213987, ~: 214063)
+[PASS] testFuzz_RateMonotonic(uint256,uint256) (runs: 1024, μ: 1573, ~: 1573)
+[FAIL: ERC20InsufficientBalance(0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496, 0, 10000000000000000 [1e16])] testGapLossSocialization() (gas: 685424)
+[PASS] testHealthyCannotBeLiquidated() (gas: 471920)
+[PASS] testInsufficientLiquidity() (gas: 456288)
+[FAIL: ERC20InsufficientAllowance(0x5991A2dF15A8F6A256D3Ec51E99254Cd3fb576A9, 0, 1030000000 [1.03e9])] testInterestAndFullRepayment() (gas: 591694)
+[PASS] testInterestIndexCapAndIdleAccrual() (gas: 552452)
+[FAIL: next call did not revert as expected] testInvalidAmounts() (gas: 62312)
+[PASS] testInvalidOracleBounds() (gas: 616317)
+[PASS] testMutationAndReadOnlyReentrancyRejected() (gas: 523057)
+[PASS] testNegativeRebaseDetected() (gas: 487498)
+[PASS] testNoReturnUSDTStyleToken() (gas: 580440)
+[PASS] testNoSameTransactionProfit() (gas: 599363)
+[FAIL: ERC20InsufficientBalance(0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496, 0, 10000000000000000 [1e16])] testOracleFailureAllowsRepaymentAndCollateralTopup() (gas: 882483)
+[PASS] testOutgoingFeeAndFalseReturnRejected() (gas: 825068)
+[PASS] testPartialAndFullLiquidation() (gas: 661010)
+[PASS] testPartialRepaymentRoundsUp() (gas: 551085)
+[PASS] testRateBoundaries() (gas: 4797)
+[PASS] testShareTransfer() (gas: 273001)
+[PASS] testSlippageProtection() (gas: 793981)
+[FAIL: ERC20InsufficientAllowance(0x5991A2dF15A8F6A256D3Ec51E99254Cd3fb576A9, 0, 1000000000 [1e9])] testThirdPartyRepayment() (gas: 486295)
+Suite result: FAILED. 22 passed; 7 failed; 0 skipped; finished in 1.35s (2.51s CPU time)
+
+Ran 1 test suite in 1.57s (1.35s CPU time): 22 tests passed, 7 failed, 0 skipped (29 total tests)
+
+Failing tests:
+Encountered 7 failing tests in test/LendingVault.t.sol:LendingVaultTest
+[FAIL: ERC20InsufficientBalance(0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496, 0, 1000000 [1e6])] testDonationCannotInflatePrice() (gas: 408698)
+[FAIL: ERC20InsufficientBalance(0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496, 0, 1000000 [1e6])] testDustLiquidationAndRestart() (gas: 671303)
+[FAIL: ERC20InsufficientBalance(0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496, 0, 10000000000000000 [1e16])] testGapLossSocialization() (gas: 685424)
+[FAIL: ERC20InsufficientAllowance(0x5991A2dF15A8F6A256D3Ec51E99254Cd3fb576A9, 0, 1030000000 [1.03e9])] testInterestAndFullRepayment() (gas: 591694)
+[FAIL: next call did not revert as expected] testInvalidAmounts() (gas: 62312)
+[FAIL: ERC20InsufficientBalance(0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496, 0, 10000000000000000 [1e16])] testOracleFailureAllowsRepaymentAndCollateralTopup() (gas: 882483)
+[FAIL: ERC20InsufficientAllowance(0x5991A2dF15A8F6A256D3Ec51E99254Cd3fb576A9, 0, 1000000000 [1e9])] testThirdPartyRepayment() (gas: 486295)
+
+Encountered a total of 7 failing tests, 22 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 7 failed tests
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger

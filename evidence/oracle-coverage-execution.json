@@ -1,0 +1,14 @@
+{
+  "exitCode": 0,
+  "command": [
+    "forge",
+    "coverage",
+    "--report",
+    "summary",
+    "--report",
+    "lcov",
+    "--fuzz-runs",
+    "256"
+  ],
+  "scope": "Unmodified oracle and full oracle tests; non-IR 0.8.38 coverage in isolation to avoid unrelated vault stack depth."
+}

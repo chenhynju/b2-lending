@@ -1,0 +1,113 @@
+Compiling 3 files with Solc 0.8.28
+Solc 0.8.28 finished in 17.43s
+Compiler run successful!
+
+Ran 1 test for test/fork/MainnetFork.t.sol:MainnetForkTest
+[SKIP] testPinnedMainnetUSDTMarket() (gas: 0)
+Suite result: ok. 0 passed; 0 failed; 1 skipped; finished in 800.61µs (258.07µs CPU time)
+
+Ran 12 tests for test/FeedOracle.t.sol:FeedOracleTest
+[PASS] testConfigBoundaries() (gas: 6474)
+[PASS] testDebtDepegIsNotAssumedOneDollar() (gas: 79579)
+[PASS] testDifferentFeedDecimals() (gas: 350690)
+[PASS] testFutureAndZeroTimestamps() (gas: 151574)
+[PASS] testFuzz_PriceRatio(uint256,uint256) (runs: 1024, μ: 121810, ~: 121796)
+[PASS] testInvalidAnswers() (gas: 217911)
+[PASS] testInvalidRound() (gas: 119738)
+[PASS] testPriceUpperAndLowerBounds() (gas: 242363)
+[PASS] testSequencerDownAndGrace() (gas: 203129)
+[PASS] testSequencerZeroFuture() (gas: 120906)
+[PASS] testStaleFeedAndExactBoundary() (gas: 79353)
+[PASS] testValidPriceAndNormalization() (gas: 43042)
+Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 1.03s (251.38ms CPU time)
+
+Ran 2 tests for test/Differential.t.sol:DifferentialTest
+[PASS] testFuzz_ActualAccrual(uint256,uint256) (runs: 1024, μ: 2759577, ~: 2761644)
+[PASS] testPythonIntegerVectors() (gas: 1693892)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 1.09s (1.36s CPU time)
+
+Ran 5 tests for test/EconomicAttack.t.sol:EconomicAttackTest
+[PASS] testDonationDoesNotChangeBorrowingPower() (gas: 457028)
+[PASS] testFlashCollateralCannotEscapeDebt() (gas: 348444)
+[PASS] testFlashDepositRedeemHasNoProfit() (gas: 146548)
+[PASS] testFuzz_LossExactlyMatchesReceivableWriteOff(uint256) (runs: 1024, μ: 512889, ~: 516277)
+[PASS] testUnfundedLiquidationCannotCommitLosses() (gas: 508730)
+Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 1.13s (1.13s CPU time)
+
+Ran 29 tests for test/LendingVault.t.sol:LendingVaultTest
+[PASS] testBorrowAtLTVBoundary() (gas: 477944)
+[PASS] testBorrowLTVAndWithdrawCollateralChecks() (gas: 657070)
+[PASS] testConstructorRejectsInvalidConfiguration() (gas: 8373)
+[PASS] testDepositWithdrawRedeem() (gas: 333183)
+[PASS] testDonationCannotInflatePrice() (gas: 493703)
+[PASS] testDustLiquidationAndRestart() (gas: 780650)
+[PASS] testFeeOnTransferIncomingRejected() (gas: 410006)
+[PASS] testFuzz_BorrowRepayRounding(uint256,uint256) (runs: 1024, μ: 645668, ~: 645635)
+[PASS] testFuzz_DepositRedeem(uint256) (runs: 1024, μ: 213983, ~: 214063)
+[PASS] testFuzz_RateMonotonic(uint256,uint256) (runs: 1024, μ: 1555, ~: 1573)
+[PASS] testGapLossSocialization() (gas: 654786)
+[PASS] testHealthyCannotBeLiquidated() (gas: 471920)
+[PASS] testInsufficientLiquidity() (gas: 456288)
+[PASS] testInterestAndFullRepayment() (gas: 716014)
+[PASS] testInterestIndexCapAndIdleAccrual() (gas: 552452)
+[PASS] testInvalidAmounts() (gas: 581242)
+[PASS] testInvalidOracleBounds() (gas: 616317)
+[PASS] testMutationAndReadOnlyReentrancyRejected() (gas: 523057)
+[PASS] testNegativeRebaseDetected() (gas: 487498)
+[PASS] testNoReturnUSDTStyleToken() (gas: 580440)
+[PASS] testNoSameTransactionProfit() (gas: 599363)
+[PASS] testOracleFailureAllowsRepaymentAndCollateralTopup() (gas: 840158)
+[PASS] testOutgoingFeeAndFalseReturnRejected() (gas: 825068)
+[PASS] testPartialAndFullLiquidation() (gas: 661010)
+[PASS] testPartialRepaymentRoundsUp() (gas: 551085)
+[PASS] testRateBoundaries() (gas: 4797)
+[PASS] testShareTransfer() (gas: 273001)
+[PASS] testSlippageProtection() (gas: 793981)
+[PASS] testThirdPartyRepayment() (gas: 484568)
+Suite result: ok. 29 passed; 0 failed; 0 skipped; finished in 1.13s (1.83s CPU time)
+
+Ran 1 test for test/Invariant.t.sol:LendingInvariant
+[PASS]
+LendingInvariant invariants:
+[PASS] invariant_AssetReceivableIdentity
+[PASS] invariant_CashConservationGhostLedger
+[PASS] invariant_CollateralConservation
+[PASS] invariant_DebtRoundingBound
+[PASS] invariant_DebtShareSupply
+[PASS] invariant_IndexMonotonicAndCapped
+[PASS] invariant_LenderShareSupply
+[PASS] invariant_PhysicalBacking
+[PASS] invariant_RateBounded
+ LendingInvariant invariants (runs: 128, calls: 8192, reverts: 0)
+
+╭----------------+------------------+-------+---------+----------╮
+| Contract       | Selector         | Calls | Reverts | Discards |
++================================================================+
+| LendingHandler | addCollateral    | 632   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | borrow           | 697   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | deposit          | 679   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | donate           | 667   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | elapse           | 696   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | liquidate        | 656   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | price            | 697   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | redeem           | 740   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | removeCollateral | 652   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | repay            | 697   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | transferShares   | 683   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | withdraw         | 696   | 0       | 0        |
+╰----------------+------------------+-------+---------+----------╯
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 10.77s (10.77s CPU time)
+
+Ran 6 test suites in 10.78s (15.17s CPU time): 49 tests passed, 0 failed, 1 skipped (50 total tests)

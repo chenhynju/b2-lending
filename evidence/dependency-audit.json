@@ -1,0 +1,52 @@
+{
+  "response": {
+    "results": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "queries": [
+    {
+      "version": "5.0.2",
+      "package": {
+        "ecosystem": "npm",
+        "name": "@openzeppelin/contracts"
+      }
+    },
+    {
+      "version": "1.56.1",
+      "package": {
+        "ecosystem": "npm",
+        "name": "@playwright/test"
+      }
+    },
+    {
+      "version": "1.56.1",
+      "package": {
+        "ecosystem": "npm",
+        "name": "playwright"
+      }
+    },
+    {
+      "version": "1.56.1",
+      "package": {
+        "ecosystem": "npm",
+        "name": "playwright-core"
+      }
+    },
+    {
+      "version": "2.3.2",
+      "package": {
+        "ecosystem": "npm",
+        "name": "fsevents"
+      }
+    }
+  ],
+  "endpoint": "https://api.osv.dev/v1/querybatch",
+  "checkedDate": "2026-11-05",
+  "status": "PASS",
+  "limitations": "Registry advisory snapshot, not a proof of no vulnerabilities or a Solidity audit."
+}

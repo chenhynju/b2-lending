@@ -1,0 +1,574 @@
+Compiling 36 files with Solc 0.8.38
+Solc 0.8.38 finished in 30.20s
+Compiler run successful with warnings:
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1312:9:
+     |
+1312 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1326:9:
+     |
+1326 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1334:79:
+     |
+1334 |     function assertApproxEqAbs(uint256 left, uint256 right, uint256 maxDelta, string calldata error) external pure;
+     |                                                                               ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1341:77:
+     |
+1341 |     function assertApproxEqAbs(int256 left, int256 right, uint256 maxDelta, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1358:9:
+     |
+1358 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1376:9:
+     |
+1376 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1386:86:
+     |
+1386 |     function assertApproxEqRel(uint256 left, uint256 right, uint256 maxPercentDelta, string calldata error)
+     |                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1397:84:
+     |
+1397 |     function assertApproxEqRel(int256 left, int256 right, uint256 maxPercentDelta, string calldata error) external pure;
+     |                                                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1404:77:
+     |
+1404 |     function assertEqDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1411:75:
+     |
+1411 |     function assertEqDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1417:46:
+     |
+1417 |     function assertEq(bool left, bool right, string calldata error) external pure;
+     |                                              ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1423:68:
+     |
+1423 |     function assertEq(string calldata left, string calldata right, string calldata error) external pure;
+     |                                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1429:66:
+     |
+1429 |     function assertEq(bytes calldata left, bytes calldata right, string calldata error) external pure;
+     |                                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1435:68:
+     |
+1435 |     function assertEq(bool[] calldata left, bool[] calldata right, string calldata error) external pure;
+     |                                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1441:74:
+     |
+1441 |     function assertEq(uint256[] calldata left, uint256[] calldata right, string calldata error) external pure;
+     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1447:72:
+     |
+1447 |     function assertEq(int256[] calldata left, int256[] calldata right, string calldata error) external pure;
+     |                                                                        ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1456:74:
+     |
+1456 |     function assertEq(address[] calldata left, address[] calldata right, string calldata error) external pure;
+     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1462:74:
+     |
+1462 |     function assertEq(bytes32[] calldata left, bytes32[] calldata right, string calldata error) external pure;
+     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1468:72:
+     |
+1468 |     function assertEq(string[] calldata left, string[] calldata right, string calldata error) external pure;
+     |                                                                        ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1474:70:
+     |
+1474 |     function assertEq(bytes[] calldata left, bytes[] calldata right, string calldata error) external pure;
+     |                                                                      ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1477:52:
+     |
+1477 |     function assertEq(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1483:50:
+     |
+1483 |     function assertEq(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1489:52:
+     |
+1489 |     function assertEq(address left, address right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1495:52:
+     |
+1495 |     function assertEq(bytes32 left, bytes32 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1501:42:
+     |
+1501 |     function assertFalse(bool condition, string calldata error) external pure;
+     |                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1509:77:
+     |
+1509 |     function assertGeDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1517:75:
+     |
+1517 |     function assertGeDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1524:52:
+     |
+1524 |     function assertGe(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1531:50:
+     |
+1531 |     function assertGe(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1539:77:
+     |
+1539 |     function assertGtDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1547:75:
+     |
+1547 |     function assertGtDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1554:52:
+     |
+1554 |     function assertGt(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1561:50:
+     |
+1561 |     function assertGt(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1569:77:
+     |
+1569 |     function assertLeDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1577:75:
+     |
+1577 |     function assertLeDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1584:52:
+     |
+1584 |     function assertLe(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1591:50:
+     |
+1591 |     function assertLe(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1599:77:
+     |
+1599 |     function assertLtDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1607:75:
+     |
+1607 |     function assertLtDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1614:52:
+     |
+1614 |     function assertLt(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1621:50:
+     |
+1621 |     function assertLt(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1628:80:
+     |
+1628 |     function assertNotEqDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                                ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1635:78:
+     |
+1635 |     function assertNotEqDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                              ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1641:49:
+     |
+1641 |     function assertNotEq(bool left, bool right, string calldata error) external pure;
+     |                                                 ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1647:71:
+     |
+1647 |     function assertNotEq(string calldata left, string calldata right, string calldata error) external pure;
+     |                                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1653:69:
+     |
+1653 |     function assertNotEq(bytes calldata left, bytes calldata right, string calldata error) external pure;
+     |                                                                     ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1659:71:
+     |
+1659 |     function assertNotEq(bool[] calldata left, bool[] calldata right, string calldata error) external pure;
+     |                                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1665:77:
+     |
+1665 |     function assertNotEq(uint256[] calldata left, uint256[] calldata right, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1671:75:
+     |
+1671 |     function assertNotEq(int256[] calldata left, int256[] calldata right, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1680:77:
+     |
+1680 |     function assertNotEq(address[] calldata left, address[] calldata right, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1686:77:
+     |
+1686 |     function assertNotEq(bytes32[] calldata left, bytes32[] calldata right, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1692:75:
+     |
+1692 |     function assertNotEq(string[] calldata left, string[] calldata right, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1698:73:
+     |
+1698 |     function assertNotEq(bytes[] calldata left, bytes[] calldata right, string calldata error) external pure;
+     |                                                                         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1701:55:
+     |
+1701 |     function assertNotEq(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1707:53:
+     |
+1707 |     function assertNotEq(int256 left, int256 right, string calldata error) external pure;
+     |                                                     ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1713:55:
+     |
+1713 |     function assertNotEq(address left, address right, string calldata error) external pure;
+     |                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1719:55:
+     |
+1719 |     function assertNotEq(bytes32 left, bytes32 right, string calldata error) external pure;
+     |                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1725:41:
+     |
+1725 |     function assertTrue(bool condition, string calldata error) external pure;
+     |                                         ^^^^^^^^^^^^^^^^^^^^^
+
+
+Ran 1 test for test/fork/MainnetFork.t.sol:MainnetForkTest
+[PASS] testPinnedMainnetUSDTMarket() (gas: 1223285)
+Traces:
+  [1451024] MainnetForkTest::testPinnedMainnetUSDTMarket()
+    ├─ [0] VM::envOr("MAINNET_RPC_URL", "") [staticcall]
+    │   └─ ← [Return] <env var value>
+    ├─ [0] VM::createSelectFork("<rpc url>", 26344752 [2.634e7])
+    │   └─ ← [Return] 0
+    ├─ [0] VM::deployCode("src/FeedOracle.sol:FeedOracle", 0x0000000000000000000000005f4ec3df9cbd43714fe2740f5e3616155c5b84190000000000000000000000003e7d1eab13ad0104d2750b8863b489d65364e32d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015180)
+    │   ├─ [379616] → new FeedOracle@0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+    │   │   ├─ [5615] 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419::decimals() [staticcall]
+    │   │   │   ├─ [273] 0x7d4E742018fb52E48b08BE73d041C18B21de6Fb5::decimals() [staticcall]
+    │   │   │   │   └─ ← [Return] 8
+    │   │   │   └─ ← [Return] 8
+    │   │   ├─ [5615] 0x3E7d1eAB13ad0104d2750B8863b489D65364e32D::decimals() [staticcall]
+    │   │   │   ├─ [273] 0x9c41663bB8d6800c8050E2Fbf98E86AD01c973e3::decimals() [staticcall]
+    │   │   │   │   └─ ← [Return] 8
+    │   │   │   └─ ← [Return] 8
+    │   │   └─ ← [Return] 1802 bytes of code
+    │   └─ ← [Return] FeedOracle: [0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f]
+    ├─ [0] VM::deployCode("src/LendingVault.sol:LendingVault", 0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc20000000000000000000000005615deb798bb3e4dfa0139dfa1b3d433cc23b72f)
+    │   ├─ [2323116] → new LendingVault@0x2e234DAe75C793f67A35089C9d99245E1C58470b
+    │   │   ├─ [2484] 0xdAC17F958D2ee523a2206206994597C13D831ec7::decimals() [staticcall]
+    │   │   │   └─ ← [Return] 6
+    │   │   ├─ [2444] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::decimals() [staticcall]
+    │   │   │   └─ ← [Return] 18
+    │   │   └─ ← [Return] 10984 bytes of code
+    │   └─ ← [Return] LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]
+    ├─ [5031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 100000000 [1e8]
+    ├─ [0] VM::record()
+    │   └─ ← [Return]
+    ├─ [5031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 100000000 [1e8]
+    ├─ [0] VM::accesses(0xdAC17F958D2ee523a2206206994597C13D831ec7) [staticcall]
+    │   └─ ← [Return] [0x000000000000000000000000000000000000000000000000000000000000000a, 0x6e10ff27cae71a13525bd61167857e5c982b4674c8e654900e4e9d5035811f78], []
+    ├─ [0] VM::load(0xdAC17F958D2ee523a2206206994597C13D831ec7, 0x6e10ff27cae71a13525bd61167857e5c982b4674c8e654900e4e9d5035811f78) [staticcall]
+    │   └─ ← [Return] 0x0000000000000000000000000000000000000000000000000000000005f5e100
+    ├─ [0] VM::load(0xdAC17F958D2ee523a2206206994597C13D831ec7, 0x6e10ff27cae71a13525bd61167857e5c982b4674c8e654900e4e9d5035811f78) [staticcall]
+    │   └─ ← [Return] 0x0000000000000000000000000000000000000000000000000000000005f5e100
+    ├─ [5031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 100000000 [1e8]
+    ├─ [0] VM::store(0xdAC17F958D2ee523a2206206994597C13D831ec7, 0x6e10ff27cae71a13525bd61167857e5c982b4674c8e654900e4e9d5035811f78, 0x0000000000000000000000000000000000000000000000000000000000000000)
+    │   └─ ← [Return]
+    ├─ [5031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 0
+    ├─ [0] VM::store(0xdAC17F958D2ee523a2206206994597C13D831ec7, 0x6e10ff27cae71a13525bd61167857e5c982b4674c8e654900e4e9d5035811f78, 0x0000000000000000000000000000000000000000000000000000000005f5e100)
+    │   └─ ← [Return]
+    ├─ emit SlotFound(who: 0xdAC17F958D2ee523a2206206994597C13D831ec7, fsig: 0x70a08231, keysHash: 0x5ff10565516c110180bb9cc111cdbc2b0a68e09ff7fac17290373c3aa4a1bb03, slot: 49784443915320261189887103614045882155521089248264299114442679287293484801912 [4.978e76])
+    ├─ [0] VM::load(0xdAC17F958D2ee523a2206206994597C13D831ec7, 0x6e10ff27cae71a13525bd61167857e5c982b4674c8e654900e4e9d5035811f78) [staticcall]
+    │   └─ ← [Return] 0x0000000000000000000000000000000000000000000000000000000005f5e100
+    ├─ [0] VM::store(0xdAC17F958D2ee523a2206206994597C13D831ec7, 0x6e10ff27cae71a13525bd61167857e5c982b4674c8e654900e4e9d5035811f78, 0x00000000000000000000000000000000000000000000000000000002540be400)
+    │   └─ ← [Return]
+    ├─ [5031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 10000000000 [1e10]
+    ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 202213274263176443 [2.022e17]
+    ├─ [0] VM::record()
+    │   └─ ← [Return]
+    ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 202213274263176443 [2.022e17]
+    ├─ [0] VM::accesses(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2) [staticcall]
+    │   └─ ← [Return] [0x1da434b76eba4736d6e760bfd78cbf883a0776ee1666a9157f99ab1b97923a3c], []
+    ├─ [0] VM::load(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, 0x1da434b76eba4736d6e760bfd78cbf883a0776ee1666a9157f99ab1b97923a3c) [staticcall]
+    │   └─ ← [Return] 0x00000000000000000000000000000000000000000000000002ce67e6cd5344fb
+    ├─ [0] VM::load(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, 0x1da434b76eba4736d6e760bfd78cbf883a0776ee1666a9157f99ab1b97923a3c) [staticcall]
+    │   └─ ← [Return] 0x00000000000000000000000000000000000000000000000002ce67e6cd5344fb
+    ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 202213274263176443 [2.022e17]
+    ├─ [0] VM::store(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, 0x1da434b76eba4736d6e760bfd78cbf883a0776ee1666a9157f99ab1b97923a3c, 0x0000000000000000000000000000000000000000000000000000000000000000)
+    │   └─ ← [Return]
+    ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 0
+    ├─ [0] VM::store(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, 0x1da434b76eba4736d6e760bfd78cbf883a0776ee1666a9157f99ab1b97923a3c, 0x00000000000000000000000000000000000000000000000002ce67e6cd5344fb)
+    │   └─ ← [Return]
+    ├─ emit SlotFound(who: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, fsig: 0x70a08231, keysHash: 0x5ff10565516c110180bb9cc111cdbc2b0a68e09ff7fac17290373c3aa4a1bb03, slot: 13407199363679635973052879518465057167389910613330280238043615909335847287356 [1.34e76])
+    ├─ [0] VM::load(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, 0x1da434b76eba4736d6e760bfd78cbf883a0776ee1666a9157f99ab1b97923a3c) [staticcall]
+    │   └─ ← [Return] 0x00000000000000000000000000000000000000000000000002ce67e6cd5344fb
+    ├─ [0] VM::store(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, 0x1da434b76eba4736d6e760bfd78cbf883a0776ee1666a9157f99ab1b97923a3c, 0x0000000000000000000000000000000000000000000000008ac7230489e80000)
+    │   └─ ← [Return]
+    ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 10000000000000000000 [1e19]
+    ├─ [48897] 0xdAC17F958D2ee523a2206206994597C13D831ec7::approve(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], 115792089237316195423570985008687907853269984665640564039457584007913129639935 [1.157e77])
+    │   ├─ emit Approval(owner: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], spender: LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], amount: 115792089237316195423570985008687907853269984665640564039457584007913129639935 [1.157e77])
+    │   └─ ← [Stop]
+    ├─ [46364] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::approve(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], 115792089237316195423570985008687907853269984665640564039457584007913129639935 [1.157e77])
+    │   ├─ emit Approval(owner: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], spender: LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], amount: 115792089237316195423570985008687907853269984665640564039457584007913129639935 [1.157e77])
+    │   └─ ← [Return] true
+    ├─ [158640] LendingVault::deposit(10000000000 [1e10], 0)
+    │   ├─ emit Accrue(index: 1000000000000000000000000000 [1e27], interest: 0)
+    │   ├─ [5031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 0
+    │   ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 0
+    │   ├─ emit Transfer(from: 0x0000000000000000000000000000000000000000, to: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], amount: 10000000000000000 [1e16])
+    │   ├─ [1031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 0
+    │   ├─ [39630] 0xdAC17F958D2ee523a2206206994597C13D831ec7::transferFrom(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], 10000000000 [1e10])
+    │   │   ├─ emit Transfer(from: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], to: LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], amount: 10000000000 [1e10])
+    │   │   └─ ← [Stop]
+    │   ├─ [1031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 10000000000 [1e10]
+    │   ├─ emit Deposit(lender: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], assets: 10000000000 [1e10], shares: 10000000000000000 [1e16])
+    │   └─ ← [Return] 10000000000000000 [1e16]
+    ├─ [119182] LendingVault::addCollateral(1000000000000000000 [1e18])
+    │   ├─ [5031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 10000000000 [1e10]
+    │   ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 0
+    │   ├─ [534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 0
+    │   ├─ [30125] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::transferFrom(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], 1000000000000000000 [1e18])
+    │   │   ├─ emit Transfer(from: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], to: LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], amount: 1000000000000000000 [1e18])
+    │   │   └─ ← [Return] true
+    │   ├─ [534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 1000000000000000000 [1e18]
+    │   ├─ emit CollateralAdded(user: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], amount: 1000000000000000000 [1e18])
+    │   └─ ← [Stop]
+    ├─ [187988] LendingVault::borrow(100000000 [1e8])
+    │   ├─ emit Accrue(index: 1000000000000000000000000000 [1e27], interest: 0)
+    │   ├─ [5031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 10000000000 [1e10]
+    │   ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 1000000000000000000 [1e18]
+    │   ├─ [39047] FeedOracle::price() [staticcall]
+    │   │   ├─ [15642] 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419::latestRoundData() [staticcall]
+    │   │   │   ├─ [7409] 0x7d4E742018fb52E48b08BE73d041C18B21de6Fb5::latestRoundData() [staticcall]
+    │   │   │   │   └─ ← [Return] 35354 [3.535e4], 242926176453 [2.429e11], 1793833234 [1.793e9], 1793833259 [1.793e9], 35354 [3.535e4]
+    │   │   │   └─ ← [Return] 129127208515966896666 [1.291e20], 242926176453 [2.429e11], 1793833234 [1.793e9], 1793833259 [1.793e9], 129127208515966896666 [1.291e20]
+    │   │   ├─ [15642] 0x3E7d1eAB13ad0104d2750B8863b489D65364e32D::latestRoundData() [staticcall]
+    │   │   │   ├─ [7409] 0x9c41663bB8d6800c8050E2Fbf98E86AD01c973e3::latestRoundData() [staticcall]
+    │   │   │   │   └─ ← [Return] 52, 99868000 [9.986e7], 1793803696 [1.793e9], 1793803715 [1.793e9], 52
+    │   │   │   └─ ← [Return] 73786976294838206516 [7.378e19], 99868000 [9.986e7], 1793803696 [1.793e9], 1793803715 [1.793e9], 73786976294838206516 [7.378e19]
+    │   │   └─ ← [Return] 2432472628399487323266 [2.432e21]
+    │   ├─ [1031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 10000000000 [1e10]
+    │   ├─ [3031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   │   └─ ← [Return] 0
+    │   ├─ [35601] 0xdAC17F958D2ee523a2206206994597C13D831ec7::transfer(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], 100000000 [1e8])
+    │   │   ├─ emit Transfer(from: LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], to: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], amount: 100000000 [1e8])
+    │   │   └─ ← [Stop]
+    │   ├─ [1031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 9900000000 [9.9e9]
+    │   ├─ [1031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   │   └─ ← [Return] 100000000 [1e8]
+    │   ├─ emit Borrow(borrower: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], assets: 100000000 [1e8], shares: 100000000 [1e8])
+    │   └─ ← [Return] 100000000 [1e8]
+    ├─ [2703] LendingVault::debtShares(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 100000000 [1e8]
+    ├─ [77502] LendingVault::repay(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], 100000000 [1e8], 115792089237316195423570985008687907853269984665640564039457584007913129639935 [1.157e77])
+    │   ├─ emit Accrue(index: 1000000000000000000000000000 [1e27], interest: 0)
+    │   ├─ [5031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 9900000000 [9.9e9]
+    │   ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 1000000000000000000 [1e18]
+    │   ├─ [1031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 9900000000 [9.9e9]
+    │   ├─ [22530] 0xdAC17F958D2ee523a2206206994597C13D831ec7::transferFrom(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], 100000000 [1e8])
+    │   │   ├─ emit Transfer(from: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], to: LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], amount: 100000000 [1e8])
+    │   │   └─ ← [Stop]
+    │   ├─ [1031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 10000000000 [1e10]
+    │   ├─ emit Repay(payer: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], borrower: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], assets: 100000000 [1e8], shares: 100000000 [1e8])
+    │   └─ ← [Return] 100000000 [1e8]
+    ├─ [64559] LendingVault::removeCollateral(1000000000000000000 [1e18])
+    │   ├─ emit Accrue(index: 1000000000000000000000000000 [1e27], interest: 0)
+    │   ├─ [5031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 10000000000 [1e10]
+    │   ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 1000000000000000000 [1e18]
+    │   ├─ [534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 1000000000000000000 [1e18]
+    │   ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   │   └─ ← [Return] 9000000000000000000 [9e18]
+    │   ├─ [8862] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::transfer(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], 1000000000000000000 [1e18])
+    │   │   ├─ emit Transfer(from: LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], to: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], amount: 1000000000000000000 [1e18])
+    │   │   └─ ← [Return] true
+    │   ├─ [534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 0
+    │   ├─ [534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   │   └─ ← [Return] 10000000000000000000 [1e19]
+    │   ├─ emit CollateralRemoved(user: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], amount: 1000000000000000000 [1e18])
+    │   └─ ← [Stop]
+    ├─ [2790] LendingVault::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   └─ ← [Return] 10000000000000000 [1e16]
+    ├─ [93451] LendingVault::redeem(10000000000000000 [1e16], 10000000000 [1e10])
+    │   ├─ emit Accrue(index: 1000000000000000000000000000 [1e27], interest: 0)
+    │   ├─ [5031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 10000000000 [1e10]
+    │   ├─ [2534] 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 0
+    │   ├─ emit Transfer(from: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], to: 0x0000000000000000000000000000000000000000, amount: 10000000000000000 [1e16])
+    │   ├─ [1031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 10000000000 [1e10]
+    │   ├─ [3031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   │   └─ ← [Return] 0
+    │   ├─ [35601] 0xdAC17F958D2ee523a2206206994597C13D831ec7::transfer(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], 10000000000 [1e10])
+    │   │   ├─ emit Transfer(from: LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b], to: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], amount: 10000000000 [1e10])
+    │   │   └─ ← [Stop]
+    │   ├─ [1031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(LendingVault: [0x2e234DAe75C793f67A35089C9d99245E1C58470b]) [staticcall]
+    │   │   └─ ← [Return] 0
+    │   ├─ [1031] 0xdAC17F958D2ee523a2206206994597C13D831ec7::balanceOf(MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496]) [staticcall]
+    │   │   └─ ← [Return] 10000000000 [1e10]
+    │   ├─ emit Withdraw(lender: MainnetForkTest: [0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496], assets: 10000000000 [1e10], shares: 10000000000000000 [1e16])
+    │   └─ ← [Return] 10000000000 [1e10]
+    ├─ [9077] LendingVault::totalAssets() [staticcall]
+    │   └─ ← [Return] 0
+    ├─ [39047] FeedOracle::price() [staticcall]
+    │   ├─ [15642] 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419::latestRoundData() [staticcall]
+    │   │   ├─ [7409] 0x7d4E742018fb52E48b08BE73d041C18B21de6Fb5::latestRoundData() [staticcall]
+    │   │   │   └─ ← [Return] 35354 [3.535e4], 242926176453 [2.429e11], 1793833234 [1.793e9], 1793833259 [1.793e9], 35354 [3.535e4]
+    │   │   └─ ← [Return] 129127208515966896666 [1.291e20], 242926176453 [2.429e11], 1793833234 [1.793e9], 1793833259 [1.793e9], 129127208515966896666 [1.291e20]
+    │   ├─ [15642] 0x3E7d1eAB13ad0104d2750B8863b489D65364e32D::latestRoundData() [staticcall]
+    │   │   ├─ [7409] 0x9c41663bB8d6800c8050E2Fbf98E86AD01c973e3::latestRoundData() [staticcall]
+    │   │   │   └─ ← [Return] 52, 99868000 [9.986e7], 1793803696 [1.793e9], 1793803715 [1.793e9], 52
+    │   │   └─ ← [Return] 73786976294838206516 [7.378e19], 99868000 [9.986e7], 1793803696 [1.793e9], 1793803715 [1.793e9], 73786976294838206516 [7.378e19]
+    │   └─ ← [Return] 2432472628399487323266 [2.432e21]
+    └─ ← [Stop]
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 21.98s (21.97s CPU time)
+
+Ran 1 test suite in 21.99s (21.98s CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

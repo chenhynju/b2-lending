@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Isolated | Lending Vault</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><span class="brand">ISOLATED <small>LENDING LAB</small></span><button id="connect">Connect wallet</button></header>
+<section class="hero"><p class="eyebrow">B2 · OVERCOLLATERALIZED CREDIT</p><h1>Put capital to work.<br>Keep risk in view.</h1><p class="intro">An isolated lending market with transparent debt, independent prices and explicit loss accounting.</p><p id="network" class="badge">No market loaded</p></section>
+<aside class="notice">Portfolio demonstration · Experimental software. Lender capital can lose value after bad debt. Withdrawals depend on available liquidity.</aside>
+<section class="metrics" aria-label="Market overview">
+<div><span>Total lender assets</span><strong id="assets">—</strong></div><div><span>Available liquidity</span><strong id="cash">—</strong></div>
+<div><span>Borrow APR</span><strong id="apr">—</strong></div><div><span>Realized bad debt</span><strong id="loss">—</strong></div>
+</section>
+<section class="workspace"><article class="panel">
+<h2>Your position</h2><dl><dt>Lender shares</dt><dd id="shares">—</dd><dt>Collateral locked</dt><dd id="collateral">—</dd><dt>Outstanding debt</dt><dd id="debt">—</dd><dt>Health factor</dt><dd id="health">—</dd></dl>
+<p class="hint">Borrow limit: 75% LTV. Liquidation threshold: 80%. Liquidation bonus: 5%. Rates compound when interest is checkpointed.</p>
+</article><article class="panel"><h2>Manage capital</h2>
+<label for="action">Action</label><select id="action">
+<option value="deposit">Supply loan tokens</option><option value="withdraw">Withdraw loan tokens</option><option value="redeem">Redeem all lender shares</option><option value="addCollateral">Add collateral</option><option value="removeCollateral">Remove collateral</option><option value="borrow">Borrow loan tokens</option><option value="repay">Repay all debt</option><option value="liquidate">Liquidate unhealthy position</option>
+</select><label for="amount">Amount in token units</label><input id="amount" inputmode="decimal" placeholder="0.00" autocomplete="off">
+<label for="borrower">Borrower address · liquidation only</label><input id="borrower" placeholder="0x…" autocomplete="off">
+<p class="hint">Quotes allow up to 0.5% execution movement. Approvals are capped at the requested or quoted amount. Liquidation may repay less than the position debt when collateral is exhausted.</p>
+<button id="execute" disabled>Review action</button><p id="quote" aria-live="polite"></p><button id="confirm" hidden>Confirm in wallet</button>
+</article></section>
+<p id="status" role="status" aria-live="polite">Start the local demo, then connect a wallet.</p>
+<footer>Immutable risk parameters · No admin withdrawals · Independent oracle · <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/tree/v5.0.2" target="_blank" rel="noreferrer">OpenZeppelin components</a></footer>
+</main><script type="module" src="app.js"></script></body></html>

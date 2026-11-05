@@ -1,0 +1,611 @@
+Compiling 39 files with Solc 0.8.38
+Solc 0.8.38 finished in 71.39s
+Compiler run successful with warnings:
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1312:9:
+     |
+1312 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1326:9:
+     |
+1326 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1334:79:
+     |
+1334 |     function assertApproxEqAbs(uint256 left, uint256 right, uint256 maxDelta, string calldata error) external pure;
+     |                                                                               ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1341:77:
+     |
+1341 |     function assertApproxEqAbs(int256 left, int256 right, uint256 maxDelta, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1358:9:
+     |
+1358 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1376:9:
+     |
+1376 |         string calldata error
+     |         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1386:86:
+     |
+1386 |     function assertApproxEqRel(uint256 left, uint256 right, uint256 maxPercentDelta, string calldata error)
+     |                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1397:84:
+     |
+1397 |     function assertApproxEqRel(int256 left, int256 right, uint256 maxPercentDelta, string calldata error) external pure;
+     |                                                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1404:77:
+     |
+1404 |     function assertEqDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1411:75:
+     |
+1411 |     function assertEqDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1417:46:
+     |
+1417 |     function assertEq(bool left, bool right, string calldata error) external pure;
+     |                                              ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1423:68:
+     |
+1423 |     function assertEq(string calldata left, string calldata right, string calldata error) external pure;
+     |                                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1429:66:
+     |
+1429 |     function assertEq(bytes calldata left, bytes calldata right, string calldata error) external pure;
+     |                                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1435:68:
+     |
+1435 |     function assertEq(bool[] calldata left, bool[] calldata right, string calldata error) external pure;
+     |                                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1441:74:
+     |
+1441 |     function assertEq(uint256[] calldata left, uint256[] calldata right, string calldata error) external pure;
+     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1447:72:
+     |
+1447 |     function assertEq(int256[] calldata left, int256[] calldata right, string calldata error) external pure;
+     |                                                                        ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1456:74:
+     |
+1456 |     function assertEq(address[] calldata left, address[] calldata right, string calldata error) external pure;
+     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1462:74:
+     |
+1462 |     function assertEq(bytes32[] calldata left, bytes32[] calldata right, string calldata error) external pure;
+     |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1468:72:
+     |
+1468 |     function assertEq(string[] calldata left, string[] calldata right, string calldata error) external pure;
+     |                                                                        ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1474:70:
+     |
+1474 |     function assertEq(bytes[] calldata left, bytes[] calldata right, string calldata error) external pure;
+     |                                                                      ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1477:52:
+     |
+1477 |     function assertEq(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1483:50:
+     |
+1483 |     function assertEq(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1489:52:
+     |
+1489 |     function assertEq(address left, address right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1495:52:
+     |
+1495 |     function assertEq(bytes32 left, bytes32 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1501:42:
+     |
+1501 |     function assertFalse(bool condition, string calldata error) external pure;
+     |                                          ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1509:77:
+     |
+1509 |     function assertGeDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1517:75:
+     |
+1517 |     function assertGeDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1524:52:
+     |
+1524 |     function assertGe(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1531:50:
+     |
+1531 |     function assertGe(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1539:77:
+     |
+1539 |     function assertGtDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1547:75:
+     |
+1547 |     function assertGtDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1554:52:
+     |
+1554 |     function assertGt(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1561:50:
+     |
+1561 |     function assertGt(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1569:77:
+     |
+1569 |     function assertLeDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1577:75:
+     |
+1577 |     function assertLeDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1584:52:
+     |
+1584 |     function assertLe(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1591:50:
+     |
+1591 |     function assertLe(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1599:77:
+     |
+1599 |     function assertLtDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1607:75:
+     |
+1607 |     function assertLtDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1614:52:
+     |
+1614 |     function assertLt(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1621:50:
+     |
+1621 |     function assertLt(int256 left, int256 right, string calldata error) external pure;
+     |                                                  ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1628:80:
+     |
+1628 |     function assertNotEqDecimal(uint256 left, uint256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                                ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1635:78:
+     |
+1635 |     function assertNotEqDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+     |                                                                              ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1641:49:
+     |
+1641 |     function assertNotEq(bool left, bool right, string calldata error) external pure;
+     |                                                 ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1647:71:
+     |
+1647 |     function assertNotEq(string calldata left, string calldata right, string calldata error) external pure;
+     |                                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1653:69:
+     |
+1653 |     function assertNotEq(bytes calldata left, bytes calldata right, string calldata error) external pure;
+     |                                                                     ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1659:71:
+     |
+1659 |     function assertNotEq(bool[] calldata left, bool[] calldata right, string calldata error) external pure;
+     |                                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1665:77:
+     |
+1665 |     function assertNotEq(uint256[] calldata left, uint256[] calldata right, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1671:75:
+     |
+1671 |     function assertNotEq(int256[] calldata left, int256[] calldata right, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1680:77:
+     |
+1680 |     function assertNotEq(address[] calldata left, address[] calldata right, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1686:77:
+     |
+1686 |     function assertNotEq(bytes32[] calldata left, bytes32[] calldata right, string calldata error) external pure;
+     |                                                                             ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1692:75:
+     |
+1692 |     function assertNotEq(string[] calldata left, string[] calldata right, string calldata error) external pure;
+     |                                                                           ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1698:73:
+     |
+1698 |     function assertNotEq(bytes[] calldata left, bytes[] calldata right, string calldata error) external pure;
+     |                                                                         ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1701:55:
+     |
+1701 |     function assertNotEq(uint256 left, uint256 right, string calldata error) external pure;
+     |                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1707:53:
+     |
+1707 |     function assertNotEq(int256 left, int256 right, string calldata error) external pure;
+     |                                                     ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1713:55:
+     |
+1713 |     function assertNotEq(address left, address right, string calldata error) external pure;
+     |                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1719:55:
+     |
+1719 |     function assertNotEq(bytes32 left, bytes32 right, string calldata error) external pure;
+     |                                                       ^^^^^^^^^^^^^^^^^^^^^
+
+Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
+    --> lib/forge-std/src/Vm.sol:1725:41:
+     |
+1725 |     function assertTrue(bool condition, string calldata error) external pure;
+     |                                         ^^^^^^^^^^^^^^^^^^^^^
+
+
+Ran 12 tests for test/FeedOracle.t.sol:FeedOracleTest
+[PASS] testConfigBoundaries() (gas: 6489)
+[PASS] testDebtDepegIsNotAssumedOneDollar() (gas: 79624)
+[PASS] testDifferentFeedDecimals() (gas: 342015)
+[PASS] testFutureAndZeroTimestamps() (gas: 151650)
+[PASS] testFuzz_PriceRatio(uint256,uint256) (runs: 32, μ: 121884, ~: 121838)
+[PASS] testInvalidAnswers() (gas: 218025)
+[PASS] testInvalidRound() (gas: 119915)
+[PASS] testPriceUpperAndLowerBounds() (gas: 242468)
+[PASS] testSequencerDownAndGrace() (gas: 203227)
+[PASS] testSequencerZeroFuture() (gas: 120952)
+[PASS] testStaleFeedAndExactBoundary() (gas: 79437)
+[PASS] testValidPriceAndNormalization() (gas: 43087)
+Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 230.69ms (103.32ms CPU time)
+
+Ran 5 tests for test/EconomicAttack.t.sol:EconomicAttackTest
+[PASS] testDonationDoesNotChangeBorrowingPower() (gas: 457571)
+[PASS] testFlashCollateralCannotEscapeDebt() (gas: 349094)
+[PASS] testFlashDepositRedeemHasNoProfit() (gas: 146956)
+[PASS] testFuzz_LossExactlyMatchesReceivableWriteOff(uint256) (runs: 32, μ: 514066, ~: 517392)
+[PASS] testUnfundedLiquidationCannotCommitLosses() (gas: 509515)
+Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 213.19ms (225.70ms CPU time)
+
+Ran 2 tests for test/Differential.t.sol:DifferentialTest
+[PASS] testFuzz_ActualAccrual(uint256,uint256) (runs: 32, μ: 2686629, ~: 2687477)
+[PASS] testPythonIntegerVectors() (gas: 1680650)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 284.78ms (412.93ms CPU time)
+
+Ran 30 tests for test/LendingVault.t.sol:LendingVaultTest
+[PASS] testBorrowAtLTVBoundary() (gas: 478716)
+[PASS] testBorrowLTVAndWithdrawCollateralChecks() (gas: 657962)
+[PASS] testConstructorRejectsInvalidConfiguration() (gas: 8406)
+[PASS] testDepositWithdrawRedeem() (gas: 333907)
+[PASS] testDonationCannotInflatePrice() (gas: 494801)
+[PASS] testDustLiquidationAndRestart() (gas: 781651)
+[PASS] testFeeOnTransferIncomingRejected() (gas: 410707)
+[PASS] testFuzz_BorrowRepayRounding(uint256,uint256) (runs: 32, μ: 647172, ~: 647168)
+[PASS] testFuzz_DepositRedeem(uint256) (runs: 32, μ: 214437, ~: 214566)
+[PASS] testFuzz_RateMonotonic(uint256,uint256) (runs: 32, μ: 1537, ~: 1570)
+[PASS] testGapLossSocialization() (gas: 656371)
+[PASS] testHealthyCannotBeLiquidated() (gas: 472749)
+[PASS] testInsufficientLiquidity() (gas: 457139)
+[PASS] testInterestAndFullRepayment() (gas: 717177)
+[PASS] testInterestIndexCapAndIdleAccrual() (gas: 553054)
+[PASS] testInvalidAmounts() (gas: 580371)
+[PASS] testInvalidOracleBounds() (gas: 616923)
+[PASS] testMutationAndReadOnlyReentrancyRejected() (gas: 524177)
+[PASS] testNegativeRebaseDetected() (gas: 488349)
+[PASS] testNoReturnUSDTStyleToken() (gas: 565660)
+[PASS] testNoSameTransactionProfit() (gas: 600817)
+[PASS] testOracleFailureAllowsRepaymentAndCollateralTopup() (gas: 841868)
+[PASS] testOutgoingFeeAndFalseReturnRejected() (gas: 826809)
+[PASS] testPartialAndFullLiquidation() (gas: 663197)
+[PASS] testPartialRepaymentRoundsUp() (gas: 552291)
+[PASS] testRateBoundaries() (gas: 4822)
+[PASS] testRegression_LastShareCannotOrphanReceivables() (gas: 835596)
+[PASS] testShareTransfer() (gas: 273483)
+[PASS] testSlippageProtection() (gas: 794014)
+[PASS] testThirdPartyRepayment() (gas: 485793)
+Suite result: ok. 30 passed; 0 failed; 0 skipped; finished in 295.83ms (542.73ms CPU time)
+
+╭----------------------------------------+-----------------+-------+--------+-------+---------╮
+| src/FeedOracle.sol:FeedOracle Contract |                 |       |        |       |         |
++=============================================================================================+
+| Deployment Cost                        | Deployment Size |       |        |       |         |
+|----------------------------------------+-----------------+-------+--------+-------+---------|
+|                                      0 |            2632 |       |        |       |         |
+|----------------------------------------+-----------------+-------+--------+-------+---------|
+|                                        |                 |       |        |       |         |
+|----------------------------------------+-----------------+-------+--------+-------+---------|
+| Function Name                          | Min             | Avg   | Median | Max   | # Calls |
+|----------------------------------------+-----------------+-------+--------+-------+---------|
+| price                                  |           12295 | 33451 |  37616 | 37616 |      52 |
+╰----------------------------------------+-----------------+-------+--------+-------+---------╯
+
+╭--------------------------------------------+-----------------+--------+--------+--------+---------╮
+| src/LendingVault.sol:LendingVault Contract |                 |        |        |        |         |
++===================================================================================================+
+| Deployment Cost                            | Deployment Size |        |        |        |         |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                          0 |           12087 |        |        |        |         |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                            |                 |        |        |        |         |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                              | Min             | Avg    | Median | Max    | # Calls |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| DEPOSIT_CAP                                |             890 |    890 |    890 |    890 |       1 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| MAX_INDEX                                  |             670 |    670 |    670 |    670 |       2 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| accrue                                     |           33355 |  42080 |  42381 |  42414 |      72 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| addCollateral                              |           42451 | 115000 | 114372 | 127808 |     124 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| balanceOf                                  |            2790 |   2790 |   2790 |   2790 |      11 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| borrow                                     |           43685 | 118199 | 125086 | 142210 |     162 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| borrowIndex                                |            2927 |   2927 |   2927 |   2927 |      38 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| cash                                       |            2883 |   2883 |   2883 |   2883 |       5 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| collateralOf                               |            2483 |   2483 |   2483 |   2483 |       4 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| cumulativeBadDebt                          |            3103 |   3103 |   3103 |   3103 |      36 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| debtOf                                     |           12153 |  13850 |  13850 |  15547 |       2 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| debtShares                                 |            2703 |   2703 |   2703 |   2703 |      42 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| decimals                                   |             302 |    302 |    302 |    302 |       1 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| deposit                                    |           52098 | 148216 | 153080 | 161427 |     135 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| healthFactor                               |           21882 |  21882 |  21882 |  21882 |       1 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| liquidate                                  |           53587 | 123865 | 136393 | 136393 |      42 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| previewDeposit                             |           12399 |  12399 |  12399 |  12399 |       1 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| redeem                                     |           50963 |  69341 |  69693 |  79643 |      46 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| removeCollateral                           |           52747 |  71721 |  67129 |  95645 |       7 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| repay                                      |           53500 |  79931 |  81429 | 105909 |      40 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| totalAssets                                |             260 |  10518 |  11328 |  12722 |     145 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| totalDebt                                  |            7884 |   7884 |   7884 |   7884 |       1 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| totalSupply                                |            2311 |   2311 |   2311 |   2311 |       4 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| transfer                                   |           46707 |  46707 |  46707 |  46707 |       1 |
+|--------------------------------------------+-----------------+--------+--------+--------+---------|
+| withdraw                                   |           50765 |  68905 |  64715 |  93079 |       8 |
+╰--------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+╭-----------------------------------------------+-----------------+--------+--------+--------+---------╮
+| test/EconomicAttack.t.sol:FlashActor Contract |                 |        |        |        |         |
++======================================================================================================+
+| Deployment Cost                               | Deployment Size |        |        |        |         |
+|-----------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                        337002 |            1537 |        |        |        |         |
+|-----------------------------------------------+-----------------+--------+--------+--------+---------|
+|                                               |                 |        |        |        |         |
+|-----------------------------------------------+-----------------+--------+--------+--------+---------|
+| Function Name                                 | Min             | Avg    | Median | Max    | # Calls |
+|-----------------------------------------------+-----------------+--------+--------+--------+---------|
+| run                                           |          170375 | 245692 | 245692 | 321009 |       2 |
+╰-----------------------------------------------+-----------------+--------+--------+--------+---------╯
+
+╭---------------------------------------------------+-----------------+------+--------+------+---------╮
+| test/LendingVault.t.sol:LendingVaultTest Contract |                 |      |        |      |         |
++======================================================================================================+
+| Deployment Cost                                   | Deployment Size |      |        |      |         |
+|---------------------------------------------------+-----------------+------+--------+------+---------|
+|                                           9032482 |           44653 |      |        |      |         |
+|---------------------------------------------------+-----------------+------+--------+------+---------|
+|                                                   |                 |      |        |      |         |
+|---------------------------------------------------+-----------------+------+--------+------+---------|
+| Function Name                                     | Min             | Avg  | Median | Max  | # Calls |
+|---------------------------------------------------+-----------------+------+--------+------+---------|
+| rate                                              |            1102 | 1102 |   1102 | 1102 |       1 |
+╰---------------------------------------------------+-----------------+------+--------+------+---------╯
+
+╭----------------------------------------+-----------------+-------+--------+-------+---------╮
+| test/mocks/Mocks.sol:MockFeed Contract |                 |       |        |       |         |
++=============================================================================================+
+| Deployment Cost                        | Deployment Size |       |        |       |         |
+|----------------------------------------+-----------------+-------+--------+-------+---------|
+|                                 257853 |             852 |       |        |       |         |
+|----------------------------------------+-----------------+-------+--------+-------+---------|
+|                                        |                 |       |        |       |         |
+|----------------------------------------+-----------------+-------+--------+-------+---------|
+| Function Name                          | Min             | Avg   | Median | Max   | # Calls |
+|----------------------------------------+-----------------+-------+--------+-------+---------|
+| decimals                               |             200 |   200 |    200 |   200 |      26 |
+|----------------------------------------+-----------------+-------+--------+-------+---------|
+| latestRoundData                        |            8833 |  8833 |   8833 |  8833 |     139 |
+|----------------------------------------+-----------------+-------+--------+-------+---------|
+| set                                    |           26358 | 33929 |  34030 | 48654 |      93 |
+|----------------------------------------+-----------------+-------+--------+-------+---------|
+| setRound                               |           21921 | 24333 |  24333 | 26745 |       2 |
+╰----------------------------------------+-----------------+-------+--------+-------+---------╯
+
+╭------------------------------------------+-----------------+-------+--------+-------+---------╮
+| test/mocks/Mocks.sol:MockOracle Contract |                 |       |        |       |         |
++===============================================================================================+
+| Deployment Cost                          | Deployment Size |       |        |       |         |
+|------------------------------------------+-----------------+-------+--------+-------+---------|
+|                                   153364 |             398 |       |        |       |         |
+|------------------------------------------+-----------------+-------+--------+-------+---------|
+|                                          |                 |       |        |       |         |
+|------------------------------------------+-----------------+-------+--------+-------+---------|
+| Function Name                            | Min             | Avg   | Median | Max   | # Calls |
+|------------------------------------------+-----------------+-------+--------+-------+---------|
+| price                                    |             440 |  4401 |   4440 |  4440 |     207 |
+|------------------------------------------+-----------------+-------+--------+-------+---------|
+| setFail                                  |           43544 | 43544 |  43544 | 43544 |       1 |
+|------------------------------------------+-----------------+-------+--------+-------+---------|
+| setPrice                                 |           21549 | 26749 |  26457 | 43593 |      40 |
+╰------------------------------------------+-----------------+-------+--------+-------+---------╯
+
+╭-----------------------------------------+-----------------+-------+--------+-------+---------╮
+| test/mocks/Mocks.sol:MockToken Contract |                 |       |        |       |         |
++==============================================================================================+
+| Deployment Cost                         | Deployment Size |       |        |       |         |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+|                                  881930 |            4465 |       |        |       |         |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+|                                         |                 |       |        |       |         |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| Function Name                           | Min             | Avg   | Median | Max   | # Calls |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| approve                                 |           46288 | 46288 |  46288 | 46288 |     286 |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| balanceOf                               |             578 |  1577 |    578 |  2578 |    2756 |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| burn                                    |           36541 | 36541 |  36541 | 36541 |       1 |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| decimals                                |             266 |   266 |    266 |   266 |     137 |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| mint                                    |           53298 | 61243 |  53514 | 70626 |     296 |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| mutationBlocked                         |            2623 |  2623 |   2623 |  2623 |       3 |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| setFail                                 |           43773 | 43773 |  43773 | 43773 |       1 |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| setFee                                  |           21586 | 39115 |  43498 | 43498 |       5 |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| setHook                                 |           43939 | 43939 |  43939 | 43939 |       2 |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| transfer                                |           36928 | 36928 |  36928 | 36928 |       2 |
+|-----------------------------------------+-----------------+-------+--------+-------+---------|
+| viewBlocked                             |            2469 |  2469 |   2469 |  2469 |       3 |
+╰-----------------------------------------+-----------------+-------+--------+-------+---------╯
+
+╭---------------------------------------------+-----------------+-------+--------+-------+---------╮
+| test/mocks/Mocks.sol:NoReturnToken Contract |                 |       |        |       |         |
++==================================================================================================+
+| Deployment Cost                             | Deployment Size |       |        |       |         |
+|---------------------------------------------+-----------------+-------+--------+-------+---------|
+|                                      234760 |             866 |       |        |       |         |
+|---------------------------------------------+-----------------+-------+--------+-------+---------|
+|                                             |                 |       |        |       |         |
+|---------------------------------------------+-----------------+-------+--------+-------+---------|
+| Function Name                               | Min             | Avg   | Median | Max   | # Calls |
+|---------------------------------------------+-----------------+-------+--------+-------+---------|
+| approve                                     |           44258 | 44258 |  44258 | 44258 |       1 |
+|---------------------------------------------+-----------------+-------+--------+-------+---------|
+| balanceOf                                   |             482 |  1370 |    482 |  2482 |       9 |
+|---------------------------------------------+-----------------+-------+--------+-------+---------|
+| decimals                                    |             186 |   186 |    186 |   186 |       1 |
+|---------------------------------------------+-----------------+-------+--------+-------+---------|
+| mint                                        |           44102 | 44102 |  44102 | 44102 |       1 |
+╰---------------------------------------------+-----------------+-------+--------+-------+---------╯
+
+
+Ran 4 test suites in 697.50ms (1.02s CPU time): 49 tests passed, 0 failed, 0 skipped (49 total tests)

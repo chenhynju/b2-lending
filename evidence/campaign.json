@@ -1,0 +1,1105 @@
+{
+  "status": "PASS",
+  "secondsRequired": 1800,
+  "fingerprint": "16728ee2c8222502e8c68edd28c4812622d0126b5cc534ee9801e1e788887c77",
+  "startedUTC": "2026-11-04T23:30:32Z",
+  "rounds": [
+    {
+      "seed": "0x2f2c8f4610",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4610",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 28.528882746999898,
+      "log": "campaign-000.txt"
+    },
+    {
+      "seed": "0x2f2c8f4611",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4611",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 28.614795564999895,
+      "log": "campaign-001.txt"
+    },
+    {
+      "seed": "0x2f2c8f4612",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4612",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 24.753095226999903,
+      "log": "campaign-002.txt"
+    },
+    {
+      "seed": "0x2f2c8f4613",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4613",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 21.203593447000003,
+      "log": "campaign-003.txt"
+    },
+    {
+      "seed": "0x2f2c8f4614",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4614",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 35.629358744,
+      "log": "campaign-004.txt"
+    },
+    {
+      "seed": "0x2f2c8f4615",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4615",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 30.524197535999974,
+      "log": "campaign-005.txt"
+    },
+    {
+      "seed": "0x2f2c8f4616",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4616",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 35.760175991000324,
+      "log": "campaign-006.txt"
+    },
+    {
+      "seed": "0x2f2c8f4617",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4617",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 54.354892432999804,
+      "log": "campaign-007.txt"
+    },
+    {
+      "seed": "0x2f2c8f4618",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4618",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 24.18469856799993,
+      "log": "campaign-008.txt"
+    },
+    {
+      "seed": "0x2f2c8f4619",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4619",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 27.982862771000327,
+      "log": "campaign-009.txt"
+    },
+    {
+      "seed": "0x2f2c8f461a",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f461a",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 41.977933468000174,
+      "log": "campaign-010.txt"
+    },
+    {
+      "seed": "0x2f2c8f461b",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f461b",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 33.34790292799971,
+      "log": "campaign-011.txt"
+    },
+    {
+      "seed": "0x2f2c8f461c",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f461c",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 35.85490460900019,
+      "log": "campaign-012.txt"
+    },
+    {
+      "seed": "0x2f2c8f461d",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f461d",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 52.50234595799975,
+      "log": "campaign-013.txt"
+    },
+    {
+      "seed": "0x2f2c8f461e",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f461e",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 48.97809155899995,
+      "log": "campaign-014.txt"
+    },
+    {
+      "seed": "0x2f2c8f461f",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f461f",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 42.87870665100036,
+      "log": "campaign-015.txt"
+    },
+    {
+      "seed": "0x2f2c8f4620",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4620",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 30.83867130999988,
+      "log": "campaign-016.txt"
+    },
+    {
+      "seed": "0x2f2c8f4621",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4621",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 26.549957411999912,
+      "log": "campaign-017.txt"
+    },
+    {
+      "seed": "0x2f2c8f4622",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4622",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 19.44098652899993,
+      "log": "campaign-018.txt"
+    },
+    {
+      "seed": "0x2f2c8f4623",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4623",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 25.18875357900015,
+      "log": "campaign-019.txt"
+    },
+    {
+      "seed": "0x2f2c8f4624",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4624",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 21.33396588200003,
+      "log": "campaign-020.txt"
+    },
+    {
+      "seed": "0x2f2c8f4625",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4625",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 19.98837017599999,
+      "log": "campaign-021.txt"
+    },
+    {
+      "seed": "0x2f2c8f4626",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4626",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 23.14857842099991,
+      "log": "campaign-022.txt"
+    },
+    {
+      "seed": "0x2f2c8f4627",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4627",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 22.47312077000015,
+      "log": "campaign-023.txt"
+    },
+    {
+      "seed": "0x2f2c8f4628",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4628",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 19.983340048000173,
+      "log": "campaign-024.txt"
+    },
+    {
+      "seed": "0x2f2c8f4629",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4629",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 37.04714960799993,
+      "log": "campaign-025.txt"
+    },
+    {
+      "seed": "0x2f2c8f462a",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f462a",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 25.01599872099996,
+      "log": "campaign-026.txt"
+    },
+    {
+      "seed": "0x2f2c8f462b",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f462b",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 22.078078825000375,
+      "log": "campaign-027.txt"
+    },
+    {
+      "seed": "0x2f2c8f462c",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f462c",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 18.806733752000127,
+      "log": "campaign-028.txt"
+    },
+    {
+      "seed": "0x2f2c8f462d",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f462d",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 23.622646411999995,
+      "log": "campaign-029.txt"
+    },
+    {
+      "seed": "0x2f2c8f462e",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f462e",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 15.931806583999787,
+      "log": "campaign-030.txt"
+    },
+    {
+      "seed": "0x2f2c8f462f",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f462f",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 27.16763870600016,
+      "log": "campaign-031.txt"
+    },
+    {
+      "seed": "0x2f2c8f4630",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4630",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 18.627888989999974,
+      "log": "campaign-032.txt"
+    },
+    {
+      "seed": "0x2f2c8f4631",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4631",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 23.034423695999976,
+      "log": "campaign-033.txt"
+    },
+    {
+      "seed": "0x2f2c8f4632",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4632",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 22.78803374500012,
+      "log": "campaign-034.txt"
+    },
+    {
+      "seed": "0x2f2c8f4633",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4633",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 18.155271289999746,
+      "log": "campaign-035.txt"
+    },
+    {
+      "seed": "0x2f2c8f4634",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4634",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 19.148827397000332,
+      "log": "campaign-036.txt"
+    },
+    {
+      "seed": "0x2f2c8f4635",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4635",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 18.855481427000086,
+      "log": "campaign-037.txt"
+    },
+    {
+      "seed": "0x2f2c8f4636",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4636",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 23.915688588000194,
+      "log": "campaign-038.txt"
+    },
+    {
+      "seed": "0x2f2c8f4637",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4637",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 18.452396508999755,
+      "log": "campaign-039.txt"
+    },
+    {
+      "seed": "0x2f2c8f4638",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4638",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 29.448932161000357,
+      "log": "campaign-040.txt"
+    },
+    {
+      "seed": "0x2f2c8f4639",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4639",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 33.06395225999995,
+      "log": "campaign-041.txt"
+    },
+    {
+      "seed": "0x2f2c8f463a",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f463a",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 20.733383844999935,
+      "log": "campaign-042.txt"
+    },
+    {
+      "seed": "0x2f2c8f463b",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f463b",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 21.515617119000126,
+      "log": "campaign-043.txt"
+    },
+    {
+      "seed": "0x2f2c8f463c",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f463c",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 16.85401730300009,
+      "log": "campaign-044.txt"
+    },
+    {
+      "seed": "0x2f2c8f463d",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f463d",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 23.82871454799988,
+      "log": "campaign-045.txt"
+    },
+    {
+      "seed": "0x2f2c8f463e",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f463e",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 15.971127731000252,
+      "log": "campaign-046.txt"
+    },
+    {
+      "seed": "0x2f2c8f463f",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f463f",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 17.19415888100002,
+      "log": "campaign-047.txt"
+    },
+    {
+      "seed": "0x2f2c8f4640",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4640",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 15.128235093000058,
+      "log": "campaign-048.txt"
+    },
+    {
+      "seed": "0x2f2c8f4641",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4641",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 20.63838705900025,
+      "log": "campaign-049.txt"
+    },
+    {
+      "seed": "0x2f2c8f4642",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4642",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 21.679114215000027,
+      "log": "campaign-050.txt"
+    },
+    {
+      "seed": "0x2f2c8f4643",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4643",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 20.657633463000366,
+      "log": "campaign-051.txt"
+    },
+    {
+      "seed": "0x2f2c8f4644",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4644",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 18.52921581999999,
+      "log": "campaign-052.txt"
+    },
+    {
+      "seed": "0x2f2c8f4645",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4645",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 20.63966196499996,
+      "log": "campaign-053.txt"
+    },
+    {
+      "seed": "0x2f2c8f4646",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4646",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 15.686151801000051,
+      "log": "campaign-054.txt"
+    },
+    {
+      "seed": "0x2f2c8f4647",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4647",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 24.25710221999998,
+      "log": "campaign-055.txt"
+    },
+    {
+      "seed": "0x2f2c8f4648",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4648",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 31.16264389099979,
+      "log": "campaign-056.txt"
+    },
+    {
+      "seed": "0x2f2c8f4649",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4649",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 29.07942194200041,
+      "log": "campaign-057.txt"
+    },
+    {
+      "seed": "0x2f2c8f464a",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f464a",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 17.92179020200001,
+      "log": "campaign-058.txt"
+    },
+    {
+      "seed": "0x2f2c8f464b",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f464b",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 16.19374234099996,
+      "log": "campaign-059.txt"
+    },
+    {
+      "seed": "0x2f2c8f464c",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f464c",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 18.12649539300037,
+      "log": "campaign-060.txt"
+    },
+    {
+      "seed": "0x2f2c8f464d",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f464d",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 15.50564095899972,
+      "log": "campaign-061.txt"
+    },
+    {
+      "seed": "0x2f2c8f464e",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f464e",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 21.69290700200054,
+      "log": "campaign-062.txt"
+    },
+    {
+      "seed": "0x2f2c8f464f",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f464f",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 20.890668094999455,
+      "log": "campaign-063.txt"
+    },
+    {
+      "seed": "0x2f2c8f4650",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4650",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 32.9234851909996,
+      "log": "campaign-064.txt"
+    },
+    {
+      "seed": "0x2f2c8f4651",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4651",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 27.772405290999814,
+      "log": "campaign-065.txt"
+    },
+    {
+      "seed": "0x2f2c8f4652",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4652",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 16.5381904019996,
+      "log": "campaign-066.txt"
+    },
+    {
+      "seed": "0x2f2c8f4653",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4653",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 20.66487653599961,
+      "log": "campaign-067.txt"
+    },
+    {
+      "seed": "0x2f2c8f4654",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4654",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 14.839608721999866,
+      "log": "campaign-068.txt"
+    },
+    {
+      "seed": "0x2f2c8f4655",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4655",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 21.365110255999753,
+      "log": "campaign-069.txt"
+    },
+    {
+      "seed": "0x2f2c8f4656",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4656",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 20.250620820999757,
+      "log": "campaign-070.txt"
+    },
+    {
+      "seed": "0x2f2c8f4657",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4657",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 21.21527996000077,
+      "log": "campaign-071.txt"
+    },
+    {
+      "seed": "0x2f2c8f4658",
+      "command": [
+        "forge",
+        "test",
+        "--no-match-contract",
+        "MainnetForkTest",
+        "--fuzz-seed",
+        "0x2f2c8f4658",
+        "-vv"
+      ],
+      "exitCode": 0,
+      "seconds": 29.854244139999537,
+      "log": "campaign-072.txt"
+    }
+  ],
+  "seconds": 1821.6581530810004,
+  "endedUTC": "2026-11-05T00:00:52Z"
+}

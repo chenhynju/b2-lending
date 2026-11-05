@@ -1,0 +1,26 @@
+[
+  {
+    "mutation": "last-share",
+    "test": "testRegression_LastShareCannotOrphanReceivables",
+    "status": "KILLED",
+    "exitCode": 1
+  },
+  {
+    "mutation": "repay-rounding",
+    "test": "testPartialRepaymentRoundsUp",
+    "status": "KILLED",
+    "exitCode": 1
+  },
+  {
+    "mutation": "borrow-rounding",
+    "test": "testFuzz_BorrowRepayRounding",
+    "status": "KILLED",
+    "exitCode": 1
+  },
+  {
+    "mutation": "stale-price",
+    "test": "testStaleFeedAndExactBoundary",
+    "status": "KILLED",
+    "exitCode": 1
+  }
+]

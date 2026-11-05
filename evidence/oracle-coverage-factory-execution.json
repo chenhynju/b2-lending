@@ -1,0 +1,14 @@
+{
+  "exitCode": 0,
+  "command": [
+    "forge",
+    "coverage",
+    "--report",
+    "summary",
+    "--report",
+    "lcov",
+    "--fuzz-runs",
+    "256"
+  ],
+  "scope": "Unmodified oracle; full tests use explicit external deployment factory to check constructor coverage mapping."
+}

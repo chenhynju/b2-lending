@@ -1,0 +1,8 @@
+Compiling 39 files with Solc 0.8.38
+Solc 0.8.38 finished in 10.58s
+Error: Compiler run failed:
+Error: Compiler error (/solidity/libsolidity/codegen/LValue.cpp:50): Stack too deep. Try compiling with `--via-ir` (cli) or the equivalent `viaIR: true` (standard JSON) while enabling the optimizer. Otherwise, try removing local variables.
+   --> src/LendingVault.sol:258:24:
+    |
+258 |             debtShares[borrower] = 0;
+    |                        ^^^^^^^^

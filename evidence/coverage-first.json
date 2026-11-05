@@ -1,0 +1,46 @@
+{
+  "status": "FAIL",
+  "command": [
+    "forge",
+    "coverage",
+    "--ir-minimum",
+    "--no-match-contract",
+    "LendingInvariant|MainnetForkTest",
+    "--fuzz-runs",
+    "256",
+    "--report",
+    "summary",
+    "--report",
+    "lcov"
+  ],
+  "exitCode": 0,
+  "files": {
+    "src/FeedOracle.sol": {
+      "SF": "src/FeedOracle.sol",
+      "FNF": "3",
+      "FNH": "3",
+      "LF": "27",
+      "LH": "26",
+      "BRF": "8",
+      "BRH": "4"
+    },
+    "src/InterestRateModel.sol": {
+      "SF": "src/InterestRateModel.sol",
+      "FNF": "1",
+      "FNH": "1",
+      "LF": "4",
+      "LH": "4",
+      "BRF": "2",
+      "BRH": "2"
+    },
+    "src/LendingVault.sol": {
+      "SF": "src/LendingVault.sol",
+      "FNF": "28",
+      "FNH": "27",
+      "LF": "181",
+      "LH": "162",
+      "BRF": "38",
+      "BRH": "32"
+    }
+  }
+}

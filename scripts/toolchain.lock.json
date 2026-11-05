@@ -1,0 +1,34 @@
+{
+  "foundry": {
+    "version": "1.8.1",
+    "url": "https://github.com/foundry-rs/foundry/releases/download/v1.8.1/foundry_v1.8.1_linux_amd64.tar.gz",
+    "sha256": "37b45855232e57624d90113b049ca54f0c92055bb5c1997fcbdc3076c7b89c10"
+  },
+  "aderyn": {
+    "version": "0.6.8",
+    "url": "https://github.com/Cyfrin/aderyn/releases/download/aderyn-v0.6.8/aderyn-x86_64-unknown-linux-gnu.tar.xz",
+    "sha256": "ffd6ca658962e211a3ac821c646f69c8e14bf1b1001cbfe091bcd4535a691e46"
+  },
+  "solc": {
+    "version": "0.8.38",
+    "url": "https://binaries.soliditylang.org/linux-amd64/solc-linux-amd64-v0.8.38+commit.1835d247",
+    "sha256": "65c3180a336eabb6bdc4bbd49cc405aeb233976964ae6c11fba2a6c8be8f3243"
+  },
+  "githubActions": {
+    "checkedDate": "2026-11-05",
+    "runtime": "node24 (verified from pinned action.yml)",
+    "checkout": "d23441a48e516b6c34aea4fa41551a30e30af803",
+    "setup-node": "249970729cb0ef3589644e2896645e5dc5ba9c38",
+    "upload-artifact": "b7c566a772e6b6bfb58ed0dc250532a479d7789f"
+  },
+  "libraries": {
+    "openzeppelin": {
+      "tag": "v5.0.2",
+      "commit": "dbb6104ce834628e473d2173bbc9d47f81a9eec3"
+    },
+    "forge-std": {
+      "tag": "v1.14.0",
+      "commit": "1801b0541f4fda118a10798fd3486bb7051c5dd6"
+    }
+  }
+}

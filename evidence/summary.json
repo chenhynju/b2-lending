@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-05",
+  "assessment": "AI-Assisted Self-Assessment",
+  "sourceCommit": "b97598b987dfee2a0bf2ee40c95d2ebda1ad62fe",
+  "sourceSHA256": {
+    "src/FeedOracle.sol": "543c79a34362fc7058fe759a932dff2e06784b0097bf3373204689f9718885fd",
+    "src/InterestRateModel.sol": "9dde3d9ed396ff5517aaf4b8eb3e5844dc54078dccd48a5d0b47c753a8a57678",
+    "src/LendingVault.sol": "34ee6190454bcf7b5ff9a49345bba2197625af94f994649033e857d51eaa129c",
+    "src/interfaces/IPriceOracle.sol": "5c644d1995674556750cdb3b43219cb9f3d3651e9a823f31df0388024a6f5253"
+  },
+  "tests": {
+    "passed": 57,
+    "failed": 0,
+    "skipped": 1,
+    "total": 58,
+    "status": "PASS"
+  },
+  "campaign": {
+    "status": "PASS",
+    "seconds": 1821.6581530810004,
+    "rounds": 73,
+    "runsPerRound": 128,
+    "depthPerRound": 64,
+    "properties": 9,
+    "note": "Campaign baseline test tree; final supplemental/factory tests use byte-for-byte identical production source."
+  },
+  "coverage": {
+    "src/FeedOracle.sol": {
+      "SF": "src/FeedOracle.sol",
+      "FNF": "3",
+      "FNH": "3",
+      "LF": "27",
+      "LH": "27",
+      "BRF": "8",
+      "BRH": "8"
+    },
+    "src/InterestRateModel.sol": {
+      "SF": "src/InterestRateModel.sol",
+      "FNF": "1",
+      "FNH": "1",
+      "LF": "4",
+      "LH": "4",
+      "BRF": "2",
+      "BRH": "2"
+    },
+    "src/LendingVault.sol": {
+      "SF": "src/LendingVault.sol",
+      "FNF": "28",
+      "FNH": "28",
+      "LF": "181",
+      "LH": "164",
+      "BRF": "38",
+      "BRH": "36"
+    }
+  },
+  "local": {
+    "status": "PASS",
+    "transactions": 28
+  },
+  "browser": {
+    "status": "PASS",
+    "confirmedWalletTransactions": 15,
+    "flows": [
+      "connect",
+      "deposit",
+      "withdraw",
+      "addCollateral",
+      "borrow",
+      "repay",
+      "removeCollateral",
+      "redeem",
+      "invalid input",
+      "healthy liquidation rejection",
+      "liquidate",
+      "wrong network rejection",
+      "account/chain change"
+    ]
+  },
+  "gates": {
+    "contract build/unit/fuzz/invariants": "PASS",
+    "30-minute changing-seed campaign": "PASS",
+    "mainnet real-state fork": "PASS",
+    "90% branch target per production module": "PASS",
+    "four targeted mutants": "PASS",
+    "independent reproducible builds": "PASS",
+    "static tools and reviewed-warning gate": "PASS",
+    "dependency advisory snapshot": "PASS",
+    "local chain settlement and runtime verification": "PASS",
+    "browser wallet / receipt / security flows": "PASS",
+    "manual economic review": "PASS (bounded self-assessment)",
+    "deep/manual campaign": "NOT RUN",
+    "public Base Sepolia deployment and source verification": "BLOCKED",
+    "remote publication / remote CI": "NOT RUN",
+    "owner learning mastery": "NOT RUN",
+    "independent third-party audit": "NOT RUN"
+  },
+  "localEngineering": "PASS",
+  "publicRelease": "BLOCKED"
+}

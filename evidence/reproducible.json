@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "builds": [
+    {
+      "LendingVault": {
+        "bytecode": "aa894c7c388f96271b546a81e788632589c791e4aae0c0353af550d275bf7c88",
+        "deployedBytecode": "daea50f5395b54876f3fdaf3a923311561995df8ffa3f2a18581bce1b6cfa824"
+      },
+      "FeedOracle": {
+        "bytecode": "84bb7464c2ca4d9f6f691c1d8a9b3aa98b7f384c70a1209cf6d1e189009b9dbc",
+        "deployedBytecode": "41acba887540c143f3685a340c0f5459ae6e3c4e7c642d565ee7aa9bcbc1f6dc"
+      },
+      "InterestRateModel": {
+        "bytecode": "953a52c70dadbfa2b66954c8ac0408a633131a6aa852620eb55d399c86bdf7c4",
+        "deployedBytecode": "f76631bb28266abea5f5678c0f33d89f032c008fd8b6162546d6774cebb64817"
+      }
+    },
+    {
+      "LendingVault": {
+        "bytecode": "aa894c7c388f96271b546a81e788632589c791e4aae0c0353af550d275bf7c88",
+        "deployedBytecode": "daea50f5395b54876f3fdaf3a923311561995df8ffa3f2a18581bce1b6cfa824"
+      },
+      "FeedOracle": {
+        "bytecode": "84bb7464c2ca4d9f6f691c1d8a9b3aa98b7f384c70a1209cf6d1e189009b9dbc",
+        "deployedBytecode": "41acba887540c143f3685a340c0f5459ae6e3c4e7c642d565ee7aa9bcbc1f6dc"
+      },
+      "InterestRateModel": {
+        "bytecode": "953a52c70dadbfa2b66954c8ac0408a633131a6aa852620eb55d399c86bdf7c4",
+        "deployedBytecode": "f76631bb28266abea5f5678c0f33d89f032c008fd8b6162546d6774cebb64817"
+      }
+    }
+  ],
+  "note": "SHA256 of creation/runtime hex objects including zeroed immutable placeholders; constructor arguments are separate."
+}

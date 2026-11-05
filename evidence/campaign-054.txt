@@ -1,0 +1,108 @@
+No files changed, compilation skipped
+
+Ran 12 tests for test/FeedOracle.t.sol:FeedOracleTest
+[PASS] testConfigBoundaries() (gas: 6471)
+[PASS] testDebtDepegIsNotAssumedOneDollar() (gas: 79564)
+[PASS] testDifferentFeedDecimals() (gas: 350477)
+[PASS] testFutureAndZeroTimestamps() (gas: 151547)
+[PASS] testFuzz_PriceRatio(uint256,uint256) (runs: 1024, μ: 121811, ~: 121776)
+[PASS] testInvalidAnswers() (gas: 217872)
+[PASS] testInvalidRound() (gas: 119711)
+[PASS] testPriceUpperAndLowerBounds() (gas: 242330)
+[PASS] testSequencerDownAndGrace() (gas: 203096)
+[PASS] testSequencerZeroFuture() (gas: 120885)
+[PASS] testStaleFeedAndExactBoundary() (gas: 79332)
+[PASS] testValidPriceAndNormalization() (gas: 43030)
+Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 321.79ms (313.19ms CPU time)
+
+Ran 5 tests for test/EconomicAttack.t.sol:EconomicAttackTest
+[PASS] testDonationDoesNotChangeBorrowingPower() (gas: 457333)
+[PASS] testFlashCollateralCannotEscapeDebt() (gas: 348790)
+[PASS] testFlashDepositRedeemHasNoProfit() (gas: 146806)
+[PASS] testFuzz_LossExactlyMatchesReceivableWriteOff(uint256) (runs: 1024, μ: 513999, ~: 517158)
+[PASS] testUnfundedLiquidationCannotCommitLosses() (gas: 509148)
+Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 1.47s (1.35s CPU time)
+
+Ran 30 tests for test/LendingVault.t.sol:LendingVaultTest
+[PASS] testBorrowAtLTVBoundary() (gas: 478502)
+[PASS] testBorrowLTVAndWithdrawCollateralChecks() (gas: 657628)
+[PASS] testConstructorRejectsInvalidConfiguration() (gas: 8370)
+[PASS] testDepositWithdrawRedeem() (gas: 333754)
+[PASS] testDonationCannotInflatePrice() (gas: 494478)
+[PASS] testDustLiquidationAndRestart() (gas: 781242)
+[PASS] testFeeOnTransferIncomingRejected() (gas: 410591)
+[PASS] testFuzz_BorrowRepayRounding(uint256,uint256) (runs: 1024, μ: 646880, ~: 646849)
+[PASS] testFuzz_DepositRedeem(uint256) (runs: 1024, μ: 214352, ~: 214434)
+[PASS] testFuzz_RateMonotonic(uint256,uint256) (runs: 1024, μ: 1556, ~: 1570)
+[PASS] testGapLossSocialization() (gas: 655987)
+[PASS] testHealthyCannotBeLiquidated() (gas: 472534)
+[PASS] testInsufficientLiquidity() (gas: 456953)
+[PASS] testInterestAndFullRepayment() (gas: 716760)
+[PASS] testInterestIndexCapAndIdleAccrual() (gas: 552841)
+[PASS] testInvalidAmounts() (gas: 580117)
+[PASS] testInvalidOracleBounds() (gas: 616645)
+[PASS] testMutationAndReadOnlyReentrancyRejected() (gas: 523846)
+[PASS] testNegativeRebaseDetected() (gas: 488163)
+[PASS] testNoReturnUSDTStyleToken() (gas: 580187)
+[PASS] testNoSameTransactionProfit() (gas: 600549)
+[PASS] testOracleFailureAllowsRepaymentAndCollateralTopup() (gas: 841427)
+[PASS] testOutgoingFeeAndFalseReturnRejected() (gas: 826463)
+[PASS] testPartialAndFullLiquidation() (gas: 662805)
+[PASS] testPartialRepaymentRoundsUp() (gas: 552040)
+[PASS] testRateBoundaries() (gas: 4813)
+[PASS] testRegression_LastShareCannotOrphanReceivables() (gas: 835122)
+[PASS] testShareTransfer() (gas: 273363)
+[PASS] testSlippageProtection() (gas: 793552)
+[PASS] testThirdPartyRepayment() (gas: 485557)
+Suite result: ok. 30 passed; 0 failed; 0 skipped; finished in 1.67s (1.79s CPU time)
+
+Ran 2 tests for test/Differential.t.sol:DifferentialTest
+[PASS] testFuzz_ActualAccrual(uint256,uint256) (runs: 1024, μ: 2760635, ~: 2762280)
+[PASS] testPythonIntegerVectors() (gas: 1675969)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 1.67s (2.96s CPU time)
+
+Ran 1 test for test/Invariant.t.sol:LendingInvariant
+[PASS]
+LendingInvariant invariants:
+[PASS] invariant_AssetReceivableIdentity
+[PASS] invariant_CashConservationGhostLedger
+[PASS] invariant_CollateralConservation
+[PASS] invariant_DebtRoundingBound
+[PASS] invariant_DebtShareSupply
+[PASS] invariant_IndexMonotonicAndCapped
+[PASS] invariant_LenderShareSupply
+[PASS] invariant_PhysicalBacking
+[PASS] invariant_RateBounded
+ LendingInvariant invariants (runs: 128, calls: 8192, reverts: 0)
+
+╭----------------+------------------+-------+---------+----------╮
+| Contract       | Selector         | Calls | Reverts | Discards |
++================================================================+
+| LendingHandler | addCollateral    | 698   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | borrow           | 671   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | deposit          | 670   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | donate           | 684   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | elapse           | 678   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | liquidate        | 659   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | price            | 654   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | redeem           | 692   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | removeCollateral | 725   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | repay            | 692   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | transferShares   | 675   | 0       | 0        |
+|----------------+------------------+-------+---------+----------|
+| LendingHandler | withdraw         | 694   | 0       | 0        |
+╰----------------+------------------+-------+---------+----------╯
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 15.16s (15.14s CPU time)
+
+Ran 5 test suites in 15.17s (20.29s CPU time): 50 tests passed, 0 failed, 0 skipped (50 total tests)

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/chenhy/workspace/web3-portfolio/b2-lending/scripts/local_smoke.py", line 112, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/home/chenhy/workspace/web3-portfolio/b2-lending/scripts/local_smoke.py", line 85, in main
+    loss=read(vault,"cumulativeBadDebt()");assert before-read(vault,"totalAssets()")==loss
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

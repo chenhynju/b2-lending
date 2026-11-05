@@ -1,0 +1,23 @@
+{
+  "network": "Base Sepolia",
+  "chainId": 84532,
+  "status": "BLOCKED",
+  "signed": false,
+  "broadcast": false,
+  "sourceCommit": "b97598b987dfee2a0bf2ee40c95d2ebda1ad62fe",
+  "compiler": "0.8.38",
+  "optimizerRuns": 1000,
+  "viaIR": true,
+  "runtimeBytes": 10984,
+  "creationBytes": 12542,
+  "constructorArgsBytes": 96,
+  "measuredLocalConstructorGas": 2558486,
+  "missing": [
+    "explicit public signing/broadcast authorization",
+    "public deployer address and test ETH",
+    "reviewed loan/collateral token and feed addresses",
+    "network-appropriate sequencer guard and heartbeat",
+    "network RPC / unsigned preflight and fee estimate"
+  ],
+  "noEvidenceClaim": "No public address, transaction, source verification or explorer record exists."
+}

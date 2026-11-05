@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "engine": "141.0.7390.37",
+  "flow": [
+    "connect",
+    "deposit",
+    "addCollateral",
+    "borrow",
+    "repay",
+    "removeCollateral",
+    "redeem",
+    "invalid input",
+    "liquidate"
+  ],
+  "viewport": [
+    1280,
+    1000
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "pageErrors": [],
+  "provider": "unlocked local Anvil, no private key"
+}

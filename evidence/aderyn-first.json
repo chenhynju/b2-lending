@@ -1,0 +1,261 @@
+{
+  "files_summary": {
+    "total_source_units": 4,
+    "total_sloc": 340
+  },
+  "files_details": {
+    "files_details": [
+      {
+        "file_path": "src/FeedOracle.sol",
+        "n_sloc": 53
+      },
+      {
+        "file_path": "src/InterestRateModel.sol",
+        "n_sloc": 11
+      },
+      {
+        "file_path": "src/LendingVault.sol",
+        "n_sloc": 272
+      },
+      {
+        "file_path": "src/interfaces/IPriceOracle.sol",
+        "n_sloc": 4
+      }
+    ]
+  },
+  "issue_count": {
+    "high": 1,
+    "low": 2
+  },
+  "high_issues": {
+    "issues": [
+      {
+        "title": "Reentrancy: State change after external call",
+        "description": "Changing state after an external call can lead to re-entrancy attacks.Use the checks-effects-interactions pattern to avoid this issue.",
+        "detector_name": "reentrancy-state-change",
+        "instances": [
+          {
+            "contract_path": "src/FeedOracle.sol",
+            "line_no": 34,
+            "src": "1566:35",
+            "src_char": "1566:35",
+            "hint": "State is changed at: `collateralScale = 10 ** (18 - c)`, `loanScale = 10 ** (18 - l)`, `maxAge = maxAge_`"
+          },
+          {
+            "contract_path": "src/FeedOracle.sol",
+            "line_no": 35,
+            "src": "1611:29",
+            "src_char": "1611:29",
+            "hint": "State is changed at: `collateralScale = 10 ** (18 - c)`, `loanScale = 10 ** (18 - l)`, `maxAge = maxAge_`"
+          },
+          {
+            "contract_path": "src/LendingVault.sol",
+            "line_no": 70,
+            "src": "3287:43",
+            "src_char": "3287:43",
+            "hint": "State is changed at: `asset = IERC20(asset_)`, `collateralToken = IERC20(collateral_)`, `oracle = IPriceOracle(oracle_)`, `assetUnit = 10 ** a`, `collateralUnit = 10 ** c`, `_shareDecimals = a + 6`, `lastAccrual = block.timestamp`"
+          },
+          {
+            "contract_path": "src/LendingVault.sol",
+            "line_no": 71,
+            "src": "3340:48",
+            "src_char": "3340:48",
+            "hint": "State is changed at: `asset = IERC20(asset_)`, `collateralToken = IERC20(collateral_)`, `oracle = IPriceOracle(oracle_)`, `assetUnit = 10 ** a`, `collateralUnit = 10 ** c`, `_shareDecimals = a + 6`, `lastAccrual = block.timestamp`"
+          }
+        ]
+      }
+    ]
+  },
+  "low_issues": {
+    "issues": [
+      {
+        "title": "Literal Instead of Constant",
+        "description": "Define and use `constant` variables instead of using literals. If the same constant literal value is used multiple times, create a constant state variable and reference it throughout the contract.",
+        "detector_name": "literal-instead-of-constant",
+        "instances": [
+          {
+            "contract_path": "src/FeedOracle.sol",
+            "line_no": 36,
+            "src": "1658:2",
+            "src_char": "1658:2"
+          },
+          {
+            "contract_path": "src/FeedOracle.sol",
+            "line_no": 36,
+            "src": "1668:2",
+            "src_char": "1668:2"
+          },
+          {
+            "contract_path": "src/FeedOracle.sol",
+            "line_no": 37,
+            "src": "1729:2",
+            "src_char": "1729:2"
+          },
+          {
+            "contract_path": "src/FeedOracle.sol",
+            "line_no": 37,
+            "src": "1736:2",
+            "src_char": "1736:2"
+          },
+          {
+            "contract_path": "src/FeedOracle.sol",
+            "line_no": 38,
+            "src": "1765:2",
+            "src_char": "1765:2"
+          },
+          {
+            "contract_path": "src/FeedOracle.sol",
+            "line_no": 38,
+            "src": "1772:2",
+            "src_char": "1772:2"
+          },
+          {
+            "contract_path": "src/FeedOracle.sol",
+            "line_no": 51,
+            "src": "2360:4",
+            "src_char": "2360:4"
+          },
+          {
+            "contract_path": "src/FeedOracle.sol",
+            "line_no": 58,
+            "src": "2764:4",
+            "src_char": "2764:4"
+          },
+          {
+            "contract_path": "src/LendingVault.sol",
+            "line_no": 72,
+            "src": "3406:2",
+            "src_char": "3406:2"
+          },
+          {
+            "contract_path": "src/LendingVault.sol",
+            "line_no": 72,
+            "src": "3416:2",
+            "src_char": "3416:2"
+          },
+          {
+            "contract_path": "src/LendingVault.sol",
+            "line_no": 76,
+            "src": "3590:2",
+            "src_char": "3590:2"
+          },
+          {
+            "contract_path": "src/LendingVault.sol",
+            "line_no": 77,
+            "src": "3624:2",
+            "src_char": "3624:2"
+          }
+        ]
+      },
+      {
+        "title": "Public Function Not Used Internally",
+        "description": "If a function is marked public but is not used internally, consider marking it as `external`.",
+        "detector_name": "unused-public-function",
+        "instances": [
+          {
+            "contract_path": "src/LendingVault.sol",
+            "line_no": 88,
+            "src": "3994:11",
+            "src_char": "3994:11"
+          },
+          {
+            "contract_path": "src/LendingVault.sol",
+            "line_no": 98,
+            "src": "4392:6",
+            "src_char": "4392:6"
+          }
+        ]
+      }
+    ]
+  },
+  "detectors_used": [
+    "abi-encode-packed-hash-collision",
+    "arbitrary-transfer-from",
+    "assert-state-change",
+    "block-timestamp-deadline",
+    "boolean-equality",
+    "builtin-symbol-shadowing",
+    "centralization-risk",
+    "constant-function-changes-state",
+    "constant-function-contains-assembly",
+    "contract-locks-ether",
+    "costly-loop",
+    "dangerous-unary-operator",
+    "dead-code",
+    "delegate-call-unchecked-address",
+    "delegatecall-in-loop",
+    "delete-nested-mapping",
+    "deprecated-oz-function",
+    "division-before-multiplication",
+    "dynamic-array-length-assignment",
+    "ecrecover",
+    "empty-block",
+    "empty-require-revert",
+    "enumerable-loop-removal",
+    "eth-send-unchecked-address",
+    "experimental-encoder",
+    "function-initializing-state",
+    "function-pointer-in-constructor",
+    "function-selector-collision",
+    "inconsistent-type-names",
+    "incorrect-caret-operator",
+    "incorrect-erc20-interface",
+    "incorrect-erc721-interface",
+    "incorrect-shift-order",
+    "incorrect-use-of-modifier",
+    "internal-function-used-once",
+    "large-numeric-literal",
+    "literal-instead-of-constant",
+    "local-variable-shadowing",
+    "missing-inheritance",
+    "misused-boolean",
+    "modifier-used-only-once",
+    "msg-value-in-loop",
+    "multiple-constructors",
+    "multiple-placeholders",
+    "nested-struct-in-mapping",
+    "non-reentrant-not-first",
+    "out-of-order-retryable",
+    "pre-declared-local-variable-usage",
+    "push-zero-opcode",
+    "redundant-statement",
+    "reentrancy-state-change",
+    "require-revert-in-loop",
+    "return-bomb",
+    "reused-contract-name",
+    "rtlo",
+    "selfdestruct",
+    "signed-integer-storage-array",
+    "solmate-safe-transfer-lib",
+    "state-change-without-event",
+    "state-no-address-check",
+    "state-variable-could-be-constant",
+    "state-variable-could-be-immutable",
+    "state-variable-init-order",
+    "state-variable-read-external",
+    "state-variable-shadowing",
+    "storage-array-length-not-cached",
+    "storage-array-memory-edit",
+    "strict-equality-contract-balance",
+    "tautological-compare",
+    "tautology-or-contradiction",
+    "todo",
+    "tx-origin-used-for-auth",
+    "unchecked-low-level-call",
+    "unchecked-return",
+    "unchecked-send",
+    "uninitialized-local-variable",
+    "unprotected-initializer",
+    "unsafe-casting",
+    "unsafe-erc20-operation",
+    "unsafe-oz-erc721-mint",
+    "unspecific-solidity-pragma",
+    "unused-error",
+    "unused-import",
+    "unused-public-function",
+    "unused-state-variable",
+    "void-constructor",
+    "weak-randomness",
+    "yul-return"
+  ]
+}

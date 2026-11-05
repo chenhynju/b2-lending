@@ -1,0 +1,98 @@
+[
+  {
+    "runs": 200,
+    "viaIR": true,
+    "exitCode": 0,
+    "log": "optimizer-200-ir-true.txt",
+    "command": [
+      "forge",
+      "test",
+      "--no-match-contract",
+      "LendingInvariant|MainnetForkTest",
+      "--fuzz-runs",
+      "32",
+      "--gas-report"
+    ],
+    "runtimeBytes": 10433,
+    "initcodeBytes": 11991
+  },
+  {
+    "runs": 1000,
+    "viaIR": true,
+    "exitCode": 0,
+    "log": "optimizer-1000-ir-true.txt",
+    "command": [
+      "forge",
+      "test",
+      "--no-match-contract",
+      "LendingInvariant|MainnetForkTest",
+      "--fuzz-runs",
+      "32",
+      "--gas-report"
+    ],
+    "runtimeBytes": 10984,
+    "initcodeBytes": 12542
+  },
+  {
+    "runs": 10000,
+    "viaIR": true,
+    "exitCode": 0,
+    "log": "optimizer-10000-ir-true.txt",
+    "command": [
+      "forge",
+      "test",
+      "--no-match-contract",
+      "LendingInvariant|MainnetForkTest",
+      "--fuzz-runs",
+      "32",
+      "--gas-report"
+    ],
+    "runtimeBytes": 11969,
+    "initcodeBytes": 13527
+  },
+  {
+    "runs": 200,
+    "viaIR": false,
+    "exitCode": 1,
+    "log": "optimizer-200-ir-false.txt",
+    "command": [
+      "forge",
+      "test",
+      "--no-match-contract",
+      "LendingInvariant|MainnetForkTest",
+      "--fuzz-runs",
+      "32",
+      "--gas-report"
+    ]
+  },
+  {
+    "runs": 1000,
+    "viaIR": false,
+    "exitCode": 1,
+    "log": "optimizer-1000-ir-false.txt",
+    "command": [
+      "forge",
+      "test",
+      "--no-match-contract",
+      "LendingInvariant|MainnetForkTest",
+      "--fuzz-runs",
+      "32",
+      "--gas-report"
+    ]
+  },
+  {
+    "runs": 10000,
+    "viaIR": false,
+    "exitCode": 1,
+    "log": "optimizer-10000-ir-false.txt",
+    "command": [
+      "forge",
+      "test",
+      "--no-match-contract",
+      "LendingInvariant|MainnetForkTest",
+      "--fuzz-runs",
+      "32",
+      "--gas-report"
+    ]
+  }
+]

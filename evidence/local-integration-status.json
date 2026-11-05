@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "supersedes": "prior blocked assertions and invalidated-racy browser artifacts",
+  "localLog": "browser-flow-verified.txt",
+  "accounting": {
+    "storedBefore": 10000000001,
+    "indexBefore": 1000082192732217322456027396,
+    "indexAfter": 1000082193683589270889220893,
+    "debtSharesBefore": 999917815,
+    "repaidShares": 476151339,
+    "writtenShares": 523766476,
+    "paid": 476190476,
+    "interest": 1,
+    "roundingSurplus": 1,
+    "loss": 523809527,
+    "assetsAfter": 9476190476,
+    "status": "PASS"
+  },
+  "walletTransactions": 15
+}

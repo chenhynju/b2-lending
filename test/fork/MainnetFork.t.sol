@@ -13,7 +13,7 @@ contract MainnetForkTest is Test {
             vm.skip(true);
             return;
         }
-        vm.createSelectFork(rpc, 21_000_000);
+        vm.createSelectFork(rpc, vm.envOr("MAINNET_FORK_BLOCK", uint256(26344752)));
         address usdt = 0xdAC17F958D2ee523a2206206994597C13D831ec7;
         address weth = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
         FeedOracle o = new FeedOracle(

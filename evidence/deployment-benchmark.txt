@@ -1,0 +1,3 @@
+{"runs": 200, "viaIR": true, "deploymentGas": 2447134, "runtimeBytes": 10433, "initcodeBytes": 11991, "constructorArgsBytes": 96, "runtimeMatch": "PASS"}
+{"runs": 1000, "viaIR": true, "deploymentGas": 2558486, "runtimeBytes": 10984, "initcodeBytes": 12542, "constructorArgsBytes": 96, "runtimeMatch": "PASS"}
+{"runs": 10000, "viaIR": true, "deploymentGas": 2765792, "runtimeBytes": 11969, "initcodeBytes": 13527, "constructorArgsBytes": 96, "runtimeMatch": "PASS"}

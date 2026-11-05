@@ -1,0 +1,1 @@
+{"name":"b2-lending-verification","private":true,"version":"1.0.0","devDependencies":{"@playwright/test":"1.56.1"},"engines":{"node":">=22 <25"}}

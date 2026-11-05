@@ -1,0 +1,77 @@
+
+Detector: incorrect-equality
+LendingVault._previewIndex() (src/LendingVault.sol#273-279) uses a dangerous strict equality:
+	- totalDebtShares == 0 || borrowIndex == MAX_INDEX || block.timestamp == lastAccrual (src/LendingVault.sol#274)
+LendingVault._utilization(uint256) (src/LendingVault.sol#285-287) uses a dangerous strict equality:
+	- debt == 0 (src/LendingVault.sol#286)
+LendingVault.deposit(uint256,uint256) (src/LendingVault.sol#127-139) uses a dangerous strict equality:
+	- totalSupply() != 0 && managed == 0 (src/LendingVault.sol#132)
+LendingVault.deposit(uint256,uint256) (src/LendingVault.sol#127-139) uses a dangerous strict equality:
+	- shares == 0 || shares < minShares (src/LendingVault.sol#134)
+LendingVault.deposit(uint256,uint256) (src/LendingVault.sol#127-139) uses a dangerous strict equality:
+	- totalSupply() == 0 (src/LendingVault.sol#133)
+LendingVault.healthFactor(address) (src/LendingVault.sol#103-107) uses a dangerous strict equality:
+	- debt == 0 (src/LendingVault.sol#105)
+LendingVault.previewDeposit(uint256) (src/LendingVault.sol#115-119) uses a dangerous strict equality:
+	- totalSupply() != 0 && managed == 0 (src/LendingVault.sol#117)
+LendingVault.previewDeposit(uint256) (src/LendingVault.sol#115-119) uses a dangerous strict equality:
+	- totalSupply() == 0 (src/LendingVault.sol#118)
+LendingVault.withdraw(uint256,uint256) (src/LendingVault.sol#142-153) uses a dangerous strict equality:
+	- shares == 0 || shares > maxShares (src/LendingVault.sol#148)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+Detector: unused-return
+FeedOracle.price() (src/FeedOracle.sol#43-52) ignores return value by (None,status,since,None,None) = sequencerFeed.latestRoundData() (src/FeedOracle.sol#45)
+FeedOracle._read(IAggregatorV3,uint256) (src/FeedOracle.sol#54-61) ignores return value by (id,answer,None,updated,answered) = feed.latestRoundData() (src/FeedOracle.sol#55)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-return
+
+Detector: timestamp
+FeedOracle.price() (src/FeedOracle.sol#43-52) uses timestamp for comparisons
+	Dangerous comparisons:
+	- status != 0 || since == 0 || since > block.timestamp || block.timestamp - since <= GRACE_PERIOD (src/FeedOracle.sol#46)
+FeedOracle._read(IAggregatorV3,uint256) (src/FeedOracle.sol#54-61) uses timestamp for comparisons
+	Dangerous comparisons:
+	- answer <= 0 || id == 0 || answered < id || updated == 0 || updated > block.timestamp || block.timestamp - updated > maxAge || uint256(answer) > 1e36 / scale (src/FeedOracle.sol#57-58)
+LendingVault.healthFactor(address) (src/LendingVault.sol#103-107) uses timestamp for comparisons
+	Dangerous comparisons:
+	- debt == 0 (src/LendingVault.sol#105)
+LendingVault.previewDeposit(uint256) (src/LendingVault.sol#115-119) uses timestamp for comparisons
+	Dangerous comparisons:
+	- totalSupply() != 0 && managed == 0 (src/LendingVault.sol#117)
+	- totalSupply() == 0 (src/LendingVault.sol#118)
+LendingVault.deposit(uint256,uint256) (src/LendingVault.sol#127-139) uses timestamp for comparisons
+	Dangerous comparisons:
+	- assets == 0 || assets > DEPOSIT_CAP || managed + assets > DEPOSIT_CAP (src/LendingVault.sol#131)
+	- totalSupply() != 0 && managed == 0 (src/LendingVault.sol#132)
+	- shares == 0 || shares < minShares (src/LendingVault.sol#134)
+	- totalSupply() == 0 (src/LendingVault.sol#133)
+LendingVault.withdraw(uint256,uint256) (src/LendingVault.sol#142-153) uses timestamp for comparisons
+	Dangerous comparisons:
+	- assets > cash (src/LendingVault.sol#146)
+	- shares == 0 || shares > maxShares (src/LendingVault.sol#148)
+LendingVault.redeem(uint256,uint256) (src/LendingVault.sol#156-167) uses timestamp for comparisons
+	Dangerous comparisons:
+	- assets < minAssets (src/LendingVault.sol#161)
+	- assets > cash (src/LendingVault.sol#162)
+	- assets != 0 (src/LendingVault.sol#165)
+LendingVault.borrow(uint256) (src/LendingVault.sol#192-204) uses timestamp for comparisons
+	Dangerous comparisons:
+	- assets > cash (src/LendingVault.sol#196)
+LendingVault._previewIndex() (src/LendingVault.sol#273-279) uses timestamp for comparisons
+	Dangerous comparisons:
+	- totalDebtShares == 0 || borrowIndex == MAX_INDEX || block.timestamp == lastAccrual (src/LendingVault.sol#274)
+	- growth >= MAX_INDEX - borrowIndex (src/LendingVault.sol#278)
+LendingVault._utilization(uint256) (src/LendingVault.sol#285-287) uses timestamp for comparisons
+	Dangerous comparisons:
+	- debt == 0 (src/LendingVault.sol#286)
+LendingVault._backed() (src/LendingVault.sol#303-307) uses timestamp for comparisons
+	Dangerous comparisons:
+	- asset.balanceOf(address(this)) < cash || collateralToken.balanceOf(address(this)) < totalCollateral (src/LendingVault.sol#304)
+LendingVault._push(IERC20,address,uint256) (src/LendingVault.sol#315-323) uses timestamp for comparisons
+	Dangerous comparisons:
+	- token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount (src/LendingVault.sol#319)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+. analyzed (19 contracts with 102 detectors), 23 result(s) found
+'forge clean' running (wd: /home/chenhy/workspace/web3-portfolio/b2-lending)
+'forge config --json' running
+'forge build --build-info --deny never --skip ./test/** ./script/** --force' running (wd: /home/chenhy/workspace/web3-portfolio/b2-lending)

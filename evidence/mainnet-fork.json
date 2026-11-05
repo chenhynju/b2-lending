@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "exitCode": 0,
+  "block": 26344752,
+  "blockHash": "0x8df6cf779d7288c94837e5efa4e98afd5a6b15f4bf06ddb1b85daac615db8c8d",
+  "blockTimestamp": 1793835047,
+  "upstream": "https://ethereum-rpc.publicnode.com",
+  "transport": "local read-only Windows bridge; no signed transaction",
+  "synthetic": "deal() provisions USDT and WETH balances; mainnet contracts/feed state are real",
+  "log": "mainnet-fork-final.txt"
+}

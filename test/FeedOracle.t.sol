@@ -5,6 +5,7 @@ import {FeedOracle} from "../src/FeedOracle.sol";
 import {MockFeed} from "./mocks/Mocks.sol";
 
 contract FeedOracleTest is Test {
+    OracleTestFactory factory;
     MockFeed c;
     MockFeed l;
     MockFeed s;
@@ -12,11 +13,12 @@ contract FeedOracleTest is Test {
 
     function setUp() public {
         vm.warp(10 days);
+        factory = new OracleTestFactory();
         c = new MockFeed(8, 2000e8);
         l = new MockFeed(8, 1e8);
         s = new MockFeed(0, 0);
         s.set(0, block.timestamp - 2 hours, block.timestamp);
-        o = new FeedOracle(address(c), address(l), address(s), 1 hours);
+        o = factory.deploy(address(c), address(l), address(s), 1 hours);
     }
 
     function testValidPriceAndNormalization() public view {
@@ -30,7 +32,7 @@ contract FeedOracleTest is Test {
 
     function testDifferentFeedDecimals() public {
         MockFeed other = new MockFeed(18, 2000e18);
-        FeedOracle x = new FeedOracle(address(other), address(l), address(0), 1 hours);
+        FeedOracle x = factory.deploy(address(other), address(l), address(0), 1 hours);
         assertEq(x.price(), 2000e18);
     }
 
@@ -94,19 +96,19 @@ contract FeedOracleTest is Test {
 
     function testConfigBoundaries() public {
         vm.expectRevert(FeedOracle.InvalidConfiguration.selector);
-        new FeedOracle(address(0), address(l), address(0), 3600);
+        factory.deploy(address(0), address(l), address(0), 3600);
         vm.expectRevert(FeedOracle.InvalidConfiguration.selector);
-        new FeedOracle(address(c), address(l), address(1), 3600);
+        factory.deploy(address(c), address(l), address(1), 3600);
         vm.expectRevert(FeedOracle.InvalidConfiguration.selector);
-        new FeedOracle(address(c), address(l), address(0), 59);
+        factory.deploy(address(c), address(l), address(0), 59);
         vm.expectRevert(FeedOracle.InvalidConfiguration.selector);
-        new FeedOracle(address(c), address(l), address(0), 7 days + 1);
+        factory.deploy(address(c), address(l), address(0), 7 days + 1);
         MockFeed invalid = new MockFeed(19, 1);
         vm.expectRevert(FeedOracle.InvalidConfiguration.selector);
-        new FeedOracle(address(invalid), address(l), address(0), 3600);
+        factory.deploy(address(invalid), address(l), address(0), 3600);
         vm.chainId(8453);
         vm.expectRevert(FeedOracle.InvalidConfiguration.selector);
-        new FeedOracle(address(c), address(l), address(0), 3600);
+        factory.deploy(address(c), address(l), address(0), 3600);
     }
 
     function testPriceUpperAndLowerBounds() public {
@@ -126,5 +128,12 @@ contract FeedOracleTest is Test {
         c.set(int256(collateralPrice), 1, block.timestamp);
         l.set(int256(loanPrice), 1, block.timestamp);
         assertEq(o.price(), collateralPrice * 1e18 / loanPrice);
+    }
+}
+
+/// @notice Explicit deployment boundary avoids coverage misattribution across inline constructor call sites.
+contract OracleTestFactory {
+    function deploy(address c, address l, address s, uint256 a) external returns (FeedOracle) {
+        return new FeedOracle(c, l, s, a);
     }
 }

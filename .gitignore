@@ -6,3 +6,10 @@ cache/
 broadcast/
 *.key
 keystore/
+
+node_modules/
+.audit-venv/
+__pycache__/
+apps/web/config.json
+out-*/
+cache-*/

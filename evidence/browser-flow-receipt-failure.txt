@@ -1,0 +1,62 @@
+127.0.0.1 - - [05/Nov/2026 11:13:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 11:13:58] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 11:13:58] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 11:13:59] "GET /config.json HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 11:13:59] "GET /selectors.json HTTP/1.1" 200 -
+Je [Error]: expect(locator).toContainText(expected) failed
+
+Locator: locator('#status')
+Expected substring: "Action confirmed"
+Received string:    "Transaction reverted. Refresh the position before retrying."
+Timeout: 30000ms
+
+Call log:
+  - Expect "to.have.text" with timeout 30000ms
+  - waiting for locator('#status')
+    2 × locator resolved to <p id="status" role="status" aria-live="polite">Awaiting wallet confirmation...</p>
+      - unexpected value "Awaiting wallet confirmation..."
+    32 × locator resolved to <p id="status" role="status" aria-live="polite">Transaction reverted. Refresh the position before…</p>
+       - unexpected value "Transaction reverted. Refresh the position before retrying."
+
+    at Proxy.<anonymous> (/home/chenhy/workspace/web3-portfolio/b2-lending/node_modules/playwright/lib/matchers/expect.js:221:24)
+    at action (/home/chenhy/workspace/web3-portfolio/b2-lending/scripts/browser_test.cjs:26:71)
+    at async /home/chenhy/workspace/web3-portfolio/b2-lending/scripts/browser_test.cjs:35:2 {
+  matcherResult: {
+    name: 'toContainText',
+    expected: 'Action confirmed',
+    message: 'expect(locator).toContainText(expected) failed\n' +
+      '\n' +
+      "Locator: locator('#status')\n" +
+      'Expected substring: "Action confirmed"\n' +
+      'Received string:    "Transaction reverted. Refresh the position before retrying."\n' +
+      'Timeout: 30000ms\n' +
+      '\n' +
+      'Call log:\n' +
+      '  - Expect "to.have.text" with timeout 30000ms\n' +
+      "  - waiting for locator('#status')\n" +
+      '    2 × locator resolved to <p id="status" role="status" aria-live="polite">Awaiting wallet confirmation...</p>\n' +
+      '      - unexpected value "Awaiting wallet confirmation..."\n' +
+      '    32 × locator resolved to <p id="status" role="status" aria-live="polite">Transaction reverted. Refresh the position before…</p>\n' +
+      '       - unexpected value "Transaction reverted. Refresh the position before retrying."\n',
+    pass: false,
+    actual: 'Transaction reverted. Refresh the position before retrying.',
+    log: [
+      '  - Expect "to.have.text" with timeout 30000ms',
+      "  - waiting for locator('#status')",
+      '    2 × locator resolved to <p id="status" role="status" aria-live="polite">Awaiting wallet confirmation...</p>',
+      '      - unexpected value "Awaiting wallet confirmation..."',
+      '    32 × locator resolved to <p id="status" role="status" aria-live="polite">Transaction reverted. Refresh the position before…</p>',
+      '       - unexpected value "Transaction reverted. Refresh the position before retrying."'
+    ],
+    timeout: 30000
+  }
+}
+Traceback (most recent call last):
+  File "/home/chenhy/workspace/web3-portfolio/b2-lending/scripts/local_smoke.py", line 138, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/home/chenhy/workspace/web3-portfolio/b2-lending/scripts/local_smoke.py", line 127, in main
+    subprocess.run(["node","scripts/browser_test.cjs"],env=env,check=True)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['node', 'scripts/browser_test.cjs']' returned non-zero exit status 1.

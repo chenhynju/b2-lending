@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/chenhy/workspace/web3-portfolio/b2-lending/scripts/local_smoke.py", line 117, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/home/chenhy/workspace/web3-portfolio/b2-lending/scripts/local_smoke.py", line 90, in main
+    assert before+interest-after==loss, {"storedBefore":before,"interest":interest,"after":after,"loss":loss}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'storedBefore': 10000000001, 'interest': 1, 'after': 9476190476, 'loss': 523809527}

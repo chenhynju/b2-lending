@@ -1,0 +1,18 @@
+127.0.0.1 - - [05/Nov/2026 11:19:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 11:19:25] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 11:19:25] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 11:19:25] "GET /config.json HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 11:19:25] "GET /selectors.json HTTP/1.1" 200 -
+Error: External fixture transaction failed
+    at tx (/home/chenhy/workspace/web3-portfolio/b2-lending/scripts/browser_test.cjs:58:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async /home/chenhy/workspace/web3-portfolio/b2-lending/scripts/browser_test.cjs:62:2
+Traceback (most recent call last):
+  File "/home/chenhy/workspace/web3-portfolio/b2-lending/scripts/local_smoke.py", line 138, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/home/chenhy/workspace/web3-portfolio/b2-lending/scripts/local_smoke.py", line 127, in main
+    subprocess.run(["node","scripts/browser_test.cjs"],env=env,check=True)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['node', 'scripts/browser_test.cjs']' returned non-zero exit status 1.
