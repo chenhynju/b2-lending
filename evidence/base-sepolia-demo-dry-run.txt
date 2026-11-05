@@ -1,0 +1,36 @@
+No files changed, compilation skipped
+Warning: Detected artifacts built from source files that no longer exist. Run `forge clean` to make sure builds are in sync with project files.
+ - /home/chenhy/workspace/web3-portfolio/b2-lending/foundry-pp/DeployHelper41.sol
+ - /home/chenhy/workspace/web3-portfolio/b2-lending/foundry-pp/DeployHelper39.sol
+ - /home/chenhy/workspace/web3-portfolio/b2-lending/foundry-pp/DeployHelper42.sol
+ - /home/chenhy/workspace/web3-portfolio/b2-lending/foundry-pp/DeployHelper40.sol
+Script ran successfully.
+
+== Return ==
+loan: contract DemoAsset 0x5FbDB2315678afecb367f032d93F642f64180aa3
+collateral: contract DemoAsset 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
+quote: contract DemoQuote 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+vault: contract LendingVault 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
+
+## Setting up 1 EVM.
+
+==========================
+
+Chain 84532
+
+Estimated max fee per gas: 2.000000001 gwei
+Estimated base fee per gas: 1 gwei
+Estimated max priority fee per gas: 0.000000001 gwei
+
+Estimated total gas used for script: 5134163
+
+Estimated amount required: 0.010268326005134163 ETH
+
+==========================
+
+SIMULATION COMPLETE. To broadcast these transactions, add --broadcast and wallet configuration(s) to the previous command. See forge script --help for more.
+
+Transactions saved to: /tmp/b2-base-demo-dry-run-l23lwkjb/broadcast/DeployBaseSepoliaDemo.s.sol/84532/dry-run/run-latest.json
+
+Sensitive values saved to: /home/chenhy/workspace/web3-portfolio/b2-lending/cache/DeployBaseSepoliaDemo.s.sol/84532/dry-run/run-latest.json
+

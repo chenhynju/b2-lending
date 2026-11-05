@@ -13,11 +13,61 @@
   "constructorArgsBytes": 96,
   "measuredLocalConstructorGas": 2558486,
   "missing": [
-    "explicit public signing/broadcast authorization",
-    "public deployer address and test ETH",
-    "reviewed loan/collateral token and feed addresses",
-    "network-appropriate sequencer guard and heartbeat",
-    "network RPC / unsigned preflight and fee estimate"
+    "funded wallet with a local signing method",
+    "live unsigned transaction and fee preflight for that wallet"
   ],
-  "noEvidenceClaim": "No public address, transaction, source verification or explorer record exists."
+  "noEvidenceClaim": "No public address, transaction, source verification or explorer record exists.",
+  "selectedDeployment": "Base Sepolia demo only; no mainnet deployment selected",
+  "authorizedTestnet": true,
+  "deployer": null,
+  "publicRpc": "https://sepolia.base.org",
+  "explorer": "https://sepolia.basescan.org",
+  "readOnlyCheck": {
+    "chainId": 84532,
+    "rpcReportedHead": "0x3421a89",
+    "knownEncryptedTestAccountBalanceWei": 0,
+    "ethereumSepoliaBalanceOfSameCandidateWei": 0,
+    "date": "2026-11-05",
+    "balanceTag": "latest"
+  },
+  "localUnsignedSimulation": {
+    "status": "PASS",
+    "scope": "private Anvil with chain ID 84532; no public RPC or public transaction",
+    "chainId": 84532,
+    "signed": false,
+    "broadcast": false,
+    "transactionCount": 4,
+    "transactions": [
+      {
+        "role": "loan token",
+        "inputBytes": 3446,
+        "inputSha256": "ab61c150ea927ca9659e60df9d43a23a095db00e9c1e88b7937209c91feeea9c",
+        "simulatedGasLimit": 745234
+      },
+      {
+        "role": "collateral token",
+        "inputBytes": 3446,
+        "inputSha256": "8707219acbd845af94d4c764ee71ca42393f48edb64ba5cdcaa44152f63c640f",
+        "simulatedGasLimit": 745265
+      },
+      {
+        "role": "controlled test quote",
+        "inputBytes": 952,
+        "inputSha256": "60ae6596352de26ac574549089f4d54c0ea3cf88a8519f389d88f7ab1eeed2f0",
+        "simulatedGasLimit": 317690
+      },
+      {
+        "role": "lending vault",
+        "inputBytes": 12638,
+        "inputSha256": "3a5e7dbe2e215423cc221ad3e35374b713a65d7d0b3344aef8bfd5823965cf09",
+        "simulatedGasLimit": 3325974
+      }
+    ],
+    "log": "base-sepolia-demo-dry-run.txt"
+  },
+  "frozenVaultArtifactHashes": {
+    "bytecode": "aa894c7c388f96271b546a81e788632589c791e4aae0c0353af550d275bf7c88",
+    "deployedBytecode": "daea50f5395b54876f3fdaf3a923311561995df8ffa3f2a18581bce1b6cfa824"
+  },
+  "publicReceipts": null
 }

@@ -1,5 +1,5 @@
 # Deployment and verification
-No public network transaction or remote source publication was performed. **Base Sepolia: BLOCKED pending explicit authorization and deployment preflight.** Mainnet is separately unauthorized.
+No public network transaction or remote source publication was performed. **Base Sepolia demo: BLOCKED on a funded signer.** The authorized testnet path passed an unsigned local simulation; [funding and deployment guide](base-sepolia-demo.md). Mainnet was not selected.
 
 ## Local
 From the Foundry root in WSL:

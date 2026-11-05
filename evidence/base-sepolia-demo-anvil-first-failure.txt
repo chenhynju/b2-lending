@@ -1,0 +1,1 @@
+Error: hardfork `Cancun` conflicts with network config `optimism`

@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "private Anvil with chain ID 84532; no public RPC or public transaction",
+  "chainId": 84532,
+  "signed": false,
+  "broadcast": false,
+  "transactionCount": 4,
+  "transactions": [
+    {
+      "role": "loan token",
+      "inputBytes": 3446,
+      "inputSha256": "ab61c150ea927ca9659e60df9d43a23a095db00e9c1e88b7937209c91feeea9c",
+      "simulatedGasLimit": 745234
+    },
+    {
+      "role": "collateral token",
+      "inputBytes": 3446,
+      "inputSha256": "8707219acbd845af94d4c764ee71ca42393f48edb64ba5cdcaa44152f63c640f",
+      "simulatedGasLimit": 745265
+    },
+    {
+      "role": "controlled test quote",
+      "inputBytes": 952,
+      "inputSha256": "60ae6596352de26ac574549089f4d54c0ea3cf88a8519f389d88f7ab1eeed2f0",
+      "simulatedGasLimit": 317690
+    },
+    {
+      "role": "lending vault",
+      "inputBytes": 12638,
+      "inputSha256": "3a5e7dbe2e215423cc221ad3e35374b713a65d7d0b3344aef8bfd5823965cf09",
+      "simulatedGasLimit": 3325974
+    }
+  ],
+  "log": "base-sepolia-demo-dry-run.txt"
+}
