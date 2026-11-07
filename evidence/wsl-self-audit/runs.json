@@ -1,0 +1,42 @@
+[
+  {
+    "name": "static",
+    "command": [
+      "python3",
+      "scripts/isolated_checks.py",
+      "static"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "build",
+    "command": [
+      "forge",
+      "build"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "triage",
+    "command": [
+      "python3",
+      "scripts/static_gate.py"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "fuzz",
+    "command": [
+      "forge",
+      "test",
+      "--match-test",
+      "testFuzz",
+      "--fuzz-runs",
+      "10000",
+      "--fuzz-seed",
+      "0x20261105",
+      "-vv"
+    ],
+    "exitCode": 0
+  }
+]

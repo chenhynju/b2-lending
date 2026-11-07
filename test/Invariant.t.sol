@@ -40,6 +40,14 @@ contract LendingInvariant is StdInvariant, Test {
         targetContract(address(h));
     }
 
+    function test_HandlerChecksCrossAccountBadDebtLiquidation() public {
+        h.price(100e18);
+        h.liquidate(1, 2);
+        assertEq(h.successfulLiquidations(), 1);
+        assertGt(v.cumulativeBadDebt(), 0);
+        assertEq(v.debtShares(h.actors(1)), 0);
+    }
+
     function invariant_CashConservationGhostLedger() public view {
         assertEq(v.cash() + h.withdrawals() + h.borrows(), h.deposits() + h.repayments() + h.liquidationPayments());
     }

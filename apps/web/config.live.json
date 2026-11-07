@@ -1,0 +1,11 @@
+{
+  "chainId": 84532,
+  "vault": "0x4A9c4C103EC26ED88528A9c8DAf032BEdB854999",
+  "loan": "0x450C689f0702Be8AF310A50D7fd6E009Abecb5D7",
+  "collateral": "0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6",
+  "oracle": "0xb27100D4d478A439D31E48d89aA348D33303d7Ab",
+  "loanSymbol": "mUSD",
+  "loanDecimals": 6,
+  "collateralSymbol": "mETH",
+  "collateralDecimals": 18
+}

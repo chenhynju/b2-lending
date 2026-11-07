@@ -1,0 +1,20 @@
+=== DemoAsset mUSD ===
+Start verifying contract `0x450C689f0702Be8AF310A50D7fd6E009Abecb5D7` deployed on base-sepolia
+Constructor args: 0x000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000004a817c800000000000000000000000000000000000000000000000000000000000000001242322044656d6f204c6f616e20546f6b656e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046d55534400000000000000000000000000000000000000000000000000000000
+
+Verifying on blockscout...
+Contract [script/DeployBaseSepoliaDemo.s.sol:DemoAsset] "0x450C689f0702Be8AF310A50D7fd6E009Abecb5D7" is already verified. Skipping verification.
+exit=0
+=== DemoAsset mETH ===
+Start verifying contract `0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6` deployed on base-sepolia
+Constructor args: 0x000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000008ac7230489e80000000000000000000000000000000000000000000000000000000000000000001242322044656d6f20436f6c6c61746572616c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046d45544800000000000000000000000000000000000000000000000000000000
+
+Verifying on blockscout...
+Submitting verification for [script/DeployBaseSepoliaDemo.s.sol:DemoAsset] 0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6.
+Warning: Failed to submit Etherscan contract verification; Received error response: status=0,message=Too many requests. Increase limits now at https://dev.blockscout.com, result=None; waiting 5 seconds before trying again (4 tries remaining)
+Submitting verification for [script/DeployBaseSepoliaDemo.s.sol:DemoAsset] 0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6.
+Warning: Failed to submit Etherscan contract verification; Received error response: status=0,message=Too many requests. Increase limits now at https://dev.blockscout.com, result=None; waiting 5 seconds before trying again (3 tries remaining)
+Submitting verification for [script/DeployBaseSepoliaDemo.s.sol:DemoAsset] 0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6.
+Warning: Failed to submit Etherscan contract verification; Received error response: status=0,message=Too many requests. Increase limits now at https://dev.blockscout.com, result=None; waiting 5 seconds before trying again (2 tries remaining)
+Submitting verification for [script/DeployBaseSepoliaDemo.s.sol:DemoAsset] 0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6.
+Warning: Failed to submit Etherscan contract verification; Received error response: status=0,message=Too many requests. Increase limits now at https://dev.blockscout.com, result=None; waiting 5 seconds before trying again (1 tries remaining)

@@ -2,6 +2,7 @@
   "network": "Base Sepolia",
   "chainId": 84532,
   "status": "BLOCKED",
+  "supersededBy": "base-sepolia-live.json",
   "signed": false,
   "broadcast": false,
   "sourceCommit": "b97598b987dfee2a0bf2ee40c95d2ebda1ad62fe",

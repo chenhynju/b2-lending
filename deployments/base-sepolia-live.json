@@ -1,0 +1,186 @@
+{
+  "network": "Base Sepolia",
+  "chainId": 84532,
+  "status": "DEPLOYED_AND_FUNCTIONALLY_VERIFIED",
+  "deploymentType": "Self-contained demo market: synthetic 6-decimal loan token, synthetic 18-decimal collateral token, operator-controlled quote, immutable LendingVault. Not a production Chainlink market.",
+  "deployedAtUtc": "2026-11-06T13:49:00Z",
+  "sourceCommit": "d719c0c4dbce5bbc6b4c86db86dfddfbb41601ac",
+  "compiler": {
+    "solidity": "0.8.38",
+    "optimizerRuns": 1000,
+    "viaIR": true,
+    "evmVersion": "cancun"
+  },
+  "deployer": "0x0118e172324801a6333e7d0fAF7f9BB4ED72628F",
+  "explorer": "https://base-sepolia.blockscout.com",
+  "rpc": "https://sepolia.base.org",
+  "repository": "https://github.com/chenhynju/b2-lending",
+  "liveUi": "https://chenhynju.github.io/b2-lending/",
+  "contracts": [
+    {
+      "name": "DemoAsset (mUSD)",
+      "role": "loan token",
+      "address": "0x450C689f0702Be8AF310A50D7fd6E009Abecb5D7",
+      "transactionHash": "0x5fd7f58db67179b5a0616037f22c068e761913bfa0a4482933579bf664e25367",
+      "blockNumber": 55255327,
+      "gasUsed": 573257,
+      "runtimeBytes": 2126,
+      "constructorArgs": ["B2 Demo Loan Token", "mUSD", 6, 20000000000]
+    },
+    {
+      "name": "DemoAsset (mETH)",
+      "role": "collateral token",
+      "address": "0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6",
+      "transactionHash": "0xe4e803236f49971985c5fea80ada5269a851c8f60881ea5ce547864e234baee4",
+      "blockNumber": 55255334,
+      "gasUsed": 573281,
+      "runtimeBytes": 2126,
+      "constructorArgs": ["B2 Demo Collateral", "mETH", 18, 10000000000000000000]
+    },
+    {
+      "name": "DemoQuote",
+      "role": "operator-controlled test price source",
+      "address": "0xb27100D4d478A439D31E48d89aA348D33303d7Ab",
+      "transactionHash": "0xf12f8cbc317ddeb5daa036b4ed12da4c2b1376766f0416d122e87ff8a9a9f365",
+      "blockNumber": 55255341,
+      "gasUsed": 244377,
+      "runtimeBytes": 664,
+      "constructorArgs": ["0x0118e172324801a6333e7d0fAF7f9BB4ED72628F"]
+    },
+    {
+      "name": "LendingVault",
+      "role": "core lending market",
+      "address": "0x4A9c4C103EC26ED88528A9c8DAf032BEdB854999",
+      "transactionHash": "0x31b9b372446d51fce894b73786c23bc7c5a4b7633ee5b9206b9eb8408339e0a7",
+      "blockNumber": 55255352,
+      "gasUsed": 2558430,
+      "runtimeBytes": 10984,
+      "constructorArgs": [
+        "0x450C689f0702Be8AF310A50D7fd6E009Abecb5D7",
+        "0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6",
+        "0xb27100D4d478A439D31E48d89aA348D33303d7Ab"
+      ]
+    }
+  ],
+  "costs": {
+    "totalDeploymentGas": 3949345,
+    "effectiveGasPriceWei": 6000000,
+    "l2FeeEth": "0.00002369607",
+    "l1FeeWei": 17621,
+    "totalDeploymentCostEth": "0.000023696087621",
+    "deployerBalanceBeforeEth": "0.01",
+    "deployerBalanceAfterEth": "0.007976177929982216",
+    "testAccountTopUpEth": "0.002"
+  },
+  "funding": [
+    {
+      "network": "Base Sepolia",
+      "amountEth": "0.01",
+      "blockNumber": 55184876,
+      "transactionHash": "0xa2e13c16e146216079484e086a6116981c3a9ab6945aaee9d3b30eb9af285b7c",
+      "source": "L2 bridge internal transaction from 0x4200000000000000000000000000000000000010",
+      "timestampUtc": "2026-11-06T09:54:04Z"
+    },
+    {
+      "network": "Ethereum Sepolia",
+      "amountEth": "0.05",
+      "blockNumber": 12074682,
+      "transactionHash": "0xeb57fd762abcf3e513605946bd8dd43b2c13b9eb1e6301c9f3291cc7889d42e1",
+      "source": "faucet distributor 0x9484449f2BE7CD6E01eF55bC5438C733e0759e0f",
+      "timestampUtc": "2026-11-06T06:04:48Z"
+    },
+    {
+      "network": "Arbitrum Sepolia",
+      "amountEth": "0",
+      "note": "Not needed; the deployed demo contracts are chain-locked to Base Sepolia."
+    }
+  ],
+  "faucetsChecked": [
+    {"name": "Chainlink Base Sepolia", "url": "https://faucets.chain.link/base-sepolia", "drip": "0.5 ETH", "status": "available, wallet connection required"},
+    {"name": "Alchemy Base Sepolia", "url": "https://www.alchemy.com/faucets/base-sepolia", "drip": "0.1 ETH / 24h", "status": "available, mainnet activity/balance eligibility"},
+    {"name": "Coinbase CDP", "url": "https://portal.cdp.coinbase.com/onchain-tools/faucet", "drip": "0.1 ETH / 24h", "status": "available, login required"},
+    {"name": "thirdweb", "url": "https://thirdweb.com/base-sepolia-testnet", "drip": "variable", "status": "listed in Base docs"},
+    {"name": "QuickNode", "url": "https://faucet.quicknode.com/base/sepolia", "drip": "variable", "status": "login required"},
+    {"name": "Chainstack", "url": "https://faucet.chainstack.com/", "drip": "variable", "status": "API key required"},
+    {"name": "Circle USDC", "url": "https://faucet.circle.com/", "drip": "test USDC", "status": "available for Base Sepolia; not needed for synthetic demo tokens"}
+  ],
+  "initializationChecks": {
+    "vaultAsset": "0x450C689f0702Be8AF310A50D7fd6E009Abecb5D7",
+    "vaultCollateralToken": "0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6",
+    "vaultOracle": "0xb27100D4d478A439D31E48d89aA348D33303d7Ab",
+    "shareDecimals": 12,
+    "assetUnit": "1000000",
+    "collateralUnit": "1000000000000000000",
+    "ltv": "750000000000000000",
+    "liquidationThreshold": "800000000000000000",
+    "liquidationBonus": "50000000000000000",
+    "borrowIndex": "1000000000000000000000000000",
+    "quoteOperator": "0x0118e172324801a6333e7d0fAF7f9BB4ED72628F",
+    "quotePrice": "2000000000000000000000",
+    "quoteMaxAgeSeconds": 604800,
+    "initialCash": "0",
+    "initialTotalSupply": "0",
+    "initialTotalCollateral": "0"
+  },
+  "functionalVerification": {
+    "actor": "0xEbf414D54a24620FdAc02ea27EA24A4E2a8d95F0",
+    "transactions": [
+      {"step": "claim mUSD", "hash": "0x2eda525e02a364480e289d74344afbba5e0062b228f24cfc5e136b8976623238", "blockNumber": 55256733, "gasUsed": 89788},
+      {"step": "claim mETH", "hash": "0x491064c36ca43231929ffedd4888f39f4d3a7d8a5e295a247f19448b49a35d19", "blockNumber": 55256810, "gasUsed": 89788},
+      {"step": "approve 10000 mUSD", "hash": "0x54249b9afa81e3f8b174be9e0b5e07b93f595f4cacc57e0d7204dc672ce09c72", "blockNumber": 55256911, "gasUsed": 45930},
+      {"step": "deposit 10000 mUSD", "hash": "0xc00cc57a390882839895b728b4559015b597fd8093ede88c5eb5287af81638b2", "blockNumber": 55257037, "gasUsed": 151479},
+      {"step": "approve 1 mETH", "hash": "0x2667a53a7f6fa6fa6e2cbf9c0df95eafc1d3b41fb3112f0d43bcd9ab9172f56c", "blockNumber": 55257188, "gasUsed": 45954},
+      {"step": "addCollateral 1 mETH", "hash": "0x5020068cda9c250decf8a0e47bae6b8718ee994024eaccb2c878cdfc9105c969", "blockNumber": 55257487, "gasUsed": 114777},
+      {"step": "borrow 1000 mUSD", "hash": "0x7dd22c1cb14145a4af12d96bca0c7fae4db1dc24c7d27cb36ed1dfd34a9f9f0d", "blockNumber": 55257673, "gasUsed": 124832},
+      {"step": "approve 1100 mUSD for repayment", "hash": "0xabbe17267d41c1e4c8acd77aa0cf6811becb51c40933357b8f7a5155c889ea0b", "blockNumber": 55259280, "gasUsed": 45918},
+      {"step": "repay 1000000330 mUSD", "hash": "0xc1b49841359a17a883afd6ce73d39d761f3de5998e4b81aead2d4b249940bec1", "blockNumber": 55259404, "gasUsed": 79045},
+      {"step": "withdraw 1000 mUSD", "hash": "0x85dc088e1fb9f459a41c0736db4dd07aba50cc04a066a28ea59091d9558608d3", "blockNumber": 55262682, "gasUsed": 84347},
+      {"step": "removeCollateral 0.5 mETH", "hash": "0x2e3269ba1581963b875d9805517030a7c10facd5dcf1467454aaaf3b232f420a", "blockNumber": 55262752, "gasUsed": 77888},
+      {"step": "redeem 9000000330 mUSD", "hash": "0xd7bb5eb1d0abd316bea38c8c98feccb5b2c149e438c76afa6ce19b90221e9df7", "blockNumber": 55262948, "gasUsed": 69467}
+    ],
+    "observations": {
+      "depositShares": "10000000000000000",
+      "borrowDebtAfterAccrual": "1000000059",
+      "healthFactorAfterBorrow": "1599999899200006350",
+      "cashAfterBorrow": "9000000000",
+      "borrowRate": "30000000710999994",
+      "repayAssets": "1000000330",
+      "finalVaultCash": "0",
+      "finalVaultTotalSupply": "0",
+      "finalVaultTotalDebt": "0",
+      "finalVaultTotalCollateral": "500000000000000000",
+      "finalActorMUSD": "20000000000",
+      "finalActorMETH": "9500000000000000000"
+    }
+  },
+  "permissions": {
+    "ownerFunctionInVault": false,
+    "adminFunctionInVault": false,
+    "upgradeFunctionInVault": false,
+    "immutableAssetCollateralOracle": true,
+    "quoteOperator": "0x0118e172324801a6333e7d0fAF7f9BB4ED72628F",
+    "unauthorizedSetQuote": "reverted with Unauthorized (0x82b42900)"
+  },
+  "sourceVerification": {
+    "provider": "Blockscout",
+    "status": "complete",
+    "verified": ["DemoAsset (mUSD)", "DemoAsset (mETH)", "DemoQuote", "LendingVault"],
+    "notVerified": [],
+    "lendingVaultGuid": "4a9c4c103ec26ed88528a9c8daf032bedb8549996aeeb387",
+    "logs": [
+      "evidence/base-sepolia-live/verify.log",
+      "evidence/base-sepolia-live/verify-remaining.log",
+      "evidence/base-sepolia-live/verify-retry.log",
+      "evidence/base-sepolia-live/verify-vault.log",
+      "evidence/base-sepolia-live/verify-vault-now.log",
+      "evidence/base-sepolia-live/verify-sourcify.log"
+    ]
+  },
+  "limitations": [
+    "Demo assets and quote are synthetic and have no real value; the quote operator can change the price.",
+    "This is a Base Sepolia-only demo deployment, not a mainnet or production Chainlink deployment.",
+    "The deployed source commit is d719c0c, with local test-only working-tree changes that do not affect src/ bytecode.",
+    "Exact immutable-masked bytecode equality was not re-run against the public deployment; runtime size and all immutable addresses were verified on-chain.",
+    "Public signing and broadcasting were explicitly authorized for Base Sepolia only."
+  ]
+}

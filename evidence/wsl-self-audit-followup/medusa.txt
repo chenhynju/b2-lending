@@ -1,0 +1,40 @@
+['medusa', 'fuzz', '--target-contracts', 'AuditVaultEchidna', '--test-limit', '10000', '--seq-len', '32']
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/lending-medusa-jxa3uzvu/medusa.json[0m[0m
+[1m[32m⇾[0m[0m [1mCompiling targets with [1mcrytic-compile[0m[0m
+[1m[32m⇾[0m[0m [1mRunning command:
+/home/chenhy/.local/bin/crytic-compile . --export-format solc[0m
+[1m[32m⇾[0m[0m [1mFinished compiling targets in 41s[0m
+[1m[32m⇾[0m[0m [1m[1martifacts: [0mMedusa is running against a [1m[32mnew[0m[0m set of build artifacts[0m
+[1m[32m⇾[0m[0m [1mNo Slither cached results found at slither_results.json[0m
+[1m[32m⇾[0m[0m [1mRunning Slither:
+/home/chenhy/.local/bin/slither . --ignore-compile --print echidna --json -[0m
+[1m[32m⇾[0m[0m [1mFinished running Slither in 19s[0m
+[1m[32m⇾[0m[0m [1mSetting up test chain[0m
+[1m[32m⇾[0m[0m [1mFinished setting up test chain[0m
+[1m[32m⇾[0m[0m [1mCreating corpus...[0m
+[1m[32m⇾[0m[0m [1mFuzzing with [1m10[0m workers[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[NOT STARTED] [0m[0m[1mProperty Test: AuditVaultEchidna.property_cash_conserved()[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[NOT STARTED] [0m[0m[1mProperty Test: AuditVaultEchidna.property_claims_accounted()[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[NOT STARTED] [0m[0m[1mProperty Test: AuditVaultEchidna.property_collateral_conserved()[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[NOT STARTED] [0m[0m[1mAssertion Test: AuditVaultEchidna.supply(uint64)[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[NOT STARTED] [0m[0m[1mAssertion Test: AuditVaultEchidna.borrow(uint64)[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[NOT STARTED] [0m[0m[1mAssertion Test: AuditVaultEchidna.exitMarket()[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[NOT STARTED] [0m[0m[1mAssertion Test: AuditVaultEchidna.repay()[0m[0m
+[1m[32m⇾[0m[0m [1m[1mfuzz: [0melapsed: [1m      0s[0m, calls: [1m         0 (     0/sec)[0m, seq/s: [1m     0[0m, branches: [1m   405[0m, corpus: [1m    0[0m, failures: [1m0/0[0m, gas/s: [1m           0[0m[0m
+[1m[32m⇾[0m[0m [1m[1mfuzz: [0melapsed: [1m      3s[0m, calls: [1m      2474 (   822/sec)[0m, seq/s: [1m    23[0m, branches: [1m   777[0m, corpus: [1m   14[0m, failures: [1m0/72[0m, gas/s: [1m    57255016[0m[0m
+[1m[32m⇾[0m[0m [1m[1mfuzz: [0melapsed: [1m      6s[0m, calls: [1m      5213 (   909/sec)[0m, seq/s: [1m    28[0m, branches: [1m   779[0m, corpus: [1m   15[0m, failures: [1m0/158[0m, gas/s: [1m    62769733[0m[0m
+[1m[32m⇾[0m[0m [1m[1mfuzz: [0melapsed: [1m      9s[0m, calls: [1m      8000 (   924/sec)[0m, seq/s: [1m    28[0m, branches: [1m   779[0m, corpus: [1m   15[0m, failures: [1m0/245[0m, gas/s: [1m    63899923[0m[0m
+[1m[32m⇾[0m[0m [1m[1mfuzz: [0melapsed: [1m     12s[0m, calls: [1m     10315 (   768/sec)[0m, seq/s: [1m    24[0m, branches: [1m   779[0m, corpus: [1m   15[0m, failures: [1m0/318[0m, gas/s: [1m    55040555[0m[0m
+[1m[32m⇾[0m[0m [1mTransaction test limit reached, halting now...[0m
+[1m[32m⇾[0m[0m [1mFuzzer stopped, test results follow below ...[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[PASSED] [0m[0m[1mAssertion Test: AuditVaultEchidna.borrow(uint64)[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[PASSED] [0m[0m[1mAssertion Test: AuditVaultEchidna.exitMarket()[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[PASSED] [0m[0m[1mAssertion Test: AuditVaultEchidna.repay()[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[PASSED] [0m[0m[1mAssertion Test: AuditVaultEchidna.supply(uint64)[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[PASSED] [0m[0m[1mProperty Test: AuditVaultEchidna.property_cash_conserved()[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[PASSED] [0m[0m[1mProperty Test: AuditVaultEchidna.property_claims_accounted()[0m[0m
+[1m[32m⇾[0m[0m [1m[1m[32m[PASSED] [0m[0m[1mProperty Test: AuditVaultEchidna.property_collateral_conserved()[0m[0m
+[1m[32m⇾[0m[0m [1mTest summary: [1m[32m7[0m[0m test(s) passed, [1m[31m0[0m[0m test(s) failed[0m
+[1m[32m⇾[0m[0m [1mhtml report(s) saved to: crytic-export/coverage/coverage_report.html[0m
+[1m[32m⇾[0m[0m [1mlcov report(s) saved to: crytic-export/coverage/lcov.info[0m
+exit 0

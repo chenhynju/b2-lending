@@ -15,5 +15,6 @@ AMM k/TWAP/LP tokens, an AMM swap UI, pooled multi-collateral risk, rewards/emis
 - Unit → bounded fuzz → four-actor handler/ghost invariants → pinned real-state fork.
 - A timed changing-seed campaign must actually run at least 1,800 seconds after compilation.
 - Public Base Sepolia transactions require explicit authorization under AGENTS.md §8.4. No public transaction is part of this local delivery.
+- Post-scope update (2026-11-06): an authorized Base Sepolia **demo** deployment was executed; see [base-sepolia-live.md](../deployment/base-sepolia-live.md). The production FeedOracle market and mainnet were not deployed.
 
 [Measured gates](../testing/results.md) separate contract checks, deployment and learning mastery.

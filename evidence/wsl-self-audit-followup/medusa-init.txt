@@ -1,0 +1,3 @@
+['medusa', 'init']
+[1m[32m⇾[0m[0m [1mProject configuration successfully output to: [1m/tmp/lending-medusa-jxa3uzvu/medusa.json[0m[0m
+exit 0

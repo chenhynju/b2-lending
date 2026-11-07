@@ -1,6 +1,6 @@
 # Base Sepolia demo deployment
 
-**Status: BLOCKED on a funded signer. Nothing has been signed or broadcast.** The user permitted testnet deployment, and this plan selects Base Sepolia, chain ID 84532.
+**Status: executed on 2026-11-06.** The live demo is recorded in [base-sepolia-live.md](base-sepolia-live.md); the original plan below is retained for reproducibility. The deployment was authorized for Base Sepolia only.
 
 1. Create or select a wallet you can control locally, for example from the [official MetaMask download page](https://metamask.com/download).
 2. Add Base Sepolia using the [official network settings](https://docs.base.org/get-started/connect-to-base): RPC https://sepolia.base.org, chain ID 84532, currency ETH.
@@ -27,4 +27,4 @@ forge script script/DeployBaseSepoliaDemo.s.sol:DeployBaseSepoliaDemo \
 
 Recheck chain, nonce, exact constructor inputs, available test ETH, and fees including the L1 data component. Sign locally with a wallet or an encrypted Foundry account only after reviewing that transaction plan. Wait for successful receipts, verify deployed runtime and immutables, submit the exact source/constructor inputs for explorer verification, and record contract addresses, transaction hashes, blocks and gas used. An actual deployment must pass these checks before the browser config points at it.
 
-For the browser smoke test, claim the demo tokens from both verified contracts, configure the actual addresses and chain ID 84532, then exercise deposit, collateral, borrowing, repayment and exit. The test quote operator can separately run a controlled liquidation. Test ETH is required only for transaction fees; the demo tokens are claimed from their own contracts.
+For the browser smoke test, claim the demo tokens from both verified contracts, configure the actual addresses and chain ID 84532, then exercise deposit, collateral, borrowing, repayment and exit. The quote operator key was removed after deployment, so this deployment's quote is frozen at `2000e18` and a controlled liquidation now requires a redeployment. Test ETH is required only for transaction fees; the demo tokens are claimed from their own contracts.

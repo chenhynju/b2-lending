@@ -1,0 +1,10 @@
+['wake', 'detect', '/tmp/lending-wake-wwi1oy4n/src']
+                                                                                
+ Usage: wake detect [OPTIONS] COMMAND [ARGS]...                                 
+                                                                                
+ Try 'wake detect -h' for help                                                  
+╭─ Error ──────────────────────────────────────────────────────────────────────╮
+│ No such command '/tmp/lending-wake-wwi1oy4n/src'.                            │
+╰──────────────────────────────────────────────────────────────────────────────╯
+                                                                                
+exit 2

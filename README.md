@@ -3,7 +3,13 @@ A collateralized credit protocol that makes lender ownership, indexed debt and i
 
 This is the **lending series of B2 DeFi**, separate from the AMM. It demonstrates how money moves through a state machine and how those transitions are attacked and tested. **AI-Assisted Self-Assessment**, not an independent audit or a real-funds product.
 
-**Release acceptance: BLOCKED.** Local implementation, economic/security self-assessment, coverage, receipt-verified UI and reproducibility checks pass; [measured gates](docs/testing/results.md) keep public deployment and independent mastery separate. No public deployment or independent mastery is claimed.
+**Release acceptance: PARTIAL.** Local implementation, economic/security self-assessment, coverage, receipt-verified UI and reproducibility checks pass. A [public Base Sepolia demo market](docs/deployment/base-sepolia-live.md) is deployed, **source-verified 4/4**, and functionally verified (synthetic assets and quote, not the production Chainlink path). Production-network deployment, independent third-party audit and owner mastery remain NOT RUN/BLOCKED.
+
+## Reviewer quick start
+- **Live demo:** https://chenhynju.github.io/b2-lending/ (Base Sepolia; synthetic test assets only)
+- **Deployment evidence:** [Base Sepolia live report](docs/deployment/base-sepolia-live.md) · [machine record](deployments/base-sepolia-live.json)
+- **Contracts:** [vault](https://base-sepolia.blockscout.com/address/0x4A9c4C103EC26ED88528A9c8DAf032BEdB854999) · [mUSD](https://base-sepolia.blockscout.com/address/0x450C689f0702Be8AF310A50D7fd6E009Abecb5D7) · [mETH](https://base-sepolia.blockscout.com/address/0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6) · [quote](https://base-sepolia.blockscout.com/address/0xb27100D4d478A439D31E48d89aA348D33303d7Ab)
+- **Try it:** switch MetaMask to Base Sepolia, claim `mUSD` and `mETH` from the two token contracts (Write Contract → `claim`), then connect the UI and supply, collateralize and borrow.
 
 ## Quick start
 Use WSL Ubuntu 24.04 and Foundry **1.8.1**. Solidity **0.8.38** is pinned; dependencies are vendored, so no forge install is required.
@@ -14,7 +20,7 @@ forge test
 python3 scripts/reference_model.py
 forge test --match-contract LendingInvariant -vv
 ```
-The repository root is the Foundry root. This work has not been remotely published. A companion Git bundle provides an offline clone/review path; the repository is self-contained apart from the pinned toolchain. First-time compiler installation needs internet or the checksum-verified compiler described in [toolchain records](evidence/toolchain/compiler.json).
+The repository root is the Foundry root. Public repository: https://github.com/chenhynju/b2-lending. A companion Git bundle provides an offline clone/review path; the repository is self-contained apart from the pinned toolchain. First-time compiler installation needs internet or the checksum-verified compiler described in [toolchain records](evidence/toolchain/compiler.json).
 
 Optional validation:
 ```sh
@@ -117,7 +123,7 @@ python3 scripts/local_smoke.py --serve
 The [receipt-verified browser run](evidence/browser.json) covers all vault actions, invalid input, healthy liquidation rejection, wrong network and account/chain changes. [Desktop](evidence/frontend-desktop.png) and [mobile](evidence/frontend-mobile.png) captures are from that run.
 
 [Deployment/preflight](docs/deployment/README.md) · [production script](script/Deploy.s.sol).
-No public Base Sepolia address/explorer link exists. Public signing, broadcast and remote publication need explicit authorization; mainnet needs separate authorization.
+Base Sepolia demo (chain 84532) is live: [deployment report](docs/deployment/base-sepolia-live.md) · [machine record](deployments/base-sepolia-live.json). Deployer `0x0118e172324801a6333e7d0fAF7f9BB4ED72628F`; vault [`0x4A9c4C103EC26ED88528A9c8DAf032BEdB854999`](https://base-sepolia.blockscout.com/address/0x4A9c4C103EC26ED88528A9c8DAf032BEdB854999). The demo uses free-claim synthetic tokens and an operator quote, not production feeds. Base Sepolia signing/broadcast was explicitly authorized; mainnet requires separate authorization.
 
 ## Performance and trade-offs
 Optimized IR variants at 200/1,000/10,000 runs are measured. The 1,000-run vault runtime is **10,984 bytes**, creation bytecode **12,542 bytes** before constructor arguments. Non-IR variants fail stack-depth compilation and are reported, not dropped. [Gas comparison and receipt measurements](docs/testing/performance.md) include deployment/function gas. [ADRs](docs/adr/decisions.md) explain the chosen middle-size/execution-cost trade-off.
@@ -131,7 +137,7 @@ Storage ReentrancyGuard is supplied by OZ 5.0.2; transient guard is unavailable 
 - Nominal APR compounds with checkpoint frequency; finite index cap eventually stops interest and creates coarse debt granularity.
 - Donations are stranded surpluses; no admin rescue exists.
 - A public RPC can prune the pinned fork block; use archive access.
-- Remote CI, public deployment/source verification and independent audit are not completed.
+- Remote CI and independent audit are not completed. The Base Sepolia demo deployment is complete; the production Chainlink market and mainnet deployment are NOT RUN. Blockscout source verification status is recorded in the deployment report.
 - Frontend is intentionally a small static demo, not the default Next.js stack.
 - Learning materials are provided; owner mastery is NOT RUN.
 

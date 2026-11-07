@@ -1,0 +1,21 @@
+No files changed, compilation skipped
+
+Ran 1 test for test/FeedOracle.t.sol:FeedOracleTest
+[PASS] testFuzz_PriceRatio(uint256,uint256) (runs: 10000, μ: 121794, ~: 121770)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 5.78s (5.78s CPU time)
+
+Ran 1 test for test/Differential.t.sol:DifferentialTest
+[PASS] testFuzz_ActualAccrual(uint256,uint256) (runs: 10000, μ: 2760476, ~: 2762294)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 16.08s (16.07s CPU time)
+
+Ran 1 test for test/EconomicAttack.t.sol:EconomicAttackTest
+[PASS] testFuzz_LossExactlyMatchesReceivableWriteOff(uint256) (runs: 10000, μ: 513669, ~: 517158)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 16.08s (16.07s CPU time)
+
+Ran 3 tests for test/LendingVault.t.sol:LendingVaultTest
+[PASS] testFuzz_BorrowRepayRounding(uint256,uint256) (runs: 10000, μ: 646878, ~: 646849)
+[PASS] testFuzz_DepositRedeem(uint256) (runs: 10000, μ: 214351, ~: 214434)
+[PASS] testFuzz_RateMonotonic(uint256,uint256) (runs: 10000, μ: 1558, ~: 1570)
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 16.08s (32.22s CPU time)
+
+Ran 4 test suites in 16.09s (54.01s CPU time): 6 tests passed, 0 failed, 0 skipped (6 total tests)

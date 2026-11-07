@@ -1,0 +1,5 @@
+{
+  "cleanUrls": true,
+  "buildCommand": "cp config.live.json config.json",
+  "outputDirectory": "."
+}

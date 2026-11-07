@@ -1,0 +1,1 @@
+{"slither": {"exitCode": 255, "reportExists": true}, "aderyn": {"exitCode": 0, "reportExists": true}}

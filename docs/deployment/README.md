@@ -1,5 +1,5 @@
 # Deployment and verification
-No public network transaction or remote source publication was performed. **Base Sepolia demo: BLOCKED on a funded signer.** The authorized testnet path passed an unsigned local simulation; [funding and deployment guide](base-sepolia-demo.md). Mainnet was not selected.
+The Base Sepolia demo market is deployed and functionally verified: [live report](base-sepolia-live.md) · [machine record](../../deployments/base-sepolia-live.json). The demo uses synthetic free-claim assets and an operator quote; the production Chainlink path and mainnet remain unexecuted. [Funding and deployment guide](base-sepolia-demo.md).
 
 ## Local
 From the Foundry root in WSL:

@@ -1,0 +1,10 @@
+(set-logic QF_LIA)
+(define-fun rate ((u Int)) Int
+  (ite (<= u 800000000000000000)
+    (+ 20000000000000000 (div (* u 80000000000000000) 800000000000000000))
+    (+ 100000000000000000 (div (* (- u 800000000000000000) 900000000000000000) 200000000000000000))))
+(declare-const x Int)
+(declare-const y Int)
+(assert (and (<= 0 x) (<= x y) (<= y 1000000000000000000)))
+(assert (> (rate x) (rate y)))
+(check-sat)

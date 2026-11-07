@@ -1,0 +1,3 @@
+$ echidna . --contract AuditVaultEchidna --test-limit 10000 --seq-len 32 --seed 20261105 --workers 1
+[2026-11-05 14:06:20.12] Compiling `.`... Given contract "AuditVaultEchidna" not found in given file
+Done! (13.615637027s)

@@ -22,14 +22,16 @@ Implemented isolated lender shares, supply/withdraw/redeem, collateral custody, 
 | browser wallet / receipt / security flows | PASS |
 | manual economic review | PASS (bounded self-assessment) |
 | deep/manual campaign | NOT RUN |
-| public Base Sepolia deployment and source verification | BLOCKED |
+| public Base Sepolia demo deployment | PASS |
+| Blockscout source verification | PASS (4/4) |
+| production Chainlink deployment / mainnet | NOT RUN |
 | remote publication / remote CI | NOT RUN |
 | owner learning mastery | NOT RUN |
 | independent third-party audit | NOT RUN |
 
 ### Test execution
 
-{'passed': 57, 'failed': 0, 'skipped': 1, 'total': 58, 'status': 'PASS'}
+{'passed': 63, 'failed': 0, 'skipped': 1, 'total': 64, 'status': 'PASS'}
 
 Timed changing-seed campaign: **1821.66 seconds / 73 rounds**, each with 128 runs x64 handler depth. Nine invariant properties share the generated sequences; these are not nine independent campaigns. Commands, seeds, timing and per-selector call counts remain in [campaign.json](../../evidence/campaign.json).
 
@@ -63,7 +65,7 @@ WSL Ubuntu24.04, Foundry1.8.1, Solidity0.8.38, OZ5.0.2, forge-std1.14.0, Slither
 
 [Actual deployment gas and optimizer comparison](performance.md): 200/1,000/10,000 optimized-IR variants are measured, non-IR stack failures retained. Selected runtime 10,984 bytes; creation 12,542 bytes plus 96 constructor argument bytes; selected constructor gas 2,558,486 on Anvil. Gas-report zero deployment entries are not treated as valid cost measurements.
 
-The CI workflow and locked installer exist, but no remote CI result or public deployment is claimed. Base Sepolia needs network-specific feeds/tokens, wallet/test ETH and explicit signing/broadcast authorization. [Preflight](../deployment/README.md).
+The CI workflow and locked installer exist. The Base Sepolia demo deployment is complete and recorded in [base-sepolia-live.md](../deployment/base-sepolia-live.md); remote CI results are recorded after the public repository push. The production FeedOracle market still needs real feeds/tokens and separate authorization. [Preflight](../deployment/README.md).
 
 ## Learning Report
 

@@ -1,0 +1,4 @@
+certora-cli 8.19.1
+key-not-exported
+8:solc_version = "0.8.38"
+9:evm_version = "cancun"

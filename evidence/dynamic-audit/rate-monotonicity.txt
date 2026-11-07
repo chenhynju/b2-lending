@@ -1,0 +1,3 @@
+Z3 version 4.12.5 - 64 bit
+unsat
+exit:0

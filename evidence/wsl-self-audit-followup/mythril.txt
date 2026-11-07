@@ -1,0 +1,4 @@
+['myth', 'analyze', '-f', '/tmp/lending-mythril-60plq2e3/vault.hex', '--bin-runtime', '-t', '1', '--execution-timeout', '60', '-o', 'json']
+/home/chenhy/.venvs/evm-myth/lib/python3.12/site-packages/eth/__init__.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Command '['myth', 'analyze', '-f', '/tmp/lending-mythril-60plq2e3/vault.hex', '--bin-runtime', '-t', '1', '--execution-timeout', '60', '-o', 'json']' timed out after 99.99997979400004 seconds
