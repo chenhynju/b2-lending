@@ -21,9 +21,10 @@ Implemented isolated lender shares, supply/withdraw/redeem, collateral custody, 
 | local chain settlement and runtime verification | PASS |
 | browser wallet / receipt / security flows | PASS |
 | manual economic review | PASS (bounded self-assessment) |
-| deep/manual campaign | NOT RUN |
+| deep profile (50k fuzz runs / 1000-depth invariant) | NOT RUN |
 | public Base Sepolia demo deployment | PASS |
 | Blockscout source verification | PASS (4/4) |
+| on-chain runtime bytecode equality | PASS (4/4, immutables masked) |
 | production Chainlink deployment / mainnet | NOT RUN |
 | remote publication / remote CI | PASS (GitHub Actions 42350148797) |
 | owner learning mastery | NOT RUN |

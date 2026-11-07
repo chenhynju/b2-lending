@@ -1,0 +1,245 @@
+{
+  "checkedAtUtc": "2026-11-07T13:53:38.075321+00:00",
+  "rpc": "https://sepolia.base.org",
+  "chainId": 84532,
+  "method": "eth_getCode; local deployedBytecode with immutable reference ranges zeroed on both sides",
+  "results": [
+    {
+      "contract": "LendingVault",
+      "address": "0x4A9c4C103EC26ED88528A9c8DAf032BEdB854999",
+      "compiler": "0.8.38+commit.1835d247",
+      "localRuntimeBytes": 10984,
+      "onChainRuntimeBytes": 10984,
+      "immutableReferences": 22,
+      "immutableValues": [
+        {
+          "offset": 1106,
+          "length": 32,
+          "hex": "0x000000000000000000000000450c689f0702be8af310a50d7fd6e009abecb5d7",
+          "decimal": 394197085921179383375399876940075959965725799895
+        },
+        {
+          "offset": 1846,
+          "length": 32,
+          "hex": "0x000000000000000000000000450c689f0702be8af310a50d7fd6e009abecb5d7",
+          "decimal": 394197085921179383375399876940075959965725799895
+        },
+        {
+          "offset": 2139,
+          "length": 32,
+          "hex": "0x000000000000000000000000caf05cf9d12a05b928e6ce473f680a7fd0023de6",
+          "decimal": 1158576413892704862374454918527356072665702088166
+        },
+        {
+          "offset": 2351,
+          "length": 32,
+          "hex": "0x000000000000000000000000caf05cf9d12a05b928e6ce473f680a7fd0023de6",
+          "decimal": 1158576413892704862374454918527356072665702088166
+        },
+        {
+          "offset": 2806,
+          "length": 32,
+          "hex": "0x00000000000000000000000000000000000000000000000000000000000f4240",
+          "decimal": 1000000
+        },
+        {
+          "offset": 3036,
+          "length": 32,
+          "hex": "0x000000000000000000000000450c689f0702be8af310a50d7fd6e009abecb5d7",
+          "decimal": 394197085921179383375399876940075959965725799895
+        },
+        {
+          "offset": 3646,
+          "length": 32,
+          "hex": "0x000000000000000000000000caf05cf9d12a05b928e6ce473f680a7fd0023de6",
+          "decimal": 1158576413892704862374454918527356072665702088166
+        },
+        {
+          "offset": 3694,
+          "length": 32,
+          "hex": "0x000000000000000000000000450c689f0702be8af310a50d7fd6e009abecb5d7",
+          "decimal": 394197085921179383375399876940075959965725799895
+        },
+        {
+          "offset": 3926,
+          "length": 32,
+          "hex": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "decimal": 1000000000000000000
+        },
+        {
+          "offset": 3994,
+          "length": 32,
+          "hex": "0x00000000000000000000000000000000000000000000000000000000000f4240",
+          "decimal": 1000000
+        },
+        {
+          "offset": 4141,
+          "length": 32,
+          "hex": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "decimal": 1000000000000000000
+        },
+        {
+          "offset": 4207,
+          "length": 32,
+          "hex": "0x000000000000000000000000b27100d4d478a439d31e48d89aa348d33303d7ab",
+          "decimal": 1018720413836361924593391956059232668896572200875
+        },
+        {
+          "offset": 4441,
+          "length": 32,
+          "hex": "0x000000000000000000000000450c689f0702be8af310a50d7fd6e009abecb5d7",
+          "decimal": 394197085921179383375399876940075959965725799895
+        },
+        {
+          "offset": 4976,
+          "length": 32,
+          "hex": "0x000000000000000000000000450c689f0702be8af310a50d7fd6e009abecb5d7",
+          "decimal": 394197085921179383375399876940075959965725799895
+        },
+        {
+          "offset": 5164,
+          "length": 32,
+          "hex": "0x000000000000000000000000450c689f0702be8af310a50d7fd6e009abecb5d7",
+          "decimal": 394197085921179383375399876940075959965725799895
+        },
+        {
+          "offset": 5355,
+          "length": 32,
+          "hex": "0x000000000000000000000000caf05cf9d12a05b928e6ce473f680a7fd0023de6",
+          "decimal": 1158576413892704862374454918527356072665702088166
+        },
+        {
+          "offset": 5502,
+          "length": 32,
+          "hex": "0x000000000000000000000000000000000000000000000000000000000000000c",
+          "decimal": 12
+        },
+        {
+          "offset": 7189,
+          "length": 32,
+          "hex": "0x000000000000000000000000450c689f0702be8af310a50d7fd6e009abecb5d7",
+          "decimal": 394197085921179383375399876940075959965725799895
+        },
+        {
+          "offset": 7331,
+          "length": 32,
+          "hex": "0x000000000000000000000000caf05cf9d12a05b928e6ce473f680a7fd0023de6",
+          "decimal": 1158576413892704862374454918527356072665702088166
+        },
+        {
+          "offset": 8390,
+          "length": 32,
+          "hex": "0x000000000000000000000000b27100d4d478a439d31e48d89aa348d33303d7ab",
+          "decimal": 1018720413836361924593391956059232668896572200875
+        },
+        {
+          "offset": 8580,
+          "length": 32,
+          "hex": "0x00000000000000000000000000000000000000000000000000000000000f4240",
+          "decimal": 1000000
+        },
+        {
+          "offset": 8619,
+          "length": 32,
+          "hex": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "decimal": 1000000000000000000
+        }
+      ],
+      "maskedBytecodeEqual": true
+    },
+    {
+      "contract": "DemoQuote",
+      "address": "0xb27100D4d478A439D31E48d89aA348D33303d7Ab",
+      "compiler": "0.8.38+commit.1835d247",
+      "localRuntimeBytes": 664,
+      "onChainRuntimeBytes": 664,
+      "immutableReferences": 2,
+      "immutableValues": [
+        {
+          "offset": 292,
+          "length": 32,
+          "hex": "0x0000000000000000000000000118e172324801a6333e7d0faf7f9bb4ed72628f",
+          "decimal": 6263847778948328135314488059292094322648965775
+        },
+        {
+          "offset": 371,
+          "length": 32,
+          "hex": "0x0000000000000000000000000118e172324801a6333e7d0faf7f9bb4ed72628f",
+          "decimal": 6263847778948328135314488059292094322648965775
+        }
+      ],
+      "maskedBytecodeEqual": true
+    },
+    {
+      "contract": "DemoAsset (mUSD)",
+      "address": "0x450C689f0702Be8AF310A50D7fd6E009Abecb5D7",
+      "compiler": "0.8.38+commit.1835d247",
+      "localRuntimeBytes": 2126,
+      "onChainRuntimeBytes": 2126,
+      "immutableReferences": 3,
+      "immutableValues": [
+        {
+          "offset": 663,
+          "length": 32,
+          "hex": "0x00000000000000000000000000000000000000000000000000000004a817c800",
+          "decimal": 20000000000
+        },
+        {
+          "offset": 814,
+          "length": 32,
+          "hex": "0x00000000000000000000000000000000000000000000000000000004a817c800",
+          "decimal": 20000000000
+        },
+        {
+          "offset": 1060,
+          "length": 32,
+          "hex": "0x0000000000000000000000000000000000000000000000000000000000000006",
+          "decimal": 6
+        }
+      ],
+      "maskedBytecodeEqual": true
+    },
+    {
+      "contract": "DemoAsset (mETH)",
+      "address": "0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6",
+      "compiler": "0.8.38+commit.1835d247",
+      "localRuntimeBytes": 2126,
+      "onChainRuntimeBytes": 2126,
+      "immutableReferences": 3,
+      "immutableValues": [
+        {
+          "offset": 663,
+          "length": 32,
+          "hex": "0x0000000000000000000000000000000000000000000000008ac7230489e80000",
+          "decimal": 10000000000000000000
+        },
+        {
+          "offset": 814,
+          "length": 32,
+          "hex": "0x0000000000000000000000000000000000000000000000008ac7230489e80000",
+          "decimal": 10000000000000000000
+        },
+        {
+          "offset": 1060,
+          "length": 32,
+          "hex": "0x0000000000000000000000000000000000000000000000000000000000000012",
+          "decimal": 18
+        }
+      ],
+      "maskedBytecodeEqual": true
+    }
+  ],
+  "allMaskedBytecodeEqual": true,
+  "liveState": {
+    "quote": {
+      "price": 2000000000000000000000,
+      "operator": "0x0118e172324801a6333e7d0faf7f9bb4ed72628f",
+      "updatedAt": 1793972937,
+      "updatedAtUtc": "2026-11-06T13:48:57+00:00"
+    },
+    "vault": {
+      "cash": 0,
+      "totalCollateral": 500000000000000000
+    }
+  }
+}

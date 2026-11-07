@@ -70,7 +70,7 @@ There is no proxy, upgrader, or administrative withdrawal path. The market is im
 
 ## Functional verification
 
-A disposable test account (`0xEbf414D54a24620FdAc02ea27EA24A4E2a8d95F0`) executed the core supply/borrow/repay/withdraw lifecycle against the deployed contracts. Every transaction below returned status `1`. Liquidation and bad-debt socialization were covered by the local unit/invariant suites, not by this live demo run; the current quote operator key was removed after deployment, so the demo quote is now frozen at `2000e18`.
+A disposable test account (`0xEbf414D54a24620FdAc02ea27EA24A4E2a8d95F0`) executed the core supply/borrow/repay/withdraw lifecycle against the deployed contracts. Every transaction below returned status `1`. Liquidation and bad-debt socialization were covered by the local unit/invariant suites, not by this live demo run. The quote operator is the deployer address `0x0118e172324801a6333e7d0fAF7f9BB4ED72628F`; the local Foundry signing-key file used for deployment is no longer present, and no price change was executed. The live quote therefore reads `2000e18`.
 
 | Step | Transaction | Block | Gas |
 |---|---|---:|---:|
@@ -102,6 +102,19 @@ Key observations:
 
 Logs: [verify.log](../../evidence/base-sepolia-live/verify.log) · [verify-remaining.log](../../evidence/base-sepolia-live/verify-remaining.log) · [verify-retry.log](../../evidence/base-sepolia-live/verify-retry.log) · [verify-vault.log](../../evidence/base-sepolia-live/verify-vault.log) · [verify-vault-now.log](../../evidence/base-sepolia-live/verify-vault-now.log) · [verify-sourcify.log](../../evidence/base-sepolia-live/verify-sourcify.log). Command sequence: [verify-source.sh](../../evidence/base-sepolia-live/verify-source.sh).
 
+## Runtime bytecode equality
+
+The deployed runtime code was re-fetched with `eth_getCode` on 2026-11-07 and compared with the local Foundry artifact for all four contracts. Immutable reference ranges were zeroed on both sides before comparison; runtime sizes and immutable values were also checked.
+
+| Contract | Runtime bytes | Immutable slots | Masked equality |
+|---|---:|---:|---|
+| LendingVault | 10,984 | 22 | PASS |
+| DemoQuote | 664 | 2 | PASS |
+| DemoAsset (mUSD) | 2,126 | 3 | PASS |
+| DemoAsset (mETH) | 2,126 | 3 | PASS |
+
+Live state read in the same run: quote price `2000e18`, operator `0x0118e172324801a6333e7d0fAF7f9BB4ED72628F` (the deployer), `updatedAt` `2026-11-06T13:48:57Z`; vault cash `0`, `totalCollateral` `0.5 mETH`. Raw output: [bytecode-equality.json](../../evidence/base-sepolia-live/bytecode-equality.json).
+
 ## Live UI hosting
 
 - **Vercel:** project `b2-lending-app`, root directory `apps/web`, build command `cp config.live.json config.json`, output directory `.`. Production URL: https://b2-lending-app.vercel.app. The project is connected to the GitHub repository and redeploys on `main`.
@@ -113,13 +126,13 @@ Logs: [verify.log](../../evidence/base-sepolia-live/verify.log) · [verify-remai
 - The environment used Foundry `1.8.1` and Solidity `0.8.38`; dependencies are vendored.
 - The local WSL network is routed through a Windows-side HTTP CONNECT proxy because the host VPN does not expose its routes to WSL. This is an environment workaround, not part of the protocol.
 - Only Base Sepolia signing and broadcasting were authorized. No mainnet transaction was created.
-- The demo tokens and quote have no real value. The quote operator can change the price, which is intentional for controlled liquidation demonstrations.
+- The demo tokens and quote have no real value. The demo quote operator is the deployer address; a controlled liquidation would require that wallet to sign `setQuote`, which was not part of this run.
 
 ## Limitations
 
 - The demo quote is not a Chainlink feed and has no sequencer-uptime protection. The production `FeedOracle` path remains unexercised on a public network.
 - The demo assets are freely claimable and not transfer-tax or rebasing tokens.
 - All four contracts are verified on Blockscout. Earlier rate-limit failures are retained in the logs and are not presented as successful runs.
-- Exact immutable-masked bytecode equality was not re-run against the public deployment. Runtime size (`10,984 B` for the vault) and all three immutable addresses were verified on-chain, and the core supply/borrow/repay/withdraw lifecycle passed.
-- The live demo did not exercise liquidation, bad-debt socialization or a price change. Those paths are covered by local tests; the quote operator key was removed after deployment, so this deployment cannot demonstrate a controlled liquidation.
+- Runtime bytecode equality was re-checked on 2026-11-07 for all four contracts; the raw comparison is recorded in [bytecode-equality.json](../../evidence/base-sepolia-live/bytecode-equality.json).
+- The live demo did not exercise liquidation, bad-debt socialization or a price change. Those paths are covered by local and fork tests. A controlled liquidation requires the deployer/operator wallet to sign `setQuote`, so it is not demonstrated on this deployment.
 - The working tree contains pre-existing test/evidence changes. The deployed `src/` bytecode corresponds to the frozen production source; the demo fixture contracts live in `script/DeployBaseSepoliaDemo.s.sol`.

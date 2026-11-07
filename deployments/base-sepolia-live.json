@@ -183,11 +183,26 @@
       "evidence/base-sepolia-live/verify-sourcify.log"
     ]
   },
+  "bytecodeVerification": {
+    "status": "PASS",
+    "checkedAtUtc": "2026-11-07T13:53:38Z",
+    "method": "eth_getCode compared with the local forge artifact after zeroing immutable reference ranges on both sides",
+    "contractsChecked": 4,
+    "allMaskedBytecodeEqual": true,
+    "liveState": {
+      "quotePrice": "2000e18",
+      "quoteOperator": "0x0118e172324801a6333e7d0fAF7f9BB4ED72628F",
+      "quoteUpdatedAtUtc": "2026-11-06T13:48:57Z",
+      "vaultCash": "0",
+      "vaultTotalCollateral": "500000000000000000"
+    },
+    "evidence": "evidence/base-sepolia-live/bytecode-equality.json"
+  },
   "limitations": [
     "Demo assets and quote are synthetic and have no real value; the quote operator can change the price.",
     "This is a Base Sepolia-only demo deployment, not a mainnet or production Chainlink deployment.",
     "The deployed source commit is d719c0c, with local test-only working-tree changes that do not affect src/ bytecode.",
-    "Exact immutable-masked bytecode equality was not re-run against the public deployment; runtime size and all immutable addresses were verified on-chain.",
+    "Runtime bytecode equality was re-checked on 2026-11-07: all four contracts match the local artifact after masking immutable slots; live quote and vault state are recorded in the evidence file.",
     "Public signing and broadcasting were explicitly authorized for Base Sepolia only."
   ]
 }

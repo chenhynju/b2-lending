@@ -139,7 +139,8 @@ Storage ReentrancyGuard is supplied by OZ 5.0.2; transient guard is unavailable 
 - Nominal APR compounds with checkpoint frequency; finite index cap eventually stops interest and creates coarse debt granularity.
 - Donations are stranded surpluses; no admin rescue exists.
 - A public RPC can prune the pinned fork block; use archive access.
-- Remote CI and independent audit are not completed. The Base Sepolia demo deployment is complete; the production Chainlink market and mainnet deployment are NOT RUN. Blockscout source verification status is recorded in the deployment report.
+- Remote CI is green and Blockscout source verification is 4/4; independent third-party audit is not completed. The Base Sepolia demo deployment is complete; the production Chainlink market and mainnet deployment are NOT RUN.
+- The live demo quote is operator-controlled by the deployer address and currently reads `2000e18`; a live liquidation would require that wallet to sign `setQuote`. Liquidation and bad-debt socialization are exercised in local/fork tests, not on the public demo.
 - Frontend is intentionally a small static demo, not the default Next.js stack.
 - Learning materials are provided; owner mastery is NOT RUN.
 
