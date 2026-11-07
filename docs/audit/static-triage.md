@@ -1,12 +1,14 @@
 # Static analysis triage
 Keep raw Slither and Aderyn JSON/logs in evidence. No detector was disabled to obtain a zero-warning result; lib/test paths are outside the production source scan scope.
 
+## Current rerun (2026-11-07)
+Pinned tools: Slither `0.11.6`, Aderyn `0.6.8`. The raw finding set is unchanged from the frozen audit set: Slither reports 27 findings (3 High `reentrancy-balance`, 12 Medium, 12 Low); Aderyn reports 2 High, 0 Medium and 2 Low. The reviewed-warning gate passes. The High-labelled families below are reviewed false positives for these concrete call sites; they are not suppressed from the reports.
+
 ## Slither
 - incorrect-equality (Medium): zero supply/debt/amount checks and same-block/index-cap checks are exact integer accounting states, not equality to a manipulable raw balance. Direct donations do not control tracked cash or supply. Reviewed as non-exploitable within the supported-token model.
 - unused-return (Medium): sequencer round tuple metadata and price-feed startedAt are intentionally ignored. The adapter checks sequencer status and restart timestamp/grace; price feeds use positive answer, round IDs, updatedAt and maxAge. It does not equate a sequencer transition timestamp with an ordinary heartbeat.
 - timestamp (Low): annual interest, freshness and sequencer grace intentionally use block time. Small timestamp variation affects interest; it is not entropy. Timestamp/sequencer manipulation remains a chain assumption, and configured heartbeat/parameters must be reviewed per deployment.
-
-- reentrancy-balance (Medium): _pull/_push intentionally read balance before and after SafeERC20 calls. Both helpers are private and every caller is nonReentrant. A callback cannot mutate vault accounting; a callback donation makes the exact-delta check revert atomically. Token callbacks and read-only valuation are executed in regression tests. Malicious token balance lies remain outside the allowlisted-token trust model.
+- reentrancy-balance (High in Slither 0.11.6; three instances at `_pull` and both `_push` call sites): _pull/_push intentionally read balance before and after SafeERC20 calls. Both helpers are private and every caller is nonReentrant. A callback cannot mutate vault accounting; a callback donation makes the exact-delta check revert atomically. Token callbacks and read-only valuation are executed in regression tests. Malicious token balance lies remain outside the allowlisted-token trust model.
 
 ## Aderyn
 - eth-send-unchecked-address (High): SafeERC20 reaches Address.functionCall, which delegates to functionCallWithValue(target,data,0). The native value is exactly zero; no vault method is payable and no ETH is transferred. The asset addresses are immutable contract addresses checked at construction. This detector follows the generic library call-with-value path without proving positive value; reviewed as a false positive for these concrete call sites. Native ETH support is not implemented.
