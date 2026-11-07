@@ -1,0 +1,10 @@
+['/bin/bash', '-lc', 'export PATH="$HOME/.foundry/bin:$HOME/.local/bin:$PATH"; python3 scripts/local_smoke.py --browser']
+127.0.0.1 - - [08/Nov/2026 04:51:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 04:51:05] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 04:51:05] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 04:51:05] "GET /config.json HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 04:51:06] "GET /selectors.json HTTP/1.1" 200 -
+PASS browser wallet and liquidation flows
+{"status": "PASS", "transactions": 28, "badDebt": 523809525, "browser": true}
+
+EXIT 0

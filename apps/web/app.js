@@ -10,14 +10,20 @@ async function rpc(method,params=[]){return wallet.request({method,params});}
 async function checkNetwork(){const chain=BigInt(await rpc('eth_chainId'));if(chain!==BigInt(config.chainId)||![31337n,84532n].includes(chain))throw Error('Switch wallet to the configured local or Base Sepolia network.');}
 async function read(to,signature,args=[]){const result=await rpc('eth_call',[{to,data:data(signature,args)},'latest']);return BigInt(result);}
 async function send(to,signature,args=[]){
+ const requestEpoch=epoch;
+ const sender=account;
+ if(!sender)throw Error('Reconnect your wallet and review again.');
  await checkNetwork();
- const transaction={from:account,to,data:data(signature,args)};
+ const transaction={from:sender,to,data:data(signature,args),chainId:'0x'+BigInt(config.chainId).toString(16)};
  const estimate=BigInt(await rpc('eth_estimateGas',[transaction]));
  transaction.gas='0x'+((estimate*120n+99n)/100n).toString(16);
+ await checkNetwork();
+ const [activeAccount]=await rpc('eth_accounts');
+ if(requestEpoch!==epoch||account!==sender||activeAccount?.toLowerCase()!==sender.toLowerCase())throw Error('Wallet changed. Review again.');
  const hash=await rpc('eth_sendTransaction',[transaction]);
  show('Transaction submitted: '+hash);
  const deadline=Date.now()+120000;
- while(Date.now()<deadline){const receipt=await rpc('eth_getTransactionReceipt',[hash]);if(receipt){if(BigInt(receipt.status)!==1n)throw Error('Transaction reverted. Refresh the position before retrying.');return receipt;}await new Promise(r=>setTimeout(r,500));}
+ while(Date.now()<deadline){const receipt=await rpc('eth_getTransactionReceipt',[hash]);if(receipt){if(requestEpoch!==epoch||account!==sender)throw Error('Wallet changed after submission. Check the transaction hash before retrying.');if(BigInt(receipt.status)!==1n)throw Error('Transaction reverted. Refresh the position before retrying.');return receipt;}await new Promise(r=>setTimeout(r,500));}
  throw Error('Confirmation is still pending. Check the wallet before retrying.');
 }
 async function approve(token,amount){

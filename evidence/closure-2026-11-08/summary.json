@@ -1,0 +1,13 @@
+{
+  "classification": "AI-Assisted Self-Assessment",
+  "baselineCommit": "7c7c89292a28a28dcaa798531ee1a7c8a9751bde",
+  "frontendFindingUI01": "FIXED; five isolated provider regressions and real-Anvil browser regression PASS",
+  "foundry": "63 PASS, 0 FAIL, 1 optional fork SKIP",
+  "browser": "PASS, 28 setup/settlement transactions, 15 browser wallet transactions",
+  "halmos": "PASS: rate range and monotonicity using actual InterestRateModel library",
+  "wake": "BLOCKED: verified latest 4.22.2 supports at most Solidity 0.8.34; source requires 0.8.38",
+  "certora": "PARTIAL: CVL and harness compile/typecheck PASS without IR; cloud proof NOT RUN",
+  "mythril": "PARTIAL: prior runtime oracle triage retained; full vault scan timeout remains",
+  "slitherAderyn": "Previously reviewed raw warnings and production source freeze unchanged",
+  "echidnaMedusa": "Previous bounded harness results retained; not rerun for this frontend-only code change"
+}

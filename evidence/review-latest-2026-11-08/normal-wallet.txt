@@ -1,0 +1,2 @@
+{"method":"eth_sendTransaction","chain":"0x14a34","from":"0x0118e172324801a6333e7d0faf7f9bb4ed72628f","epoch":0,"account":"0x0118e172324801a6333e7d0faf7f9bb4ed72628f"}
+PASS: unchanged wallet submits one transaction with chainId

@@ -1,0 +1,3 @@
+Command ['git', 'diff', '--exit-code', 'b97598b', '--', 'src'] EXIT 0
+Command ['/home/chenhy/.foundry/bin/forge', 'fmt', '--check'] EXIT 0
+Command ['git', 'diff', '--check', '--', 'apps', 'scripts', '.github', 'audit', 'docs', 'AGENTS.md', 'README.md', '.gitignore'] EXIT 0

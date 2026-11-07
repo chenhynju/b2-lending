@@ -1,0 +1,461 @@
+
+
+The Certora Prover - A formal verification tool for smart contracts
+
+
+Usage: /home/chenhy/.local/bin/certoraRun <Files> <Flags>
+
+Flag Types
+
+1. boolean (B): gets no value, sets flag value to true (false is always the 
+default)
+2. string (S): gets a single string as a value, note also numbers are of type 
+string
+3. list (L): gets multiple strings as a value, flags may also appear multiple 
+times
+4. map (M): collection of key, value pairs
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━┳┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┓
+┃Flag                     ┃┃Description                    ┃Default            ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━╇╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━┩
+│address                  ││Set the address of a contract  │Assigns addresses  │
+│                         ││to a given address             │arbitrarily        │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│assume_no_casting_overfl…││Will Assume solidity casting   │Solidity casting   │
+│                         ││expressions never overflow     │expressions may    │
+│                         ││                               │overflow           │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│auto_dispatcher          ││automatically add              │                   │
+│                         ││`DISPATCHER(true)` summaries   │                   │
+│                         ││for all calls with unresolved  │                   │
+│                         ││callees                        │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│build_cache              ││Enable caching of the contract │Compiles contract  │
+│                         ││compilation process            │source files from  │
+│                         ││                               │scratch each time  │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│compilation_steps_only   ││Compile the spec and the code  │Sends a request    │
+│                         ││without sending a verification │after source       │
+│                         ││request to the cloud           │compilation and    │
+│                         ││                               │spec syntax        │
+│                         ││                               │checking           │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│compiler_map             ││Map contracts to the           │Uses the same      │
+│                         ││appropriate compiler in case   │compiler version   │
+│                         ││not all contract files are     │for all contracts  │
+│                         ││compiled with the same compiler│                   │
+│                         ││version.                       │                   │
+│                         ││                               │                   │
+│                         ││CLI Example:                   │                   │
+│                         ││  --compiler_map               │                   │
+│                         ││A=solc8.11,B=solc8.9,C=solc7.5 │                   │
+│                         ││                               │                   │
+│                         ││JSON Example:                  │                   │
+│                         ││  "compiler_map": {            │                   │
+│                         ││    "A": "solc8.11",           │                   │
+│                         ││    "B": "solc8.9",            │                   │
+│                         ││    "C": "solc7.5"             │                   │
+│                         ││  }                            │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│contract_extensions      ││Dictionary of extension        │                   │
+│                         ││contracts. Format:             │                   │
+│                         ││{                              │                   │
+│                         ││  "ExtendedContractA: [        │                   │
+│                         ││    {                          │                   │
+│                         ││      "extension": "ExtenderA",│                   │
+│                         ││      "exclude": [             │                   │
+│                         ││        "method1",             │                   │
+│                         ││        ...,                   │                   │
+│                         ││        "methodN"              │                   │
+│                         ││      ]                        │                   │
+│                         ││    },                         │                   │
+│                         ││    {                          │                   │
+│                         ││      ...                      │                   │
+│                         ││    }                          │                   │
+│                         ││  ],                           │                   │
+│                         ││  "ExtendedContractB: [        │                   │
+│                         ││    ...                        │                   │
+│                         ││  ],                           │                   │
+│                         ││  ...                          │                   │
+│                         ││}                              │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│contract_extensions_over…││Set this flag if you are using │Prover will fail if│
+│                         ││`contract_extensions` and an   │an extending       │
+│                         ││extending contract has a method│contract has a     │
+│                         ││that should override a method  │method with the    │
+│                         ││with the same name in the      │same name as one in│
+│                         ││extension contract             │the extended       │
+│                         ││                               │contract that      │
+│                         ││                               │wasn't excluded.   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│contract_recursion_limit ││Specify the maximum depth of   │0 - no recursion is│
+│                         ││recursive calls verified for   │allowed            │
+│                         ││Solidity functions due to      │                   │
+│                         ││inlining                       │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│dump_asts                ││dump all solidity files' asts  │asts are not saved │
+│                         ││to asts.json in the build      │                   │
+│                         ││directory                      │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│dump_cvl_ast             ││Path to output file where the  │                   │
+│                         ││CVL AST will be printed during │                   │
+│                         ││typechecking                   │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│dynamic_bound            ││Set the maximum amount of times│0 - calling        │
+│                         ││a contract can be cloned       │create/create2/new │
+│                         ││                               │causes havocs that │
+│                         ││                               │can lead to        │
+│                         ││                               │non-useful counter │
+│                         ││                               │examples           │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│dynamic_dispatch         ││Automatically apply the        │Contract method    │
+│                         ││DISPATCHER summary on newly    │invocations on     │
+│                         ││created instances              │newly created      │
+│                         ││                               │instances causes   │
+│                         ││                               │havocs that can    │
+│                         ││                               │lead to non-useful │
+│                         ││                               │counter examples   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│exclude_method           ││Filter out methods to be       │Verifies all public│
+│                         ││verified by their signature    │or external        │
+│                         ││                               │methods. In        │
+│                         ││                               │invariants pure and│
+│                         ││                               │view functions are │
+│                         ││                               │ignored            │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│exclude_rule             ││Filter out the list of         │Verifies all rules │
+│                         ││rules/invariants to verify.    │and invariants     │
+│                         ││Asterisks are interpreted as   │                   │
+│                         ││wildcards                      │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│foundry                  ││Verify all Foundry fuzz tests  │                   │
+│                         ││in the current project         │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│hashing_length_bound     ││Set the maximum length of      │224 bytes (7 EVM   │
+│                         ││otherwise unbounded data chunks│words)             │
+│                         ││that are being hashed          │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│ignore_solidity_warnings ││Ignore all Solidity compiler   │Treats certain     │
+│                         ││warnings                       │severe Solidity    │
+│                         ││                               │compiler warnings  │
+│                         ││                               │as errors          │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│independent_satisfy      ││Check each `satisfy` statement │For each `satisfy` │
+│                         ││that occurs in a rule while    │statement, assumes │
+│                         ││ignoring previous ones         │that all previous  │
+│                         ││                               │`satisfy`          │
+│                         ││                               │statements were    │
+│                         ││                               │fulfilled          │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│link                     ││Link a slot in a contract with │The slot can be any│
+│                         ││another contract.              │address, often     │
+│                         ││                               │resulting in       │
+│                         ││Format:                        │unresolved calls   │
+│                         ││  <Contract>:<field>=<Contract>│and havocs that    │
+│                         ││                               │lead to non-useful │
+│                         ││Example:                       │counter examples   │
+│                         ││  Pool:asset=Asset             │                   │
+│                         ││                               │                   │
+│                         ││The field asset in contract    │                   │
+│                         ││Pool is a contract of type     │                   │
+│                         ││Asset                          │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│loop_iter                ││Set the maximum number of loop │A single iteration │
+│                         ││iterations                     │for variable       │
+│                         ││                               │iterations loops,  │
+│                         ││                               │all iterations for │
+│                         ││                               │fixed iterations   │
+│                         ││                               │loops              │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│max_concurrent_rules     ││Set the maximum number of      │Number of available│
+│                         ││parallel rule evaluations.     │CPU cores.         │
+│                         ││Lower values (e.g., 1, 2, or 4)│                   │
+│                         ││may reduce memory usage in     │                   │
+│                         ││large runs. This can sometimes │                   │
+│                         ││help to mitigate out of memory │                   │
+│                         ││problems.                      │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│method                   ││Filter methods to be verified  │Verifies all public│
+│                         ││by their signature             │or external        │
+│                         ││                               │methods. In        │
+│                         ││                               │invariants pure and│
+│                         ││                               │view functions are │
+│                         ││                               │ignored            │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│msg                      ││Add a message description to   │No message         │
+│                         ││your run                       │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│multi_assert_check       ││Check each assertion statement │Stops after a      │
+│                         ││that occurs in a rule,         │single violation of│
+│                         ││separately                     │any assertion is   │
+│                         ││                               │found              │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│multi_example            ││Show several counter examples  │Shows a single     │
+│                         ││for failed `assert` statements │example            │
+│                         ││and several witnesses for      │                   │
+│                         ││verified `satisfy` statements  │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│nondet_difficult_funcs   ││Summarize as NONDET all        │Tries to prove the │
+│                         ││value-type returning difficult │unsimplified code  │
+│                         ││internal functions which are   │                   │
+│                         ││view or pure                   │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│nondet_minimal_difficulty││Set the minimal `difficulty`   │50                 │
+│                         ││threshold for summarization by │                   │
+│                         ││`nondet_difficult_funcs`       │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│optimistic_contract_recu…││Assume the recursion limit is  │May show counter   │
+│                         ││never reached in cases of      │examples where the │
+│                         ││recursion of Solidity functions│recursion limit is │
+│                         ││due to inlining                │reached            │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│optimistic_fallback      ││Prevent unresolved external    │Unresolved external│
+│                         ││calls with an empty input      │calls with an empty│
+│                         ││buffer from affecting storage  │input buffer cause │
+│                         ││states                         │havocs that can    │
+│                         ││                               │lead to non-useful │
+│                         ││                               │counter examples   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│optimistic_hashing       ││Bound the length of data (with │May show counter   │
+│                         ││potentially unbounded length)  │examples with      │
+│                         ││to the value given in          │hashing applied to │
+│                         ││`hashing_length_bound`         │data with unbounded│
+│                         ││                               │length             │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│optimistic_loop          ││Assume the loop halt conditions│May produce a      │
+│                         ││hold, after unrolling loops    │counter example    │
+│                         ││                               │showing a case     │
+│                         ││                               │where loop halt    │
+│                         ││                               │conditions don't   │
+│                         ││                               │hold after         │
+│                         ││                               │unrolling          │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│optimistic_summary_recur…││Assume the recursion limit of  │Can show counter   │
+│                         ││Solidity functions within a    │examples where the │
+│                         ││summary is never reached       │recursion limit was│
+│                         ││                               │reached            │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│override_base_config     ││Path to parent conf            │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│packages                 ││Map packages to their location │Takes packages     │
+│                         ││in the file system             │mappings from      │
+│                         ││                               │`package.json`     │
+│                         ││                               │`remappings.txt` if│
+│                         ││                               │exist, conflicting │
+│                         ││                               │mappings cause the │
+│                         ││                               │script abnormal    │
+│                         ││                               │termination        │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│packages_path            ││Look for Solidity packages in  │Looks for the      │
+│                         ││the given directory            │packages in        │
+│                         ││                               │$NODE_PATH         │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│parametric_contracts     ││Filter the set of contracts    │Verifies all       │
+│                         ││whose functions will be        │functions in all   │
+│                         ││verified in parametric         │contracts in the   │
+│                         ││rules/invariants               │file list          │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│precise_bitwise_ops      ││Show precise bitwise operation │May report         │
+│                         ││counter examples. Models       │counterexamples    │
+│                         ││mathints as unit256 that may   │caused by incorrect│
+│                         ││over/underflow                 │modeling of bitwise│
+│                         ││                               │operations, but    │
+│                         ││                               │supports unbounded │
+│                         ││                               │integers (mathints)│
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│project_sanity           ││Perform basic sanity checks on │                   │
+│                         ││all contracts in the current   │                   │
+│                         ││project                        │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│protocol_author          ││Add the protocol's author for  │The `package.json` │
+│                         ││easy filtering in the dashboard│file's `author`    │
+│                         ││                               │field if found     │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│protocol_name            ││Add the protocol's name for    │The `package.json` │
+│                         ││easy filtering in the dashboard│file's `name` field│
+│                         ││                               │if found           │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│prototype                ││Set the address of the         │Calls to the       │
+│                         ││contract's create code.        │created contract   │
+│                         ││                               │will be unresolved,│
+│                         ││Format:                        │causing havocs that│
+│                         ││  <hex address>=<Contract>     │may lead to        │
+│                         ││                               │non-useful counter │
+│                         ││Example:                       │examples           │
+│                         ││  0x3d602...73                 │                   │
+│                         ││                               │                   │
+│                         ││Contract Foo will be created   │                   │
+│                         ││from the code in address       │                   │
+│                         ││0x3d602...73                   │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│prover_args              ││Send flags directly to the     │                   │
+│                         ││Prover                         │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│prover_version           ││Use a specific Prover revision │Uses the latest    │
+│                         ││                               │public Prover      │
+│                         ││                               │version            │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│ranger_exclude_method    ││Filter out methods to be       │All methods are    │
+│                         ││included in ranger sequences by│considered in      │
+│                         ││their signature                │constructing ranger│
+│                         ││                               │sequences          │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│ranger_include_method    ││Filter methods to be included  │All methods are    │
+│                         ││in ranger sequences by their   │considered in      │
+│                         ││signature                      │constructing ranger│
+│                         ││                               │sequences          │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│resolve_vyper_imports    ││Whether to resolve Vyper       │Vyper contracts are│
+│                         ││imports (Vyper >= 4 only)      │assumed not to use │
+│                         ││                               │the import system  │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│rule                     ││Verify only the given list of  │Verifies all rules │
+│                         ││rules/invariants. Asterisks are│and invariants     │
+│                         ││interpreted as wildcards       │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│rule_sanity              ││Select the type of sanity check│Basic sanity checks│
+│                         ││that will be performed during  │(Vacuity and       │
+│                         ││execution                      │trivial invariant  │
+│                         ││                               │check)             │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│safe_casting_builtin     ││This needs to be set to true   │safeCasting builtin│
+│                         ││for the safeCasting builtin to │will not run       │
+│                         ││work                           │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│short_output             ││Reduce verbosity               │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│solc                     ││Path to the Solidity compiler  │Calling `solc`     │
+│                         ││executable file                │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│solc_allow_path          ││Set the base path for loading  │Only the Solidity  │
+│                         ││Solidity files                 │compiler's default │
+│                         ││                               │paths are allowed  │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│solc_evm_version         ││Instruct the Solidity compiler │Uses the Solidity  │
+│                         ││to use a specific EVM version  │compiler's default │
+│                         ││                               │EVM version        │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│solc_evm_version_map     ││Map contracts to the           │Uses the same      │
+│                         ││appropriate EVM version        │Solidity EVM       │
+│                         ││                               │version for all    │
+│                         ││                               │contracts          │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│solc_optimize            ││Tell the Solidity compiler to  │Uses the Solidity  │
+│                         ││optimize the gas costs of the  │compiler's default │
+│                         ││contract for a given number of │optimization       │
+│                         ││runs                           │settings           │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│solc_optimize_map        ││Map contracts to their         │Compiles all       │
+│                         ││optimized number of runs in    │contracts with the │
+│                         ││case not all contract files are│same optimization  │
+│                         ││compiled with the same number  │settings           │
+│                         ││of runs.                       │                   │
+│                         ││                               │                   │
+│                         ││CLI Example:                   │                   │
+│                         ││  --solc_optimize_map          │                   │
+│                         ││A=200,B=300,C=200              │                   │
+│                         ││                               │                   │
+│                         ││JSON Example:                  │                   │
+│                         ││  "solc_optimize_map": {       │                   │
+│                         ││    "A": "200",                │                   │
+│                         ││    "B": "300",                │                   │
+│                         ││    "C": "200"                 │                   │
+│                         ││  }                            │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│solc_via_ir              ││Pass the `--via-ir` flag to the│                   │
+│                         ││Solidity compiler              │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│solc_via_ir_map          ││Map contracts to the           │do not set via_ir  │
+│                         ││appropriate via_ir value       │during compilation │
+│                         ││                               │unless solc_via_ir │
+│                         ││                               │is set             │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│split_rules              ││List of rules to be sent to    │Verifies all rules │
+│                         ││Prover each on a separate run  │and invariants in a│
+│                         ││                               │single run         │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│struct_link              ││Link a slot in a struct with   │The slot can be any│
+│                         ││another contract.              │address, often     │
+│                         ││                               │resulting in       │
+│                         ││Format:                        │unresolved calls   │
+│                         ││  <Contract>:<slot#>=<Contract>│and havocs that    │
+│                         ││Example:                       │lead to non-useful │
+│                         ││  Bank:0=BankToken             │counter examples   │
+│                         ││Bank:1=LoanToken               │                   │
+│                         ││                               │                   │
+│                         ││The first field in contract    │                   │
+│                         ││Bank is a contract of type     │                   │
+│                         ││BankToken and the second of    │                   │
+│                         ││type LoanToken                 │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│summary_recursion_limit  ││Determine the number of        │0 - no recursion is│
+│                         ││recursive calls we verify in   │allowed            │
+│                         ││case of recursion of Solidity  │                   │
+│                         ││functions within a summary     │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│unchecked_overflow_built…││This needs to be set to true   │uncheckedOverflow  │
+│                         ││for the uncheckedOverflow      │builtin will not   │
+│                         ││builtin to work                │run                │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│url_visibility           ││Sets the visibility of the     │Generate a Private │
+│                         ││generated report link          │report link        │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│use_relpaths_for_solc_js…││Uses relative paths when       │By using relative  │
+│                         ││constructing json keys for     │paths for the      │
+│                         ││solc's standard-json input     │standard json, some│
+│                         ││                               │rare compilation   │
+│                         ││                               │errors can be      │
+│                         ││                               │prevented          │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│verify                   ││Path to The Certora CVL formal │                   │
+│                         ││specifications file.           │                   │
+│                         ││                               │                   │
+│                         ││Format:                        │                   │
+│                         ││  <contract>:<spec file>       │                   │
+│                         ││Example:                       │                   │
+│                         ││  Bank:specs/Bank.spec         │                   │
+│                         ││                               │                   │
+│                         ││spec files suffix must be .spec│                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│version                  ││Show the Prover version        │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│vyper                    ││Path to the Vyper compiler     │Calling `vyper`    │
+│                         ││executable file                │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│vyper_custom_std_json_in…││Supply a base json for getting │It is assumed the  │
+│                         ││vyper compiler output,         │standard-json      │
+│                         ││generated by `vyper -f         │generated by       │
+│                         ││solc_json`, on a percontract   │certora-cli will be│
+│                         ││basis                          │able to compile the│
+│                         ││                               │contracts          │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│vyper_import_path        ││Additional paths to search for │Only the Python    │
+│                         ││Vyper imports (Vyper >= 4 only)│system path will be│
+│                         ││                               │searched           │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│vyper_system_path        ││The system path to pass to     │Use the current    │
+│                         ││Vyper (Vyper >= 4 only);       │Python system path │
+│                         ││typically automatically        │                   │
+│                         ││populated                      │                   │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│vyper_venom              ││Whether to use                 │All contracts are  │
+│                         ││experimental-codegen (Vyper >= │compiled without   │
+│                         ││4 only)                        │experimental       │
+│                         ││                               │codegen            │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│vyper_venom_map          ││Map contracts to the           │All contracts are  │
+│                         ││appropriate                    │compiled without   │
+│                         ││experimental-codegen option    │experimental       │
+│                         ││(Vyper >= 4 only)              │codegen            │
+├─────────────────────────┼┼───────────────────────────────┼───────────────────┤
+│wait_for_results         ││Wait for verification results  │Sends request and  │
+│                         ││before terminating the run     │does not wait for  │
+│                         ││                               │results            │
+└─────────────────────────┴┴───────────────────────────────┴───────────────────┘
+
+
+You can find detailed documentation of the supported flags here: 
+https://docs.certora.com/en/latest/docs/prover/cli/options.html
+
+

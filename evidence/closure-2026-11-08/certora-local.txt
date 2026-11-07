@@ -1,0 +1,9 @@
+['certoraRun', 'audit/certora/RateHarness.sol', '--verify', 'RateHarness:audit/certora/Rate.spec', '--solc', '/home/chenhy/.local/share/svm/0.8.38/solc-0.8.38', '--solc_via_ir', '--solc_optimize', '1000', '--solc_evm_version', 'cancun', '--compilation_steps_only']
+WARNING: `java` is not installed. Installing Java version 19 or later will enable faster CVL specification syntax checking before uploading to the cloud.
+The recommended LTS version is 21.
+
+Cannot run local checks because of missing a suitable java installation. To skip
+local checks run with the --disable_local_typechecking flag
+
+
+EXIT 1

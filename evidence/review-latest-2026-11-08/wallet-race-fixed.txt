@@ -1,0 +1,1 @@
+PASS: switched network rejected before eth_sendTransaction: Switch wallet to the configured local or Base Sepolia network.

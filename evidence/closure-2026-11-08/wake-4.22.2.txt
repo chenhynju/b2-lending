@@ -1,0 +1,173 @@
+Wake 4.22.2 overlay, verified PyPI wheel, isolated cache with pinned Foundry compiler
+[04:57:46] Found 294 *.sol files in 0.71 s                         detect.py:729
+           Failed to load previous build artifacts               compiler.py:863
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/bin/wake:6 in <module>         │
+│                                                                              │
+│   3 from wake.cli.__main__ import main                                       │
+│   4 if __name__ == '__main__':                                               │
+│   5 │   sys.argv[0] = sys.argv[0].removesuffix('.exe')                       │
+│ ❱ 6 │   sys.exit(main())                                                     │
+│   7                                                                          │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/r │
+│ ich_click/rich_command.py:401 in __call__                                    │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/c │
+│ lick/core.py:1631 in __call__                                                │
+│                                                                              │
+│   1628 │                                                                     │
+│   1629 │   def __call__(self, *args: t.Any, **kwargs: t.Any) -> t.Any:       │
+│   1630 │   │   """Alias for :meth:`main`."""                                 │
+│ ❱ 1631 │   │   return self.main(*args, **kwargs)                             │
+│   1632                                                                       │
+│   1633                                                                       │
+│   1634 class _FakeSubclassCheck(type):                                       │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/w │
+│ ake/cli/__main__.py:108 in main                                              │
+│                                                                              │
+│   105 │   │   │   │   │   **extra,                                           │
+│   106 │   │   │   │   )                                                      │
+│   107 │   │   else:                                                          │
+│ ❱ 108 │   │   │   return super().main(                                       │
+│   109 │   │   │   │   args=args,                                             │
+│   110 │   │   │   │   prog_name=prog_name,                                   │
+│   111 │   │   │   │   complete_var=complete_var,                             │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/r │
+│ ich_click/rich_command.py:215 in main                                        │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/c │
+│ lick/core.py:2032 in invoke                                                  │
+│                                                                              │
+│   2029 │   │   │   │   super().invoke(ctx)                                   │
+│   2030 │   │   │   │   sub_ctx = cmd.make_context(cmd_name, args, parent=ctx │
+│   2031 │   │   │   │   with sub_ctx:                                         │
+│ ❱ 2032 │   │   │   │   │   return _process_result(sub_ctx.command.invoke(sub │
+│   2033 │   │                                                                 │
+│   2034 │   │   # In chain mode we create the contexts step by step, but afte │
+│   2035 │   │   # base command has been invoked.  Because at that point we do │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/w │
+│ ake/cli/detect.py:387 in invoke                                              │
+│                                                                              │
+│    384 │   def invoke(self, ctx: click.Context):                             │
+│    385 │   │   ctx.obj["subcommand_args"] = ctx.args                         │
+│    386 │   │   ctx.obj["subcommand_protected_args"] = ctx.protected_args     │
+│ ❱  387 │   │   super().invoke(ctx)                                           │
+│    388                                                                       │
+│    389                                                                       │
+│    390 async def detect_(                                                    │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/c │
+│ lick/core.py:2029 in invoke                                                  │
+│                                                                              │
+│   2026 │   │   │   │   cmd_name, cmd, args = self.resolve_command(ctx, args) │
+│   2027 │   │   │   │   assert cmd is not None                                │
+│   2028 │   │   │   │   ctx.invoked_subcommand = cmd_name                     │
+│ ❱ 2029 │   │   │   │   super().invoke(ctx)                                   │
+│   2030 │   │   │   │   sub_ctx = cmd.make_context(cmd_name, args, parent=ctx │
+│   2031 │   │   │   │   with sub_ctx:                                         │
+│   2032 │   │   │   │   │   return _process_result(sub_ctx.command.invoke(sub │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/c │
+│ lick/core.py:1415 in invoke                                                  │
+│                                                                              │
+│   1412 │   │   │   echo(style(message, fg="red"), err=True)                  │
+│   1413 │   │                                                                 │
+│   1414 │   │   if self.callback is not None:                                 │
+│ ❱ 1415 │   │   │   return ctx.invoke(self.callback, **ctx.params)            │
+│   1416 │                                                                     │
+│   1417 │   def shell_complete(self, ctx: Context, incomplete: str) -> list[C │
+│   1418 │   │   """Return a list of completions for the incomplete value. Loo │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/c │
+│ lick/core.py:910 in invoke                                                   │
+│                                                                              │
+│    907 │   │   │   ctx = self                                                │
+│    908 │   │                                                                 │
+│    909 │   │   with augment_usage_errors(self), ctx:                         │
+│ ❱  910 │   │   │   return callback(*args, **kwargs)                          │
+│    911 │                                                                     │
+│    912 │   def forward(self, cmd: Command, /, *args: t.Any, **kwargs: t.Any) │
+│    913 │   │   """Similar to :meth:`invoke` but fills in default keyword     │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/c │
+│ lick/decorators.py:34 in new_func                                            │
+│                                                                              │
+│    31 │   """                                                                │
+│    32 │                                                                      │
+│    33 │   def new_func(*args: P.args, **kwargs: P.kwargs) -> R:              │
+│ ❱  34 │   │   return f(get_current_context(), *args, **kwargs)               │
+│    35 │                                                                      │
+│    36 │   return update_wrapper(new_func, f)                                 │
+│    37                                                                        │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/w │
+│ ake/cli/detect.py:1095 in run_detect                                         │
+│                                                                              │
+│   1092 │   │   deleted_options,                                              │
+│   1093 │   )                                                                 │
+│   1094 │                                                                     │
+│ ❱ 1095 │   asyncio.run(                                                      │
+│   1096 │   │   detect_(                                                      │
+│   1097 │   │   │   config,                                                   │
+│   1098 │   │   │   no_artifacts,                                             │
+│                                                                              │
+│ /usr/lib/python3.12/asyncio/runners.py:194 in run                            │
+│                                                                              │
+│   191 │   │   │   "asyncio.run() cannot be called from a running event loop" │
+│   192 │                                                                      │
+│   193 │   with Runner(debug=debug, loop_factory=loop_factory) as runner:     │
+│ ❱ 194 │   │   return runner.run(main)                                        │
+│   195                                                                        │
+│   196                                                                        │
+│   197 def _cancel_all_tasks(loop):                                           │
+│                                                                              │
+│ /usr/lib/python3.12/asyncio/runners.py:118 in run                            │
+│                                                                              │
+│   115 │   │                                                                  │
+│   116 │   │   self._interrupt_count = 0                                      │
+│   117 │   │   try:                                                           │
+│ ❱ 118 │   │   │   return self._loop.run_until_complete(task)                 │
+│   119 │   │   except exceptions.CancelledError:                              │
+│   120 │   │   │   if self._interrupt_count > 0:                              │
+│   121 │   │   │   │   uncancel = getattr(task, "uncancel", None)             │
+│                                                                              │
+│ /usr/lib/python3.12/asyncio/base_events.py:687 in run_until_complete         │
+│                                                                              │
+│    684 │   │   if not future.done():                                         │
+│    685 │   │   │   raise RuntimeError('Event loop stopped before Future comp │
+│    686 │   │                                                                 │
+│ ❱  687 │   │   return future.result()                                        │
+│    688 │                                                                     │
+│    689 │   def stop(self):                                                   │
+│    690 │   │   """Stop running the event loop.                               │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/w │
+│ ake/cli/detect.py:819 in detect_                                             │
+│                                                                              │
+│    816 │                                                                     │
+│    817 │   build: ProjectBuild                                               │
+│    818 │   errors: Set[SolcOutputError]                                      │
+│ ❱  819 │   build, errors = await compiler.compile(                           │
+│    820 │   │   sol_files,                                                    │
+│    821 │   │   [SolcOutputSelectionEnum.ALL],                                │
+│    822 │   │   write_artifacts=not no_artifacts,                             │
+│                                                                              │
+│ /home/chenhy/.local/share/pipx/venvs/eth-wake/lib/python3.12/site-packages/w │
+│ ake/compiler/compiler.py:1002 in compile                                     │
+│                                                                              │
+│    999 │   │   │   │   │   f"Target configured version {target_version} is l │
+│   1000 │   │   │   │   )                                                     │
+│   1001 │   │   │   if target_version is not None and target_version > max_ve │
+│ ❱ 1002 │   │   │   │   raise CompilationError(                               │
+│   1003 │   │   │   │   │   f"Target configured version {target_version} is h │
+│   1004 │   │   │   │   )                                                     │
+│   1005                                                                       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+CompilationError: Target configured version 0.8.38 is higher than maximum 
+supported version 0.8.34
+
+EXIT 1

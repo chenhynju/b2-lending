@@ -20,6 +20,8 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
+      - name: Wallet context regressions
+        run: node scripts/wallet_context_test.cjs
       - name: Install pinned tools
         run: |
           python3 scripts/install_ci_tools.py

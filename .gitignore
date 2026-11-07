@@ -13,3 +13,6 @@ __pycache__/
 apps/web/config.json
 out-*/
 cache-*/
+
+.certora_internal/
+.certora_sources/

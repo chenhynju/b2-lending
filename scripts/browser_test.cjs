@@ -21,7 +21,13 @@ const confirmations=[];
        if(method==='eth_requestAccounts'||method==='eth_accounts')return [account];
        if(method==='eth_chainId'&&window.__chainOverride)return window.__chainOverride;
        const response=await fetch('http://127.0.0.1:18545',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({jsonrpc:'2.0',id:1,method,params})});
-       const value=await response.json();if(value.error)throw Error(value.error.message);if(method==='eth_sendTransaction'){window.__transactions.push(value.result);await window.captureWalletTx(value.result);}return value.result;
+       const value=await response.json();if(value.error)throw Error(value.error.message);
+       if(method==='eth_estimateGas'&&window.__switchDuringEstimate){
+         window.__switchDuringEstimate=false;
+         window.__chainOverride='0x1';
+         window.__listeners.chainChanged('0x1');
+       }
+       if(method==='eth_sendTransaction'){window.__transactions.push(value.result);await window.captureWalletTx(value.result);}return value.result;
      },
      on:(event,callback)=>{window.__listeners[event]=callback;}
    };
@@ -113,7 +119,16 @@ const confirmations=[];
  await expect(page.locator('#execute')).toBeDisabled();
  if(await page.evaluate(()=>window.__transactions.length)!==beforeRejected)throw Error('Rejected network/account action broadcast a transaction');
  
+ // Switch chains while the real Anvil gas estimate is in flight.
+ await page.click('#connect');await expect(page.locator('#execute')).toBeEnabled();
+ await page.selectOption('#action','withdraw');await page.fill('#amount','1');
+ await page.click('#execute');await expect(page.locator('#confirm')).toBeVisible();
+ await page.evaluate(()=>{window.__switchDuringEstimate=true;});
+ await page.click('#confirm');
+ await expect(page.locator('#status')).toContainText('Switch wallet');
+ if(await page.evaluate(()=>window.__transactions.length)!==beforeRejected)throw Error('Gas-estimation race broadcast a transaction');
+ await page.evaluate(()=>{window.__chainOverride=undefined;});
  if(errors.length)throw Error(errors.join('\n'));
- fs.writeFileSync('evidence/browser.json',JSON.stringify({status:'PASS',engine:browser.version(),flow:['connect','deposit','withdraw','addCollateral','borrow','repay','removeCollateral','redeem','invalid input','healthy liquidation rejection','liquidate','wrong network rejection','account/chain change'],viewport:[1280,1000],mobile:[390,844],pageErrors:errors,provider:'unlocked local Anvil, no private key',confirmations,receipts},null,2));
+ fs.writeFileSync('evidence/browser.json',JSON.stringify({status:'PASS',engine:browser.version(),flow:['connect','deposit','withdraw','addCollateral','borrow','repay','removeCollateral','redeem','invalid input','healthy liquidation rejection','liquidate','wrong network rejection','account/chain change','chain change during gas estimation'],viewport:[1280,1000],mobile:[390,844],pageErrors:errors,provider:'unlocked local Anvil, no private key',confirmations,receipts},null,2));
  await browser.close();console.log('PASS browser wallet and liquidation flows');
 })().catch(e=>{console.error(e);process.exit(1)});

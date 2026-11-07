@@ -1,0 +1,10 @@
+{
+  "apps/web/app.js": "fa8f9e26d30e26ac139b055797215b3a1c5089c871344173810148a6cf00108b",
+  "scripts/browser_test.cjs": "afda90a875a6e57cc2c98dcd66544e88a62b7029942cc0817ddd55873832b91b",
+  "scripts/wallet_context_test.cjs": "cbed5d2d6b45b028907b6ba3afaf83f37e08162d49daed14b72d9139e1b37c43",
+  "src/LendingVault.sol": "34ee6190454bcf7b5ff9a49345bba2197625af94f994649033e857d51eaa129c",
+  "src/InterestRateModel.sol": "9dde3d9ed396ff5517aaf4b8eb3e5844dc54078dccd48a5d0b47c753a8a57678",
+  "src/FeedOracle.sol": "543c79a34362fc7058fe759a932dff2e06784b0097bf3373204689f9718885fd",
+  "audit/certora/RateHarness.sol": "4e8c12755130b01d90dfb2bdf2a6776b0377c66a094b7f6a346203a16c22d688",
+  "audit/certora/Rate.spec": "ad23318c4ddd22699573739e31f2e40d630638c5ac8388458065a8f8bf170fc6"
+}

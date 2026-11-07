@@ -1,0 +1,8 @@
+['/bin/bash', '-lc', 'node scripts/wallet_context_test.cjs']
+PASS unchanged wallet binds sender and chain
+PASS network changes during gas estimation
+PASS active account changes without an event
+PASS wallet event invalidates pending action
+PASS wallet change prevents stale receipt completion
+
+EXIT 0

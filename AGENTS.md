@@ -597,3 +597,11 @@ web3-portfolio-project/
 不要仅生成计划而停止。没有实际执行的项目必须说明阻塞，不能宣称完成。
 
 **最终成功标准：交付一套同时证明工业级开发能力、协议安全与经济建模能力、测试与审计能力、真实链上部署能力，以及本人对代码深入理解的专业 Web3 作品集。**
+
+## 18. 本工程工作区同步顺序
+
+WSL 路径 /home/chenhy/workspace/web3-portfolio/b2-lending 是开发与测试的主工作区。
+所有代码改动、测试、Git commit 均在 WSL 完成，然后从该工作树 push 到 origin。
+Windows 路径 D:/appspace/web3prepare/b2-lending 仅在推送成功后，从 origin/main 执行 fast-forward 拉取。
+同步前检查两端 git status，将未提交修改保存为命名 stash 或备份。不得通过 reset --hard 覆盖工作。
+同步后核对两端 HEAD 和受版本管理文件的哈希。Windows 网络通道可以作为 WSL GitHub 访问失败时的传输方式，但仓库和提交来源仍须是 WSL 主工作树。

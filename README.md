@@ -151,3 +151,5 @@ Storage ReentrancyGuard is supplied by OZ 5.0.2; transient guard is unavailable 
 Custom: lending/accounting state machine, indexed debt integration, liquidation/loss settlement, feed adapter policy, handler/ghost tests, reference model, adversarial fixtures, evidence tooling and wallet demo. Third-party: OZ ERC20/SafeERC20/Math/ReentrancyGuard, Foundry execution, Chainlink feeds and Playwright. This implementation/documentation is AI-assisted; authorship of generated material is not proof of the portfolio owner's independent skill.
 
 Future work must first close verification gaps, obtain independent review and validate market-specific risk/operations. It is not appropriate to expand features while treating unaccepted gates as complete.
+
+Development follows the [WSL commit, push, Windows pull workflow](docs/deployment/workspace-workflow.md). Wallet-context security regressions run in CI with node scripts/wallet_context_test.cjs.
