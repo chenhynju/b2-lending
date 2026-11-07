@@ -5,7 +5,7 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[1];e=root/"evidence"
 def workspace(tests=True):
     td=tempfile.TemporaryDirectory(prefix="b2-lending-check-");p=Path(td.name)
-    for name in ["src"]+(["test"] if tests else []):shutil.copytree(root/name,p/name)
+    for name in ["src"]+(["test","script"] if tests else []):shutil.copytree(root/name,p/name)
     (p/"lib").symlink_to(root/"lib",target_is_directory=True)
     shutil.copy(root/"foundry.toml",p/"foundry.toml")
     return td,p

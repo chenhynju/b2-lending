@@ -2,8 +2,8 @@ Warning: `--ir-minimum` enables `viaIR` with minimum optimization, which can res
 Only use this flag as a workaround if you are experiencing "stack too deep" errors.
 Note that `viaIR` is production ready since Solidity 0.8.13 and above.
 See more: https://book.getfoundry.sh/guides/best-practices/stack-too-deep
-Compiling 43 files with Solc 0.8.38
-Solc 0.8.38 finished in 6.22s
+Compiling 47 files with Solc 0.8.38
+Solc 0.8.38 finished in 56.57s
 Compiler run successful with warnings:
 Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
     --> lib/forge-std/src/Vm.sol:1312:9:
@@ -356,6 +356,37 @@ Warning (6335): "error" will be promoted to keyword in the future and will not b
 Analysing contracts...
 Running tests...
 
+Ran 5 tests for test/BaseSepoliaDemo.t.sol:BaseSepoliaDemoTest
+[PASS] testClaimOncePerAddress() (gas: 228349)
+[PASS] testDemoLifecycleAndLiquidation() (gas: 1088070)
+[PASS] testNoInvalidConfiguration() (gas: 573450)
+[PASS] testOnlyBaseSepolia() (gas: 7641879)
+[PASS] testQuoteAuthorizationAndFreshness() (gas: 146990)
+Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 192.91ms (202.83ms CPU time)
+
+Ran 5 tests for test/EconomicAttack.t.sol:EconomicAttackTest
+[PASS] testDonationDoesNotChangeBorrowingPower() (gas: 539316)
+[PASS] testFlashCollateralCannotEscapeDebt() (gas: 434475)
+[PASS] testFlashDepositRedeemHasNoProfit() (gas: 200410)
+[PASS] testFuzz_LossExactlyMatchesReceivableWriteOff(uint256) (runs: 256, μ: 638922, ~: 644661)
+[PASS] testUnfundedLiquidationCannotCommitLosses() (gas: 614211)
+Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 7.58s (7.54s CPU time)
+
+Ran 12 tests for test/FeedOracle.t.sol:FeedOracleTest
+[PASS] testConfigBoundaries() (gas: 847425)
+[PASS] testDebtDepegIsNotAssumedOneDollar() (gas: 93688)
+[PASS] testDifferentFeedDecimals() (gas: 719224)
+[PASS] testFutureAndZeroTimestamps() (gas: 170339)
+[PASS] testFuzz_PriceRatio(uint256,uint256) (runs: 256, μ: 141606, ~: 141334)
+[PASS] testInvalidAnswers() (gas: 245021)
+[PASS] testInvalidRound() (gas: 137216)
+[PASS] testPriceUpperAndLowerBounds() (gas: 275190)
+[PASS] testSequencerDownAndGrace() (gas: 230354)
+[PASS] testSequencerZeroFuture() (gas: 133476)
+[PASS] testStaleFeedAndExactBoundary() (gas: 99423)
+[PASS] testValidPriceAndNormalization() (gas: 54985)
+Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 7.58s (7.55s CPU time)
+
 Ran 7 tests for test/Additional.t.sol:AdditionalLendingTest
 [PASS] testAggregateCapsAndZeroShareDeposits() (gas: 549887)
 [PASS] testCollateralNegativeRebaseStopsMutation() (gas: 591977)
@@ -364,35 +395,7 @@ Ran 7 tests for test/Additional.t.sol:AdditionalLendingTest
 [PASS] testRedeemBlockedUntilBorrowerRepays() (gas: 755873)
 [PASS] testRepayUnauthorizedSharesCannotBeRemoved() (gas: 564351)
 [PASS] testWorthlessShareQuoteFailsClosed() (gas: 645288)
-Suite result: ok. 7 passed; 0 failed; 0 skipped; finished in 69.17ms (61.63ms CPU time)
-
-Ran 12 tests for test/FeedOracle.t.sol:FeedOracleTest
-[PASS] testConfigBoundaries() (gas: 847425)
-[PASS] testDebtDepegIsNotAssumedOneDollar() (gas: 93688)
-[PASS] testDifferentFeedDecimals() (gas: 719224)
-[PASS] testFutureAndZeroTimestamps() (gas: 170339)
-[PASS] testFuzz_PriceRatio(uint256,uint256) (runs: 256, μ: 141619, ~: 141334)
-[PASS] testInvalidAnswers() (gas: 245021)
-[PASS] testInvalidRound() (gas: 137216)
-[PASS] testPriceUpperAndLowerBounds() (gas: 275190)
-[PASS] testSequencerDownAndGrace() (gas: 230354)
-[PASS] testSequencerZeroFuture() (gas: 133476)
-[PASS] testStaleFeedAndExactBoundary() (gas: 99423)
-[PASS] testValidPriceAndNormalization() (gas: 54985)
-Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 389.08ms (376.15ms CPU time)
-
-Ran 2 tests for test/Differential.t.sol:DifferentialTest
-[PASS] testFuzz_ActualAccrual(uint256,uint256) (runs: 256, μ: 4240505, ~: 4241909)
-[PASS] testPythonIntegerVectors() (gas: 5287408)
-Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 687.28ms (1.30s CPU time)
-
-Ran 5 tests for test/EconomicAttack.t.sol:EconomicAttackTest
-[PASS] testDonationDoesNotChangeBorrowingPower() (gas: 539316)
-[PASS] testFlashCollateralCannotEscapeDebt() (gas: 434475)
-[PASS] testFlashDepositRedeemHasNoProfit() (gas: 200410)
-[PASS] testFuzz_LossExactlyMatchesReceivableWriteOff(uint256) (runs: 256, μ: 638319, ~: 644661)
-[PASS] testUnfundedLiquidationCannotCommitLosses() (gas: 614211)
-Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 1.03s (1.03s CPU time)
+Suite result: ok. 7 passed; 0 failed; 0 skipped; finished in 7.58s (357.69ms CPU time)
 
 Ran 30 tests for test/LendingVault.t.sol:LendingVaultTest
 [PASS] testBorrowAtLTVBoundary() (gas: 577280)
@@ -402,9 +405,9 @@ Ran 30 tests for test/LendingVault.t.sol:LendingVaultTest
 [PASS] testDonationCannotInflatePrice() (gas: 636563)
 [PASS] testDustLiquidationAndRestart() (gas: 969659)
 [PASS] testFeeOnTransferIncomingRejected() (gas: 467097)
-[PASS] testFuzz_BorrowRepayRounding(uint256,uint256) (runs: 256, μ: 811899, ~: 811516)
-[PASS] testFuzz_DepositRedeem(uint256) (runs: 256, μ: 265014, ~: 265157)
-[PASS] testFuzz_RateMonotonic(uint256,uint256) (runs: 256, μ: 8090, ~: 7960)
+[PASS] testFuzz_BorrowRepayRounding(uint256,uint256) (runs: 256, μ: 811839, ~: 811516)
+[PASS] testFuzz_DepositRedeem(uint256) (runs: 256, μ: 264991, ~: 264429)
+[PASS] testFuzz_RateMonotonic(uint256,uint256) (runs: 256, μ: 8060, ~: 7960)
 [PASS] testGapLossSocialization() (gas: 837011)
 [PASS] testHealthyCannotBeLiquidated() (gas: 569570)
 [PASS] testInsufficientLiquidity() (gas: 548788)
@@ -425,9 +428,14 @@ Ran 30 tests for test/LendingVault.t.sol:LendingVaultTest
 [PASS] testShareTransfer() (gas: 333807)
 [PASS] testSlippageProtection() (gas: 975792)
 [PASS] testThirdPartyRepayment() (gas: 600855)
-Suite result: ok. 30 passed; 0 failed; 0 skipped; finished in 1.18s (1.74s CPU time)
+Suite result: ok. 30 passed; 0 failed; 0 skipped; finished in 8.12s (15.11s CPU time)
 
-Ran 5 test suites in 1.18s (3.36s CPU time): 56 tests passed, 0 failed, 0 skipped (56 total tests)
+Ran 2 tests for test/Differential.t.sol:DifferentialTest
+[PASS] testFuzz_ActualAccrual(uint256,uint256) (runs: 256, μ: 4240470, ~: 4241909)
+[PASS] testPythonIntegerVectors() (gas: 5287408)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 8.38s (16.39s CPU time)
+
+Ran 6 test suites in 16.95s (39.44s CPU time): 61 tests passed, 0 failed, 0 skipped (61 total tests)
 
 ╭----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------╮
 | File                                                                 | % Lines           | % Statements      | % Branches      | % Funcs          |
@@ -450,7 +458,7 @@ Ran 5 test suites in 1.18s (3.36s CPU time): 56 tests passed, 0 failed, 0 skippe
 |----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
 | lib/forge-std/src/StdToml.sol                                        | 0.00% (0/94)      | 0.00% (0/92)      | N/A (0/0)       | 0.00% (0/47)     |
 |----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
-| lib/forge-std/src/StdUtils.sol                                       | 24.32% (18/74)    | 39.13% (36/92)    | 43.75% (7/16)   | 10.53% (2/19)    |
+| lib/forge-std/src/StdUtils.sol                                       | 24.32% (18/74)    | 40.22% (37/92)    | 50.00% (8/16)   | 10.53% (2/19)    |
 |----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
 | lib/forge-std/src/console.sol                                        | 0.00% (0/769)     | 0.00% (0/385)     | N/A (0/0)       | 0.00% (0/384)    |
 |----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
@@ -468,6 +476,10 @@ Ran 5 test suites in 1.18s (3.36s CPU time): 56 tests passed, 0 failed, 0 skippe
 |----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
 | lib/openzeppelin-contracts/contracts/utils/math/Math.sol             | 9.21% (14/152)    | 10.16% (19/187)   | 6.45% (2/31)    | 20.00% (4/20)    |
 |----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
+| script/Deploy.s.sol                                                  | 0.00% (0/13)      | 0.00% (0/18)      | 0.00% (0/2)     | 0.00% (0/1)      |
+|----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
+| script/DeployBaseSepoliaDemo.s.sol                                   | 80.56% (29/36)    | 80.95% (34/42)    | 90.00% (9/10)   | 100.00% (8/8)    |
+|----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
 | src/FeedOracle.sol                                                   | 100.00% (27/27)   | 100.00% (67/67)   | 100.00% (8/8)   | 100.00% (3/3)    |
 |----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
 | src/InterestRateModel.sol                                            | 100.00% (4/4)     | 100.00% (11/11)   | 100.00% (2/2)   | 100.00% (1/1)    |
@@ -480,10 +492,10 @@ Ran 5 test suites in 1.18s (3.36s CPU time): 56 tests passed, 0 failed, 0 skippe
 |----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
 | test/fixtures/LendingFixture.sol                                     | 75.76% (25/33)    | 73.33% (22/30)    | N/A (0/0)       | 100.00% (6/6)    |
 |----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
-| test/invariant/LendingHandler.sol                                    | 0.00% (0/130)     | 0.00% (0/200)     | 0.00% (0/20)    | 0.00% (0/14)     |
+| test/invariant/LendingHandler.sol                                    | 0.00% (0/142)     | 0.00% (0/220)     | 0.00% (0/21)    | 0.00% (0/14)     |
 |----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
 | test/mocks/Mocks.sol                                                 | 100.00% (59/59)   | 100.00% (49/49)   | 71.43% (5/7)    | 100.00% (21/21)  |
 |----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------|
-| Total                                                                | 3.19% (434/13584) | 4.19% (570/13612) | 14.26% (75/526) | 6.53% (102/1563) |
+| Total                                                                | 3.39% (463/13645) | 4.42% (605/13692) | 15.77% (85/539) | 7.00% (110/1572) |
 ╰----------------------------------------------------------------------+-------------------+-------------------+-----------------+------------------╯
 Wrote LCOV report.
