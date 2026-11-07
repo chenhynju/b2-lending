@@ -8,7 +8,7 @@ This is the **lending series of B2 DeFi**, separate from the AMM. It demonstrate
 **Release acceptance: PARTIAL.** Local implementation, economic/security self-assessment, coverage, receipt-verified UI and reproducibility checks pass. A [public Base Sepolia demo market](docs/deployment/base-sepolia-live.md) is deployed, **source-verified 4/4**, and functionally verified (synthetic assets and quote, not the production Chainlink path). Production-network deployment, independent third-party audit and owner mastery remain NOT RUN/BLOCKED.
 
 ## Reviewer quick start
-- **Live demo:** https://chenhynju.github.io/b2-lending/ (Base Sepolia; synthetic test assets only)
+- **Live demo:** https://b2-lending-app.vercel.app (Base Sepolia; synthetic test assets only) · [GitHub Pages mirror](https://chenhynju.github.io/b2-lending/)
 - **Deployment evidence:** [Base Sepolia live report](docs/deployment/base-sepolia-live.md) · [machine record](deployments/base-sepolia-live.json)
 - **Contracts:** [vault](https://base-sepolia.blockscout.com/address/0x4A9c4C103EC26ED88528A9c8DAf032BEdB854999) · [mUSD](https://base-sepolia.blockscout.com/address/0x450C689f0702Be8AF310A50D7fd6E009Abecb5D7) · [mETH](https://base-sepolia.blockscout.com/address/0xcAf05CF9D12A05B928E6cE473f680A7fd0023DE6) · [quote](https://base-sepolia.blockscout.com/address/0xb27100D4d478A439D31E48d89aA348D33303d7Ab)
 - **Try it:** switch MetaMask to Base Sepolia, claim `mUSD` and `mETH` from the two token contracts (Write Contract → `claim`), then connect the UI and supply, collateralize and borrow.
@@ -114,7 +114,7 @@ One confirmed Low issue, [final-share orphaned receivables](docs/audit/findings/
 [Assessment](docs/audit/final-report/report.md) · [frozen scope](docs/audit/scope.md) · [compiler review](docs/audit/compiler-review.md) · [dependency review](docs/audit/dependency-review.md).
 
 ## Local UI and deployment
-The static EIP-1193 wallet UI uses BigInt, compiled selectors, explicit action review, configured chain checks and bounded approvals. No signing key is embedded. It handles supply/withdraw/redeem, collateral, borrowing/repayment and liquidation.
+The static EIP-1193 wallet UI uses BigInt, compiled selectors, explicit action review, configured chain checks and bounded approvals. No signing key is embedded. It handles supply/withdraw/redeem, collateral, borrowing/repayment and liquidation. Live builds copy `apps/web/config.live.json` to `config.json`; Vercel serves the primary demo and GitHub Pages serves the mirror.
 ```sh
 npm ci
 npx playwright install --with-deps chromium

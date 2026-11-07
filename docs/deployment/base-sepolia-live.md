@@ -4,7 +4,7 @@
 
 - Network: Base Sepolia, chain ID `84532`
 - Repository: https://github.com/chenhynju/b2-lending
-- Live UI: https://chenhynju.github.io/b2-lending/
+- Live UI: https://b2-lending-app.vercel.app (primary) · https://chenhynju.github.io/b2-lending/ (mirror)
 - Deployer: `0x0118e172324801a6333e7d0fAF7f9BB4ED72628F`
 - Deployed source commit: `d719c0c4dbce5bbc6b4c86db86dfddfbb41601ac`
 - Compiler: Solidity `0.8.38`, optimizer runs `1000`, `via_ir = true`, EVM `cancun`
@@ -101,6 +101,12 @@ Key observations:
 **All four contracts verified on Blockscout.** `DemoAsset (mUSD)`, `DemoAsset (mETH)`, `DemoQuote` and `LendingVault` were submitted with ABI-encoded constructor arguments. Earlier attempts hit Blockscout rate limits; the final `LendingVault` submission was accepted and reported `Pass - Verified` (GUID `4a9c4c103ec26ed88528a9c8daf032bedb8549996aeeb387`).
 
 Logs: [verify.log](../../evidence/base-sepolia-live/verify.log) · [verify-remaining.log](../../evidence/base-sepolia-live/verify-remaining.log) · [verify-retry.log](../../evidence/base-sepolia-live/verify-retry.log) · [verify-vault.log](../../evidence/base-sepolia-live/verify-vault.log) · [verify-vault-now.log](../../evidence/base-sepolia-live/verify-vault-now.log) · [verify-sourcify.log](../../evidence/base-sepolia-live/verify-sourcify.log). Command sequence: [verify-source.sh](../../evidence/base-sepolia-live/verify-source.sh).
+
+## Live UI hosting
+
+- **Vercel:** project `b2-lending-app`, root directory `apps/web`, build command `cp config.live.json config.json`, output directory `.`. Production URL: https://b2-lending-app.vercel.app. The project is connected to the GitHub repository and redeploys on `main`.
+- **GitHub Pages mirror:** workflow [pages.yml](../../.github/workflows/pages.yml) copies the same live config and publishes `apps/web`; URL: https://chenhynju.github.io/b2-lending/.
+- The live config contains only public addresses and token metadata. The page never receives a private key; all signatures happen in the browser wallet.
 
 ## Reproduction notes
 

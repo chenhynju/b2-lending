@@ -15,7 +15,8 @@
   "explorer": "https://base-sepolia.blockscout.com",
   "rpc": "https://sepolia.base.org",
   "repository": "https://github.com/chenhynju/b2-lending",
-  "liveUi": "https://chenhynju.github.io/b2-lending/",
+  "liveUi": "https://b2-lending-app.vercel.app",
+  "liveUiMirror": "https://chenhynju.github.io/b2-lending/",
   "ci": {
     "workflow": "Lending verification",
     "runId": 42350148797,
