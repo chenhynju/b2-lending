@@ -25,7 +25,7 @@ Implemented isolated lender shares, supply/withdraw/redeem, collateral custody, 
 | public Base Sepolia demo deployment | PASS |
 | Blockscout source verification | PASS (4/4) |
 | production Chainlink deployment / mainnet | NOT RUN |
-| remote publication / remote CI | NOT RUN |
+| remote publication / remote CI | PASS (GitHub Actions 42350148797) |
 | owner learning mastery | NOT RUN |
 | independent third-party audit | NOT RUN |
 
