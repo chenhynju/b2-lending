@@ -3,6 +3,8 @@ A collateralized credit protocol that makes lender ownership, indexed debt and i
 
 This is the **lending series of B2 DeFi**, separate from the AMM. It demonstrates how money moves through a state machine and how those transitions are attacked and tested. **AI-Assisted Self-Assessment**, not an independent audit or a real-funds product.
 
+[![Lending verification](https://github.com/chenhynju/b2-lending/actions/workflows/verify.yml/badge.svg)](https://github.com/chenhynju/b2-lending/actions/workflows/verify.yml) [![Deploy web demo](https://github.com/chenhynju/b2-lending/actions/workflows/pages.yml/badge.svg)](https://github.com/chenhynju/b2-lending/actions/workflows/pages.yml)
+
 **Release acceptance: PARTIAL.** Local implementation, economic/security self-assessment, coverage, receipt-verified UI and reproducibility checks pass. A [public Base Sepolia demo market](docs/deployment/base-sepolia-live.md) is deployed, **source-verified 4/4**, and functionally verified (synthetic assets and quote, not the production Chainlink path). Production-network deployment, independent third-party audit and owner mastery remain NOT RUN/BLOCKED.
 
 ## Reviewer quick start
