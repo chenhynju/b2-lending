@@ -102,6 +102,7 @@ LendingVault._push(IERC20,address,uint256) (src/LendingVault.sol#317-325) uses t
 	- token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount (src/LendingVault.sol#321)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
 . analyzed (17 contracts with 102 detectors), 27 result(s) found
-'forge clean' running (wd: /tmp/b2-lending-check-6j4c3_60)
+INFO:Slither:/mnt/d/appspace/web3prepare/b2-lending/evidence/slither-final.json exists already, the overwrite is prevented
+'forge clean' running (wd: /tmp/b2-lending-check-j32qi1a7)
 'forge config --json' running
-'forge build --build-info --deny never --skip ./test/** ./script/** --force' running (wd: /tmp/b2-lending-check-6j4c3_60)
+'forge build --build-info --deny never --skip ./test/** ./script/** --force' running (wd: /tmp/b2-lending-check-j32qi1a7)

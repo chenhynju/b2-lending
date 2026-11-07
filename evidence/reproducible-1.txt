@@ -1,19 +1,19 @@
 Compiling 14 files with Solc 0.8.38
-Solc 0.8.38 finished in 5.53s
+Solc 0.8.38 finished in 4.56s
 Compiler run successful!
-note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
-   ╭▸ src/FeedOracle.sol:14:36
-   │
-14 │     IAggregatorV3 public immutable collateralFeed;
-   │                                    ━━━━━━━━━━━━━━ help: consider using: `COLLATERAL_FEED`
-   │
-   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
-
 note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
    ╭▸ src/LendingVault.sol:25:29
    │
 25 │     IERC20 public immutable asset;
    │                             ━━━━━ help: consider using: `ASSET`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/FeedOracle.sol:14:36
+   │
+14 │     IAggregatorV3 public immutable collateralFeed;
+   │                                    ━━━━━━━━━━━━━━ help: consider using: `COLLATERAL_FEED`
    │
    ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
 
@@ -42,42 +42,18 @@ note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
    ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
 
 note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
-   ╭▸ src/FeedOracle.sol:16:36
-   │
-16 │     IAggregatorV3 public immutable sequencerFeed;
-   │                                    ━━━━━━━━━━━━━ help: consider using: `SEQUENCER_FEED`
-   │
-   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
-
-note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
-   ╭▸ src/FeedOracle.sol:17:30
-   │
-17 │     uint256 public immutable maxAge;
-   │                              ━━━━━━ help: consider using: `MAX_AGE`
-   │
-   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
-
-note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
-   ╭▸ src/FeedOracle.sol:18:30
-   │
-18 │     uint256 public immutable collateralScale;
-   │                              ━━━━━━━━━━━━━━━ help: consider using: `COLLATERAL_SCALE`
-   │
-   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
-
-note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
-   ╭▸ src/FeedOracle.sol:19:30
-   │
-19 │     uint256 public immutable loanScale;
-   │                              ━━━━━━━━━ help: consider using: `LOAN_SCALE`
-   │
-   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
-
-note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
    ╭▸ src/LendingVault.sol:28:30
    │
 28 │     uint256 public immutable assetUnit;
    │                              ━━━━━━━━━ help: consider using: `ASSET_UNIT`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/FeedOracle.sol:16:36
+   │
+16 │     IAggregatorV3 public immutable sequencerFeed;
+   │                                    ━━━━━━━━━━━━━ help: consider using: `SEQUENCER_FEED`
    │
    ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
 
@@ -90,12 +66,60 @@ note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
    ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
 
 note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/FeedOracle.sol:17:30
+   │
+17 │     uint256 public immutable maxAge;
+   │                              ━━━━━━ help: consider using: `MAX_AGE`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
    ╭▸ src/LendingVault.sol:30:29
    │
 30 │     uint8 private immutable _shareDecimals;
    │                             ━━━━━━━━━━━━━━ help: consider using: `_SHARE_DECIMALS`
    │
    ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/FeedOracle.sol:18:30
+   │
+18 │     uint256 public immutable collateralScale;
+   │                              ━━━━━━━━━━━━━━━ help: consider using: `COLLATERAL_SCALE`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/LendingVault.sol:72:17
+   │
+72 │         if (a > 18 || c > 18) revert InvalidConfiguration();
+   │                 ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/LendingVault.sol:72:27
+   │
+72 │         if (a > 18 || c > 18) revert InvalidConfiguration();
+   │                           ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+   ╭▸ src/FeedOracle.sol:19:30
+   │
+19 │     uint256 public immutable loanScale;
+   │                              ━━━━━━━━━ help: consider using: `LOAN_SCALE`
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/screaming-snake-case-immutable
+
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/LendingVault.sol:76:21
+   │
+76 │         assetUnit = 10 ** a;
+   │                     ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
 
 note[multi-contract-file]: prefer having only one contract, interface or library per file
   ╭▸ src/FeedOracle.sol:6:11
@@ -105,6 +129,14 @@ note[multi-contract-file]: prefer having only one contract, interface or library
   │
   ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
 
+note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
+   ╭▸ src/LendingVault.sol:77:26
+   │
+77 │         collateralUnit = 10 ** c;
+   │                          ━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
 note[multi-contract-file]: prefer having only one contract, interface or library per file
    ╭▸ src/FeedOracle.sol:13:10
    │
@@ -113,6 +145,14 @@ note[multi-contract-file]: prefer having only one contract, interface or library
    │
    ╰ help: https://getfoundry.sh/forge/linting/multi-contract-file
 
+warning[missing-events-access-control]: `collateralOf` is changed without an event but is used for access control
+    ╭▸ src/LendingVault.sol:186:9
+    │
+186 │         collateralOf[msg.sender] -= amount;
+    │         ━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/missing-events-access-control
+
 note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
    ╭▸ src/FeedOracle.sol:36:17
    │
@@ -120,6 +160,28 @@ note[literal-instead-of-constant]: this literal appears multiple times in the co
    │                 ━━
    │
    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+note[unwrapped-modifier-logic]: wrap modifier logic to reduce code size
+   ╭▸ src/LendingVault.sol:61:5
+   │
+61 │ ┏     modifier stableView() {
+62 │ ┃         if (_reentrancyGuardEntered()) revert ReadDuringMutation();
+63 │ ┃         _;
+64 │ ┃     }
+   │ ┗━━━━━┛
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/unwrapped-modifier-logic
+help: wrap modifier logic to reduce code size
+   ╭╴
+61 ±     modifier stableView() {
+62 +         _stableView();
+63 +         _;
+64 +     }
+65 + 
+66 +     function _stableView() internal {
+67 +         if (_reentrancyGuardEntered()) revert ReadDuringMutation();
+68 +     }
+   ╰╴
 
 note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
    ╭▸ src/FeedOracle.sol:36:27
@@ -161,6 +223,14 @@ note[literal-instead-of-constant]: this literal appears multiple times in the co
    │
    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
 
+warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
+    ╭▸ src/LendingVault.sol:276:65
+    │
+276 │         if (totalDebtShares == 0 || borrowIndex == MAX_INDEX || block.timestamp == lastAccrual) return borrowIndex;
+    │                                                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/block-timestamp
+
 note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
    ╭▸ src/FeedOracle.sol:51:35
    │
@@ -168,6 +238,14 @@ note[literal-instead-of-constant]: this literal appears multiple times in the co
    │                                   ━━━━
    │
    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+
+warning[incorrect-strict-equality]: dangerous strict equality check on an externally-influenced value
+    ╭▸ src/LendingVault.sol:314:13
+    │
+314 │         if (token.balanceOf(address(this)) != beforeBalance + amount) revert UnsupportedToken();
+    │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/incorrect-strict-equality
 
 note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
    ╭▸ src/FeedOracle.sol:58:76
@@ -177,37 +255,13 @@ note[literal-instead-of-constant]: this literal appears multiple times in the co
    │
    ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
 
-note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
-   ╭▸ src/LendingVault.sol:72:17
-   │
-72 │         if (a > 18 || c > 18) revert InvalidConfiguration();
-   │                 ━━
-   │
-   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
-
-note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
-   ╭▸ src/LendingVault.sol:72:27
-   │
-72 │         if (a > 18 || c > 18) revert InvalidConfiguration();
-   │                           ━━
-   │
-   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
-
-note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
-   ╭▸ src/LendingVault.sol:76:21
-   │
-76 │         assetUnit = 10 ** a;
-   │                     ━━
-   │
-   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
-
-note[literal-instead-of-constant]: this literal appears multiple times in the contract; declare a named constant for it
-   ╭▸ src/LendingVault.sol:77:26
-   │
-77 │         collateralUnit = 10 ** c;
-   │                          ━━
-   │
-   ╰ help: https://getfoundry.sh/forge/linting/literal-instead-of-constant
+warning[incorrect-strict-equality]: dangerous strict equality check on an externally-influenced value
+    ╭▸ src/LendingVault.sol:321:13
+    │
+321 │         if (token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount)
+    │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/incorrect-strict-equality
 
 warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
    ╭▸ src/FeedOracle.sol:46:46
@@ -216,6 +270,14 @@ warning[block-timestamp]: usage of `block.timestamp` in a comparison may be mani
    │                                              ━━━━━━━━━━━━━━━━━━━━━━━
    │
    ╰ help: https://getfoundry.sh/forge/linting/block-timestamp
+
+warning[incorrect-strict-equality]: dangerous strict equality check on an externally-influenced value
+    ╭▸ src/LendingVault.sol:321:73
+    │
+321 │         if (token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount)
+    │                                                                         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    │
+    ╰ help: https://getfoundry.sh/forge/linting/incorrect-strict-equality
 
 warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
    ╭▸ src/FeedOracle.sol:46:73
@@ -284,66 +346,4 @@ warning[unsafe-typecast]: typecasts that can truncate values should be checked
    │       
    │       
    ╰ help: https://getfoundry.sh/forge/linting/unsafe-typecast
-
-warning[missing-events-access-control]: `collateralOf` is changed without an event but is used for access control
-    ╭▸ src/LendingVault.sol:186:9
-    │
-186 │         collateralOf[msg.sender] -= amount;
-    │         ━━━━━━━━━━━━━━━━━━━━━━━━
-    │
-    ╰ help: https://getfoundry.sh/forge/linting/missing-events-access-control
-
-note[unwrapped-modifier-logic]: wrap modifier logic to reduce code size
-   ╭▸ src/LendingVault.sol:61:5
-   │
-61 │ ┏     modifier stableView() {
-62 │ ┃         if (_reentrancyGuardEntered()) revert ReadDuringMutation();
-63 │ ┃         _;
-64 │ ┃     }
-   │ ┗━━━━━┛
-   │
-   ╰ help: https://getfoundry.sh/forge/linting/unwrapped-modifier-logic
-help: wrap modifier logic to reduce code size
-   ╭╴
-61 ±     modifier stableView() {
-62 +         _stableView();
-63 +         _;
-64 +     }
-65 + 
-66 +     function _stableView() internal {
-67 +         if (_reentrancyGuardEntered()) revert ReadDuringMutation();
-68 +     }
-   ╰╴
-
-warning[block-timestamp]: usage of `block.timestamp` in a comparison may be manipulated by validators
-    ╭▸ src/LendingVault.sol:276:65
-    │
-276 │         if (totalDebtShares == 0 || borrowIndex == MAX_INDEX || block.timestamp == lastAccrual) return borrowIndex;
-    │                                                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    │
-    ╰ help: https://getfoundry.sh/forge/linting/block-timestamp
-
-warning[incorrect-strict-equality]: dangerous strict equality check on an externally-influenced value
-    ╭▸ src/LendingVault.sol:314:13
-    │
-314 │         if (token.balanceOf(address(this)) != beforeBalance + amount) revert UnsupportedToken();
-    │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    │
-    ╰ help: https://getfoundry.sh/forge/linting/incorrect-strict-equality
-
-warning[incorrect-strict-equality]: dangerous strict equality check on an externally-influenced value
-    ╭▸ src/LendingVault.sol:321:13
-    │
-321 │         if (token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount)
-    │             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    │
-    ╰ help: https://getfoundry.sh/forge/linting/incorrect-strict-equality
-
-warning[incorrect-strict-equality]: dangerous strict equality check on an externally-influenced value
-    ╭▸ src/LendingVault.sol:321:73
-    │
-321 │         if (token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount)
-    │                                                                         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    │
-    ╰ help: https://getfoundry.sh/forge/linting/incorrect-strict-equality
 

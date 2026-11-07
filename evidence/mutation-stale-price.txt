@@ -1,5 +1,5 @@
-Compiling 36 files with Solc 0.8.38
-Solc 0.8.38 finished in 24.87s
+Compiling 38 files with Solc 0.8.38
+Solc 0.8.38 finished in 16.38s
 Compiler run successful with warnings:
 Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
     --> lib/forge-std/src/Vm.sol:1312:9:
@@ -352,9 +352,9 @@ Warning (6335): "error" will be promoted to keyword in the future and will not b
 
 Ran 1 test for test/FeedOracle.t.sol:FeedOracleTest
 [FAIL: next call did not revert as expected] testStaleFeedAndExactBoundary() (gas: 91601)
-Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 1.83ms (397.56µs CPU time)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 1.84ms (322.04µs CPU time)
 
-Ran 1 test suite in 127.32ms (1.83ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+Ran 1 test suite in 37.00ms (1.84ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
 
 Failing tests:
 Encountered 1 failing test in test/FeedOracle.t.sol:FeedOracleTest

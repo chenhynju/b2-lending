@@ -1,5 +1,5 @@
-Compiling 36 files with Solc 0.8.38
-Solc 0.8.38 finished in 64.17s
+Compiling 38 files with Solc 0.8.38
+Solc 0.8.38 finished in 27.96s
 Compiler run successful with warnings:
 Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
     --> lib/forge-std/src/Vm.sol:1312:9:
@@ -351,14 +351,14 @@ Warning (6335): "error" will be promoted to keyword in the future and will not b
 
 
 Ran 1 test for test/LendingVault.t.sol:LendingVaultTest
-[FAIL: InvalidAmount(); counterexample: calldata=0x86a720630000000000000000000000000000000000c097ce7bc90715b34b9f100000000100000000000000000000000000000000000000000000000000000000000003e6 args=[1000000000000000000000000000000000001 [1e36], 998]] testFuzz_BorrowRepayRounding(uint256,uint256) (runs: 21, μ: 646724, ~: 646702)
-Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 70.18ms (61.25ms CPU time)
+[FAIL: InvalidAmount(); counterexample: calldata=0x86a720630000000000000000000000000000000000c097ce7bc90715b34b9f100000000100000000000000000000000000000000000000000000000000000000000003e6 args=[1000000000000000000000000000000000001 [1e36], 998]] testFuzz_BorrowRepayRounding(uint256,uint256) (runs: 32, μ: 646705, ~: 646679)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 517.71ms (514.22ms CPU time)
 
-Ran 1 test suite in 72.05ms (70.18ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+Ran 1 test suite in 539.92ms (517.71ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
 
 Failing tests:
 Encountered 1 failing test in test/LendingVault.t.sol:LendingVaultTest
-[FAIL: InvalidAmount(); counterexample: calldata=0x86a720630000000000000000000000000000000000c097ce7bc90715b34b9f100000000100000000000000000000000000000000000000000000000000000000000003e6 args=[1000000000000000000000000000000000001 [1e36], 998]] testFuzz_BorrowRepayRounding(uint256,uint256) (runs: 21, μ: 646724, ~: 646702)
+[FAIL: InvalidAmount(); counterexample: calldata=0x86a720630000000000000000000000000000000000c097ce7bc90715b34b9f100000000100000000000000000000000000000000000000000000000000000000000003e6 args=[1000000000000000000000000000000000001 [1e36], 998]] testFuzz_BorrowRepayRounding(uint256,uint256) (runs: 32, μ: 646705, ~: 646679)
 
 Encountered a total of 1 failing tests, 0 tests succeeded
 

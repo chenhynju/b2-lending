@@ -1,5 +1,5 @@
-Compiling 36 files with Solc 0.8.38
-Solc 0.8.38 finished in 36.76s
+Compiling 38 files with Solc 0.8.38
+Solc 0.8.38 finished in 23.30s
 Compiler run successful with warnings:
 Warning (6335): "error" will be promoted to keyword in the future and will not be allowed as an identifier anymore.
     --> lib/forge-std/src/Vm.sol:1312:9:
@@ -352,9 +352,9 @@ Warning (6335): "error" will be promoted to keyword in the future and will not b
 
 Ran 1 test for test/LendingVault.t.sol:LendingVaultTest
 [FAIL: next call did not revert as expected] testRegression_LastShareCannotOrphanReceivables() (gas: 876944)
-Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 9.13ms (2.27ms CPU time)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 8.64ms (3.34ms CPU time)
 
-Ran 1 test suite in 86.57ms (9.13ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+Ran 1 test suite in 51.72ms (8.64ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
 
 Failing tests:
 Encountered 1 failing test in test/LendingVault.t.sol:LendingVaultTest

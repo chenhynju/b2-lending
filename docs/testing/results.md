@@ -34,6 +34,8 @@ Implemented isolated lender shares, supply/withdraw/redeem, collateral custody, 
 
 {'passed': 63, 'failed': 0, 'skipped': 1, 'total': 64, 'status': 'PASS'}
 
+Re-run on 2026-11-07 after documentation-only commits: the full Forge suite, coverage gate, four mutation cases (4/4 KILLED), reproducible-build check, Slither/Aderyn and the reviewed-warning gate all re-executed with the same results. The refreshed raw logs are in [evidence](../../evidence).
+
 Timed changing-seed campaign: **1821.66 seconds / 73 rounds**, each with 128 runs x64 handler depth. Nine invariant properties share the generated sequences; these are not nine independent campaigns. Commands, seeds, timing and per-selector call counts remain in [campaign.json](../../evidence/campaign.json).
 
 [Final tests](../../evidence/tests-delivery.txt) and [real mainnet fork](../../evidence/mainnet-fork.json). The ordinary test command deliberately skips the fork without MAINNET_RPC_URL. The separately executed fork uses real token/feed state at a recorded block/hash and synthetic deal balances. No mainnet transaction was broadcast.

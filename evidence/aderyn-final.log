@@ -2,8 +2,8 @@
 -------------------------------------------
 # Configuration
 -------------------------------------------
-Root - /tmp/b2-lending-check-6j4c3_60
-Source - /tmp/b2-lending-check-6j4c3_60/src
+Root - /tmp/b2-lending-check-j32qi1a7
+Source - /tmp/b2-lending-check-j32qi1a7/src
 Remappings - [
     "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
     "forge-std/=lib/forge-std/src/",
@@ -25,8 +25,8 @@ Ingesting 4 compiled files [solc : v0.8.38]
 -------------------------------------------
 Running 88 detectors
 Detectors run, printing report.
-Report printed to /home/chenhy/workspace/web3-portfolio/b2-lending/evidence/aderyn-final.json
+Report printed to /mnt/d/appspace/web3prepare/b2-lending/evidence/aderyn-final.json
 
-✔  Done! Fast, clean, effective.
-⭐ Support the project with a star:
+💡 Did Aderyn help you today?
+Show some love with a quick star on GitHub Star ⭐
 https://github.com/Cyfrin/aderyn
