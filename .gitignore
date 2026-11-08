@@ -16,3 +16,11 @@ cache-*/
 
 .certora_internal/
 .certora_sources/
+
+.vercel/
+
+*.tsbuildinfo
+
+*.py[cod]
+.vercel
+.env*
