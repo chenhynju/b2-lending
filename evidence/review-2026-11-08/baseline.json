@@ -1,0 +1,57 @@
+[
+  {
+    "project": "W01",
+    "command": [
+      "forge",
+      "--version"
+    ],
+    "cwd": "/home/chenhy/workspace/web3-portfolio/b2-lending",
+    "startedAt": "2026-11-08T06:50:53.365649+00:00",
+    "seconds": 1.67,
+    "exitCode": 0,
+    "status": "PASS",
+    "log": "/home/chenhy/workspace/web3-portfolio/portfolio-ops/evidence/2026-11-08/W01-0.log"
+  },
+  {
+    "project": "W01",
+    "command": [
+      "forge",
+      "test",
+      "--fuzz-seed",
+      "0x20261108",
+      "-vv"
+    ],
+    "cwd": "/home/chenhy/workspace/web3-portfolio/b2-lending",
+    "startedAt": "2026-11-08T06:50:55.032945+00:00",
+    "seconds": 59.83,
+    "exitCode": 0,
+    "status": "PASS",
+    "log": "/home/chenhy/workspace/web3-portfolio/portfolio-ops/evidence/2026-11-08/W01-1.log"
+  },
+  {
+    "project": "W01",
+    "command": [
+      "node",
+      "scripts/wallet_context_test.cjs"
+    ],
+    "cwd": "/home/chenhy/workspace/web3-portfolio/b2-lending",
+    "startedAt": "2026-11-08T06:51:53.813077+00:00",
+    "seconds": 1.87,
+    "exitCode": 0,
+    "status": "PASS",
+    "log": "/home/chenhy/workspace/web3-portfolio/portfolio-ops/evidence/2026-11-08/W01-2.log"
+  },
+  {
+    "project": "W01",
+    "command": [
+      "python3",
+      "scripts/reference_model.py"
+    ],
+    "cwd": "/home/chenhy/workspace/web3-portfolio/b2-lending",
+    "startedAt": "2026-11-08T06:51:55.685960+00:00",
+    "seconds": 12.13,
+    "exitCode": 0,
+    "status": "PASS",
+    "log": "/home/chenhy/workspace/web3-portfolio/portfolio-ops/evidence/2026-11-08/W01-3.log"
+  }
+]

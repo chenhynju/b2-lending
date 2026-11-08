@@ -1,0 +1,26 @@
+{
+  "authorization": "free-only",
+  "confirmedPersonalFreeMinutes": 2000,
+  "confirmedOrganizationFreeMinutes": 2000,
+  "organizationMembers": 1,
+  "jobs": [
+    {
+      "config": "rate",
+      "jobId": "3fd66aba-1ea8-4533-9d3b-96fa4c38a8e2",
+      "reservedMinutes": 120,
+      "freeMinutes": 120,
+      "billedMinutes": 0,
+      "finished": true,
+      "proverSuccess": true
+    },
+    {
+      "config": "vault",
+      "jobId": "44f4054b-f2bc-45a8-8095-f4583f4bddf2",
+      "reservedMinutes": 120,
+      "freeMinutes": 120,
+      "billedMinutes": 0,
+      "finished": false,
+      "proverSuccess": false
+    }
+  ]
+}

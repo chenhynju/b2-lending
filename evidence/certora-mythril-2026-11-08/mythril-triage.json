@@ -1,0 +1,121 @@
+{
+  "rawIssues": 7,
+  "reviewedIssues": 7,
+  "unreviewedIssues": 0,
+  "confirmedProtocolVulnerabilities": 0,
+  "scope": "One transaction, max depth 256, symbolic storage, no chain dependency resolution, 120-second execution budget",
+  "findings": [
+    {
+      "pc": 4785,
+      "swc": "101",
+      "rawSeverity": "High",
+      "function": "totalCollateral()",
+      "classification": "FALSE_POSITIVE: compiler ABI calldata-length comparison, intentional modular addition",
+      "disassembly": [
+        "000012ac: PUSH0",
+        "000012ad: CALLDATASIZE",
+        "000012ae: PUSH1 0x03",
+        "000012b0: NOT",
+        "000012b1: ADD",
+        "000012b2: SLT",
+        "000012b3: PUSH2 0x0266"
+      ]
+    },
+    {
+      "pc": 5144,
+      "swc": "101",
+      "rawSeverity": "High",
+      "function": "asset()",
+      "classification": "FALSE_POSITIVE: compiler ABI calldata-length comparison, intentional modular addition",
+      "disassembly": [
+        "00001413: PUSH0",
+        "00001414: CALLDATASIZE",
+        "00001415: PUSH1 0x03",
+        "00001417: NOT",
+        "00001418: ADD",
+        "00001419: SLT",
+        "0000141a: PUSH2 0x0266"
+      ]
+    },
+    {
+      "pc": 5211,
+      "swc": "101",
+      "rawSeverity": "High",
+      "function": "LIQUIDATION_BONUS()",
+      "classification": "FALSE_POSITIVE: compiler ABI calldata-length comparison, intentional modular addition",
+      "disassembly": [
+        "00001456: PUSH0",
+        "00001457: CALLDATASIZE",
+        "00001458: PUSH1 0x03",
+        "0000145a: NOT",
+        "0000145b: ADD",
+        "0000145c: SLT",
+        "0000145d: PUSH2 0x0266"
+      ]
+    },
+    {
+      "pc": 5488,
+      "swc": "101",
+      "rawSeverity": "High",
+      "function": "decimals()",
+      "classification": "FALSE_POSITIVE: compiler ABI calldata-length comparison, intentional modular addition",
+      "disassembly": [
+        "0000156b: PUSH0",
+        "0000156c: CALLDATASIZE",
+        "0000156d: PUSH1 0x03",
+        "0000156f: NOT",
+        "00001570: ADD",
+        "00001571: SLT",
+        "00001572: PUSH2 0x0266"
+      ]
+    },
+    {
+      "pc": 5853,
+      "swc": "101",
+      "rawSeverity": "High",
+      "function": "totalDebtShares()",
+      "classification": "FALSE_POSITIVE: compiler ABI calldata-length comparison, intentional modular addition",
+      "disassembly": [
+        "000016d8: PUSH0",
+        "000016d9: CALLDATASIZE",
+        "000016da: PUSH1 0x03",
+        "000016dc: NOT",
+        "000016dd: ADD",
+        "000016de: SLT",
+        "000016df: PUSH2 0x0266"
+      ]
+    },
+    {
+      "pc": 5938,
+      "swc": "101",
+      "rawSeverity": "High",
+      "function": "totalSupply()",
+      "classification": "FALSE_POSITIVE: compiler ABI calldata-length comparison, intentional modular addition",
+      "disassembly": [
+        "0000172d: PUSH0",
+        "0000172e: CALLDATASIZE",
+        "0000172f: PUSH1 0x03",
+        "00001731: NOT",
+        "00001732: ADD",
+        "00001733: SLT",
+        "00001734: PUSH2 0x0266"
+      ]
+    },
+    {
+      "pc": 6635,
+      "swc": "116",
+      "rawSeverity": "Low",
+      "function": "totalAssets()",
+      "classification": "EXPECTED_DESIGN: totalAssets previews timestamp-based, capped interest accrual",
+      "disassembly": [
+        "000019e3: PUSH2 0x1a6f",
+        "000019e6: JUMPI",
+        "000019e7: JUMPDEST",
+        "000019e8: PUSH2 0x1a68",
+        "000019eb: JUMPI",
+        "000019ec: PUSH2 0x1a1c",
+        "000019ef: PUSH2 0x1a16"
+      ]
+    }
+  ]
+}

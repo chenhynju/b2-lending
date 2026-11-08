@@ -1,0 +1,980 @@
+['/home/chenhy/.venvs/evm-tools/bin/python', '-m', 'certora_cli.certoraRun', 'audit/certora/rate.conf', '--wait_for_results', 'all']
+Compiling audit/certora/RateHarness.sol...
+Compiling audit/certora/RateHarness.sol to expose internal function information and local variables...
+
+Connecting to server...
+[32mStarting job as user chenhynju@gmail.com in org purelamp (purelamp). Reserved 120 minutes: 120 free, 0 billed to purelamp.[0m
+
+[32mJob submitted to server[0m
+
+Manage your jobs at https://app.certora.com/orgs/purelamp/jobs
+Follow your job and see verification results at https://app.certora.com/orgs/purelamp/jobs/3fd66aba-1ea8-4533-9d3b-96fa4c38a8e2/report
+Output:
+
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+processing \
+processing |
+processing /
+processing -
+[INFO]: prover-container-version: 1.1.5
+[INFO]: Overcommit memory value: 1
+[INFO]: s5cmd: cp s3://certora-prod/uploadFiles/4975826/3fd66aba1ea845339d3b96fa4c38a8e2.zip /home/appuser/code/job.zip
+[INFO]: s5cmd: cp s3://tac-optimizer-artifacts/8.20.3/tac_optimizer-8.20.3 /home/appuser/bin/tac_optimizer
+[INFO]: s5cmd: cp s3://prover-artifacts/8.20.3/emv-8.20.3.jar /home/appuser/bin/emv.jar
+[INFO]: inputs download time :: 0.7918 seconds
+[INFO]: tac optimizer ready on PATH at /home/appuser/bin/tac_optimizer
+[INFO]: s5cmd stderr: ERROR "sync s3://certora-prod/outputs/4975826/cache/79a2ddd7a2fbd5b112a3ad63908313bc3c18f0026653d740397fe1957d5c57fb-optimisticFalse-iterNone-None--certora-cli-8.20.3/* /home/appuser/code/cache": no object found
+[INFO]: cache download time :: 0.0620 seconds
+[INFO]: Command: java -Xmx31999m -XX:+UseParallelGC -XX:MaxHeapFreeRatio=10 -XX:MinHeapFreeRatio=5 -XX:G1PeriodicGCInterval=15 -XX:NewRatio=5 -XX:+CrashOnOutOfMemoryError -XX:ErrorFile=/home/appuser/code/java_error/java_error%p.log -DoutputUrl=s3://certora-prod/outputs/4975826/output_3fd66aba1ea845339d3b96fa4c38a8e2/ -DjobId=3fd66aba1ea845339d3b96fa4c38a8e2 -DuserId=4975826 -jar /home/appuser/bin/emv.jar -cache 79a2ddd7a2fbd5b112a3ad63908313bc3c18f0026653d740397fe1957d5c57fb-optimisticFalse-iterNone-None--certora-cli-8.20.3 -userGlobalTimeout 7200 -globalTimeout 7500
+Start Sat Nov 07 22:10:29 GMT 2026
+Start Sat Nov 07 22:10:29 GMT 2026
+The scene contains 20 contracts:
+RateHarness : 0xce4604a0000000000000000000000002,
+ecrecover : 0x1,
+sha256 : 0x2,
+ripemd160 : 0x3,
+identity : 0x4,
+bigmod : 0x5,
+bn256Add : 0x6,
+bn256ScalarMul : 0x7,
+bn256Pairing : 0x8,
+Precompiled244 : 0xf4,
+Precompiled245 : 0xf5,
+Precompiled246 : 0xf6,
+Precompiled247 : 0xf7,
+Precompiled248 : 0xf8,
+Precompiled249 : 0xf9,
+Precompiled250 : 0xfa,
+Precompiled251 : 0xfb,
+Precompiled252 : 0xfc,
+Precompiled253 : 0xfd,
+Precompiled254 : 0xfe
+Running initial transformations
+Has CVL checks.
+Checking CVL audit/certora/Rate.spec for contract RateHarness
+Unrolling loops 1 time, unwinding condition is asserted
+Checking rule envfreeFuncsStaticCheck (3 out of 3)...
+Checking rule rateBounds (1 out of 3)...
+Checking rule rateMonotonic (2 out of 3)...
+Result for envfreeFuncsStaticCheck: envfreeFuncsStaticCheck: rate(uint256): SUCCESS
+Starting to run on rule rateBounds
+Starting to run on rule rateMonotonic
+Verified: rateBounds
+rateBounds: Properties successfully verified on all inputs
+Starting to run on rule rateBounds-rule_not_vacuous
+Total time for rateMonotonic: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: rateMonotonic
+rateMonotonic: Properties successfully verified on all inputs
+Total time for rateBounds-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: rateBounds-rule_not_vacuous
+rateBounds-rule_not_vacuous: A property is violated
+Result for rateBounds: rateBounds: SUCCESS
+Starting to run on rule rateMonotonic-rule_not_vacuous
+Total time for rateMonotonic-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: rateMonotonic-rule_not_vacuous
+rateMonotonic-rule_not_vacuous: A property is violated
+Result for rateMonotonic: rateMonotonic: SUCCESS
+Results for envfreeFuncsStaticCheck:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|rate(uint256)                           |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for all:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|envfreeFuncsStaticCheck                 |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|rateBounds                              |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|rateMonotonic                           |Not violated |1         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|rule_not_vacuous                        |Not violated |0         |Assert message: sanity check for rule rateBounds succeed... |RateHarness=1                                     |
+|                                        |(sat)        |          |                                                            |result=0x470de4df820000                           |
+|                                        |             |          |                                                            |utilization=0                                     |
+|rule_not_vacuous                        |Not violated |0         |Assert message: sanity check for rule rateMonotonic succ... |RateHarness=1                                     |
+|                                        |(sat)        |          |                                                            |lower=0                                           |
+|                                        |             |          |                                                            |lowerRate=0x470de4df820000                        |
+|                                        |             |          |                                                            |upper=0                                           |
+|                                        |             |          |                                                            |upperRate=0x470de4df820000                        |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Failures summary:
+Failed on rule_not_vacuous:
+Assert message: sanity check for rule rateBounds succeed...
+sanity check (vacuity of rule) for rule rateBounds
+Failed on rule_not_vacuous:
+Assert message: sanity check for rule rateMonotonic succ...
+sanity check (vacuity of rule) for rule rateMonotonic
+Done 0m
+Done 0m
+Event reporter: all events were sent without errors
+[INFO]: Live-mirror upload summary: 28 uploads, 28 unique keys, 0 redundant re-uploads, 1.00 uploads/key.
+[INFO]: s5cmd: cp /home/appuser/code/3fd66aba1ea845339d3b96fa4c38a8e2.tar.gz s3://certora-prod/outputs/4975826/output_3fd66aba1ea845339d3b96fa4c38a8e2/3fd66aba1ea845339d3b96fa4c38a8e2.tar.gz
+[INFO]: s5cmd transferred 31 file(s)
+[INFO]: Cache upload took 0.2087 seconds
+[INFO]: Timings :: prover=7.4542 seconds, exit_code=0, timed_out=False
+
+Finished verification request
+[32mNo errors found by Prover![0m
+
+EXIT 0

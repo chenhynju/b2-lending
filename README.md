@@ -1,5 +1,6 @@
-# Isolated Lending Vault
+# D02 — Isolated Lending
 A collateralized credit protocol that makes lender ownership, indexed debt and insolvency settlement explicit.
+[Current self-assessment and release gates](docs/audit/review-2026-11-08.md) · [WSL source policy](docs/deployment/workspace-workflow.md)
 
 This is the **lending series of B2 DeFi**, separate from the AMM. It demonstrates how money moves through a state machine and how those transitions are attacked and tested. **AI-Assisted Self-Assessment**, not an independent audit or a real-funds product.
 

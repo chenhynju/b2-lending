@@ -1,0 +1,30 @@
+[
+  {
+    "project": "D02",
+    "command": [
+      "python3",
+      "scripts/isolated_checks.py",
+      "static"
+    ],
+    "cwd": "/home/chenhy/workspace/web3-portfolio/d02-isolated-lending",
+    "startedAt": "2026-11-08T07:14:00.447906+00:00",
+    "seconds": 71.57,
+    "exitCode": 0,
+    "executionStatus": "PASS",
+    "log": "/home/chenhy/workspace/web3-portfolio/portfolio-ops/evidence/2026-11-08/extended-00-D02.log"
+  },
+  {
+    "project": "D02",
+    "command": [
+      "python3",
+      "scripts/isolated_checks.py",
+      "coverage"
+    ],
+    "cwd": "/home/chenhy/workspace/web3-portfolio/d02-isolated-lending",
+    "startedAt": "2026-11-08T07:15:10.869834+00:00",
+    "seconds": 88.07,
+    "exitCode": 0,
+    "executionStatus": "PASS",
+    "log": "/home/chenhy/workspace/web3-portfolio/portfolio-ops/evidence/2026-11-08/extended-01-D02.log"
+  }
+]

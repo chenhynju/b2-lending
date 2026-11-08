@@ -1,0 +1,55 @@
+{
+  "success": true,
+  "error": null,
+  "issues": [
+    {
+      "pc": 4785,
+      "swc": "101",
+      "severity": "High",
+      "function": "_function_0x4ac8eb5f",
+      "selector": "0x4ac8eb5f"
+    },
+    {
+      "pc": 5144,
+      "swc": "101",
+      "severity": "High",
+      "function": "asset()",
+      "selector": "0x38d52e0f"
+    },
+    {
+      "pc": 5211,
+      "swc": "101",
+      "severity": "High",
+      "function": "_function_0x3574d4c4",
+      "selector": "0x3574d4c4"
+    },
+    {
+      "pc": 5488,
+      "swc": "101",
+      "severity": "High",
+      "function": "available_assert_time(uint16,uint64) or decimals()",
+      "selector": "0x313ce567"
+    },
+    {
+      "pc": 5853,
+      "swc": "101",
+      "severity": "High",
+      "function": "_function_0x1b859e41",
+      "selector": "0x1b859e41"
+    },
+    {
+      "pc": 5938,
+      "swc": "101",
+      "severity": "High",
+      "function": "totalSupply()",
+      "selector": "0x18160ddd"
+    },
+    {
+      "pc": 6635,
+      "swc": "116",
+      "severity": "Low",
+      "function": "totalAssets()",
+      "selector": "0x01e1d114"
+    }
+  ]
+}

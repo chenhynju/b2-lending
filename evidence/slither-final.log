@@ -12,18 +12,18 @@ Reentrancy in LendingVault._push(IERC20,address,uint256) (src/LendingVault.sol#3
 	External call allowing reentrancy:
 	- token.safeTransfer(to,amount) (src/LendingVault.sol#320)
 	Balance read before the call:
-	- receiverBalance = token.balanceOf(to) (src/LendingVault.sol#319)
-	Possible stale balance used after the call in a condition:
-	- token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount (src/LendingVault.sol#321)
-		- stale variable `receiverBalance`
-Reentrancy in LendingVault._push(IERC20,address,uint256) (src/LendingVault.sol#317-325):
-	External call allowing reentrancy:
-	- token.safeTransfer(to,amount) (src/LendingVault.sol#320)
-	Balance read before the call:
 	- beforeBalance = token.balanceOf(address(this)) (src/LendingVault.sol#318)
 	Possible stale balance used after the call in a condition:
 	- token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount (src/LendingVault.sol#321)
 		- stale variable `beforeBalance`
+Reentrancy in LendingVault._push(IERC20,address,uint256) (src/LendingVault.sol#317-325):
+	External call allowing reentrancy:
+	- token.safeTransfer(to,amount) (src/LendingVault.sol#320)
+	Balance read before the call:
+	- receiverBalance = token.balanceOf(to) (src/LendingVault.sol#319)
+	Possible stale balance used after the call in a condition:
+	- token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount (src/LendingVault.sol#321)
+		- stale variable `receiverBalance`
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
 
 Detector: incorrect-equality
@@ -102,7 +102,7 @@ LendingVault._push(IERC20,address,uint256) (src/LendingVault.sol#317-325) uses t
 	- token.balanceOf(address(this)) + amount != beforeBalance || token.balanceOf(to) != receiverBalance + amount (src/LendingVault.sol#321)
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
 . analyzed (17 contracts with 102 detectors), 27 result(s) found
-INFO:Slither:/mnt/d/appspace/web3prepare/b2-lending/evidence/slither-final.json exists already, the overwrite is prevented
-'forge clean' running (wd: /tmp/b2-lending-check-j32qi1a7)
+INFO:Slither:/home/chenhy/workspace/web3-portfolio/d02-isolated-lending/evidence/slither-final.json exists already, the overwrite is prevented
+'forge clean' running (wd: /tmp/b2-lending-check-p0j8953x)
 'forge config --json' running
-'forge build --build-info --deny never --skip ./test/** ./script/** --force' running (wd: /tmp/b2-lending-check-j32qi1a7)
+'forge build --build-info --deny never --skip ./test/** ./script/** --force' running (wd: /tmp/b2-lending-check-p0j8953x)

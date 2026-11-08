@@ -2,7 +2,7 @@
 """Isolated checks never clean or mutate campaign build products."""
 import argparse,hashlib,json,os,shutil,subprocess,tempfile
 from pathlib import Path
-root=Path(__file__).resolve().parents[1];e=root/"evidence"
+root=Path(__file__).resolve().parents[1];e=root/os.environ.get("LENDING_EVIDENCE_DIR", "evidence");e.mkdir(parents=True,exist_ok=True)
 def workspace(tests=True):
     td=tempfile.TemporaryDirectory(prefix="b2-lending-check-");p=Path(td.name)
     for name in ["src"]+(["test","script"] if tests else []):shutil.copytree(root/name,p/name)

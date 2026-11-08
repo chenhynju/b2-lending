@@ -1,0 +1,7 @@
+127.0.0.1 - - [08/Nov/2026 16:54:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 16:54:23] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 16:54:23] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 16:54:24] "GET /config.json HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 16:54:24] "GET /selectors.json HTTP/1.1" 200 -
+PASS browser wallet and liquidation flows
+{"status": "PASS", "transactions": 28, "badDebt": 523809526, "browser": true}
