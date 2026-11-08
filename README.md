@@ -154,3 +154,7 @@ Custom: lending/accounting state machine, indexed debt integration, liquidation/
 Future work must first close verification gaps, obtain independent review and validate market-specific risk/operations. It is not appropriate to expand features while treating unaccepted gates as complete.
 
 Development follows the [WSL commit, push, Windows pull workflow](docs/deployment/workspace-workflow.md). Wallet-context security regressions run in CI with node scripts/wallet_context_test.cjs.
+
+## Hosted UI evidence
+
+[Protected Vercel deployment](https://b2-lending-jclgzyqvy-purelamp.vercel.app). Authenticated Chromium desktop and 390px mobile rendering passed with no page errors or horizontal overflow. [Evidence](evidence/hosted-ui-20261109/acceptance.json). This check does not establish hosted wallet transaction acceptance. Access protection remains enabled.

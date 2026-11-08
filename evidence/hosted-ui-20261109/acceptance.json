@@ -1,0 +1,12 @@
+{
+  "project": "b2-lending-app",
+  "status": "PASS",
+  "scope": "Authenticated hosted UI render; no wallet signing or public workflow claim",
+  "httpStatus": 200,
+  "title": "Isolated | Lending Vault",
+  "h1": "Put capital to work.\nKeep risk in view.",
+  "mobileOverflow": false,
+  "pageErrors": [],
+  "url": "https://b2-lending-jclgzyqvy-purelamp.vercel.app",
+  "sourceCommit": "be953b7c06d31bc66c573c8364dd9c457baa7557"
+}
