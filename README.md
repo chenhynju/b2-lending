@@ -158,3 +158,5 @@ Development follows the [WSL commit, push, Windows pull workflow](docs/deploymen
 ## Hosted UI evidence
 
 [Protected Vercel deployment](https://b2-lending-jclgzyqvy-purelamp.vercel.app). Authenticated Chromium desktop and 390px mobile rendering passed with no page errors or horizontal overflow. [Evidence](evidence/hosted-ui-20261109/acceptance.json). This check does not establish hosted wallet transaction acceptance. Access protection remains enabled.
+
+[Engineering, self-review and public testnet evidence](docs/deployment/acceptance-2026-11-09.md)
